@@ -45,3 +45,8 @@ py -m http.server 8000
 ```
 
 و بعد <http://localhost:8000> را باز کن. برخلاف نسخه‌های قبلی، این نسخه به `/api/*` نیاز ندارد.
+
+
+### Music API resilience
+
+The Classical Listening Room avoids sorting large result sets and avoids querying the full description field. It uses a longer timeout, then tries the official Internet Archive Scraping API if Advanced Search stalls. Successful searches are saved in local storage so a previous query can still be shown when the archive is temporarily slow. Track playback falls back to the Archive embed if metadata lookup times out.
