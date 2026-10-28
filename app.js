@@ -12,8 +12,11 @@ let musicSearchRequestId = 0;
 let musicTrackRequestId = 0;
 const musicSearchCache = new Map();
 const musicTrackCache = new Map();
-// Art Institute images use IIIF; Commons is the browser-friendly fallback gallery.
+// Art Institute metadata is synchronized at build time by GitHub Actions into a static JSON snapshot.
+// IIIF images are loaded directly from the museum; Commons remains an explicitly attributed fallback.
 let iiifBase = 'https://www.artic.edu/iiif/2';
+let articSnapshotPromise = null;
+let articSnapshotCache = null;
 let discoverResults = [];
 let discoverOffset = 0;
 let discoverQuery = 'Sandro Botticelli';
@@ -190,11 +193,11 @@ function directIiifFromUrl(value) {
 }
 function iiifUrl(art, size = '843,') {
   if (!art || !art.image_id) return '';
-  return proxiedIiifUrl(art.image_id, size) || directIiifUrl(art, size);
+  // GitHub Pages has no same-origin image proxy; use the official IIIF image URL directly.
+  return directIiifUrl(art, size);
 }
 // Image requests may fail even when museum metadata loads: the IIIF host is a separate service.
-// Try the same-origin image proxy first (the image URL is built by iiifUrl), then direct IIIF,
-// and finally an explicitly attributed Wikimedia Commons image search for the same work.
+// Try the official direct IIIF URL, then an explicitly attributed Wikimedia Commons image search.
 function addImageFailurePlaceholder(img) {
   img.onerror = null;
   img.style.display = 'none';
@@ -512,9 +515,9 @@ function renderDiscoverFavorites() {
   $('#discover-count').textContent = `${faNum(state.favorites.length)} اثر ذخیره‌شده`;
   $('#load-more-btn').hidden = true;
 }
-// Art Institute calls are routed through a same-origin serverless proxy first.
-// This avoids browser CORS/network restrictions on static hosting. If the host has
-// no serverless support, the visual gallery falls back to Wikimedia Commons.
+// GitHub Pages cannot run a server-side API proxy. Instead, GitHub Actions periodically
+// fetches public-domain records from the official Art Institute API and publishes them as
+// data/artic-artworks.json. The site searches this snapshot locally, avoiding browser CORS.
 async function fetchJsonWithTimeout(url, timeoutMs = 14000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
@@ -538,10 +541,57 @@ function validateApiPayload(json, response) {
   if (json.error || json.errors?.length) throw new Error(String(json.error || json.errors.map(item => item.message || item).join('; ')));
   return json;
 }
+function normalizeSearchText(value = '') {
+  return String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+}
+async function loadArticSnapshot() {
+  if (articSnapshotCache) return articSnapshotCache;
+  if (!articSnapshotPromise) {
+    articSnapshotPromise = (async () => {
+      const url = new URL('data/artic-artworks.json', document.baseURI);
+      const { response, body } = await fetchJsonWithTimeout(url.href, 12000);
+      if (!response.ok) throw new Error(`فهرست همگام‌سازی‌شده‌ی موزه در دسترس نیست (HTTP ${response.status}). بررسی کن GitHub Actions با موفقیت اجرا شده باشد.`);
+      if (!body || !Array.isArray(body.works)) throw new Error('فایل داده‌ی موزه ساختار معتبری ندارد.');
+      if (!body.works.length) throw new Error('فهرست آثار موزه هنوز با GitHub Actions دریافت نشده یا همگام‌سازی ناموفق بوده است. صفحه‌ی Actions مخزن را بررسی کن.');
+      articSnapshotCache = body;
+      return body;
+    })().catch(error => { articSnapshotPromise = null; throw error; });
+  }
+  return articSnapshotPromise;
+}
+function artistTitleMatches(title, wanted) {
+  const candidate = normalizeSearchText(title);
+  const target = normalizeSearchText(wanted);
+  if (!candidate || !target) return false;
+  if (candidate === target) return true;
+  // Some museum records use Michelangelo Buonarroti instead of Michelangelo.
+  return target === 'michelangelo' && candidate.startsWith('michelangelo ');
+}
 async function museumFetch(path, params = {}) {
-  // GitHub Pages can host only static assets. No /api/artic proxy can run here.
-  // This project edition intentionally uses the Commons fallback directly to avoid slow CORS failures.
-  throw new Error('این نسخه برای GitHub Pages ساخته شده و تابع سمت سرور ندارد؛ گالری از Wikimedia Commons استفاده می‌کند.');
+  if (path === '/agents/search') {
+    const q = normalizeSearchText(params.q || '');
+    return { data: ARTIST_CATALOG.filter(artist => !q || normalizeSearchText(`${artist.name} ${artist.fa}`).includes(q)).map(artist => ({ id: artist.id, title: artist.name, description: artist.description, is_artist: true })) };
+  }
+  if (path !== '/artworks/search') throw new Error(`مسیر موزه در نسخه‌ی استاتیک پشتیبانی نمی‌شود: ${path}`);
+  const snapshot = await loadArticSnapshot();
+  const allWorks = Array.isArray(snapshot.works) ? snapshot.works : [];
+  const artistQuery = params.query?.term?.['artist_title.keyword'] || '';
+  const freeQuery = normalizeSearchText(params.q || '');
+  let matches = allWorks;
+  if (artistQuery) {
+    matches = matches.filter(item => artistTitleMatches(item.artist_title || '', artistQuery));
+  } else if (freeQuery) {
+    const terms = freeQuery.split(/\s+/).filter(Boolean);
+    matches = matches.filter(item => {
+      const haystack = normalizeSearchText([item.title, item.artist_title, item.date_display, item.medium_display, item.place_of_origin, item.short_description, item.description, item.style_title, item.classification_title, ...(Array.isArray(item.term_titles) ? item.term_titles : [])].join(' '));
+      return terms.every(term => haystack.includes(term));
+    });
+  }
+  matches = matches.filter(item => item && item.id != null && item.image_id && item.is_public_domain === true);
+  const offset = Math.max(0, Number(params.from || 0));
+  const size = Math.max(1, Math.min(100, Number(params.size || params.limit || 12)));
+  const pageItems = matches.slice(offset, offset + size);
+  return { data: pageItems, pagination: { total: matches.length, limit: size, offset, current_page: Math.floor(offset / size) + 1, total_pages: Math.ceil(matches.length / size) }, snapshot: { generatedAt: snapshot.generatedAt, successfulQueries: snapshot.successfulQueries } };
 }
 function showApiError(error) {
   const detail = error?.message || String(error || 'خطای ناشناخته');
@@ -720,7 +770,7 @@ async function searchArtworks(query, append = false) {
   const commonsQuery = catalogArtist?.query || `${discoverQuery} painting artwork`;
   if (!append) { discoverOffset = 0; discoverResults = []; window.__atelierTotal = null; $('#discover-grid').innerHTML = ''; }
   $('#discover-heading').textContent = `جست‌وجو: ${catalogArtist?.fa || discoverQuery}`;
-  $('#discover-status').textContent = GITHUB_PAGES_STATIC ? 'در حال جست‌وجوی آرشیو عمومی تصاویر…' : 'در حال جست‌وجوی مجموعه‌ی دیجیتال…';
+  $('#discover-status').textContent = 'در حال جست‌وجو در داده‌های همگام‌سازی‌شده‌ی API رسمی Art Institute of Chicago…';
   $('#discover-status').classList.remove('error', 'warning');
   $('#load-more-btn').disabled = true;
   try {
@@ -737,7 +787,7 @@ async function searchArtworks(query, append = false) {
     const receivedItems = Array.isArray(json.data) ? json.data : [];
     // Keep artist-specific results precise and only use works that have an image and are marked public domain.
     const rawItems = catalogArtist
-      ? receivedItems.filter(item => String(item.artist_title || '').trim().toLocaleLowerCase() === catalogArtist.name.toLocaleLowerCase() && item.is_public_domain === true && item.image_id)
+      ? receivedItems.filter(item => artistTitleMatches(item.artist_title || '', catalogArtist.name) && item.is_public_domain === true && item.image_id)
       : receivedItems;
     const items = rawItems.filter(item => item && item.id != null).map(item => ({ ...item, sourceType: 'artic', sourceUrl: item.web_url || `https://www.artic.edu/artworks/${item.id}`, imageUrl: item.image_id ? iiifUrl(item, '843,') : '' }));
     if (!items.length && !append) {
@@ -755,11 +805,12 @@ async function searchArtworks(query, append = false) {
     discoverSource = 'artic';
     discoverOffset += receivedItems.length;
     window.__atelierTotal = catalogArtist ? Number(json.pagination?.total ?? discoverResults.length) : Number(json.pagination?.total ?? (json.pagination?.total_pages != null ? json.pagination.total_pages * (json.pagination.limit || 12) : discoverResults.length));
+    const snapshotDate = json.snapshot?.generatedAt ? new Date(json.snapshot.generatedAt).toLocaleDateString('fa-IR') : '';
     $('#discover-status').textContent = items.length
       ? (catalogArtist
-          ? `نمایش ${faNum(items.length)} اثر با انتساب دقیق به ${catalogArtist.fa} از مجموعه‌ی عمومی Art Institute of Chicago.`
-          : `نمایش ${faNum(items.length)} اثر از مجموعه‌ی عمومی Art Institute of Chicago؛ داده‌ها از API رسمی دریافت شدند.`)
-      : 'برای این عبارت نتیجه‌ای با تصویر قابل‌نمایش در مجموعه‌ی موزه پیدا نشد. در حال بررسی آرشیو جایگزین…';
+          ? `نمایش ${faNum(items.length)} اثر با انتساب دقیق به ${catalogArtist.fa} از مجموعه‌ی عمومی Art Institute of Chicago؛ داده‌ها با GitHub Actions همگام‌سازی شده‌اند${snapshotDate ? ` · آخرین همگام‌سازی: ${snapshotDate}` : ''}.`
+          : `نمایش ${faNum(items.length)} اثر از مجموعه‌ی عمومی Art Institute of Chicago؛ داده‌های API در مرحله‌ی انتشار همگام‌سازی شده‌اند${snapshotDate ? ` · آخرین همگام‌سازی: ${snapshotDate}` : ''}.`)
+      : 'در فهرست همگام‌سازی‌شده‌ی Art Institute برای این عبارت اثر قابل‌نمایشی پیدا نشد. در حال بررسی منبع جایگزین…';
     renderDiscoverGrid();
     $('#load-more-btn').hidden = items.length < 1 || discoverResults.length >= window.__atelierTotal || Boolean(catalogArtist && receivedItems.length < 30);
   } catch (museumError) {
@@ -770,7 +821,7 @@ async function searchArtworks(query, append = false) {
       const normalized = commonsItems.map((item, index) => ({ ...item, id: item.id || `commons:${index}`, artist: catalogArtist?.name || discoverQuery, sourceType: 'commons' }));
       discoverResults = append ? discoverResults.concat(normalized) : normalized;
       discoverSource = 'commons'; window.__atelierTotal = discoverResults.length;
-      $('#discover-status').textContent = `نسخه‌ی GitHub Pages بدون سرور اجرا می‌شود؛ ${faNum(normalized.length)} تصویر از Wikimedia Commons نمایش داده شده‌اند. این تصاویر الزاماً متعلق به یک موزه‌ی خاص نیستند؛ برای اعتبار و مجوز، صفحه‌ی منبع هر تصویر را باز کن.`;
+      $('#discover-status').textContent = `در داده‌های همگام‌سازی‌شده‌ی Art Institute نتیجه‌ای برای این عبارت موجود نیست یا فایل همگام‌سازی در دسترس نیست؛ ${faNum(normalized.length)} تصویر جایگزین از Wikimedia Commons نمایش داده شده‌اند. این آثار لزوماً متعلق به مجموعه‌ی موزه نیستند؛ منبع و مجوز را در صفحه‌ی هر تصویر بررسی کن. علت: ${museumError.message || museumError}`;
       $('#discover-status').classList.add('warning');
       renderDiscoverGrid(); $('#load-more-btn').hidden = true;
     } catch (fallbackError) {
@@ -785,20 +836,19 @@ async function searchArtworks(query, append = false) {
 async function testMuseumConnection() {
   const button = $('#api-test-btn'); const status = $('#discover-status');
   button.disabled = true; button.textContent = 'در حال آزمایش…'; status.classList.remove('error', 'warning');
-  status.textContent = 'در حال آزمایش اتصال گالری تصاویر…';
+  status.textContent = 'در حال بررسی فهرست آثار همگام‌سازی‌شده‌ی Art Institute…';
   try {
-    const items = await searchCommonsImages('Sandro Botticelli The Birth of Venus painting', 1);
-    if (!items.length) throw new Error('پاسخ آرشیو تصاویر خالی بود.');
-    status.textContent = 'اتصال گالری موفق است. این نسخه فقط روی GitHub Pages اجرا می‌شود و تصاویر را مستقیم از Wikimedia Commons می‌گیرد؛ هیچ سرور یا پروکسی جداگانه‌ای لازم نیست.';
+    const snapshot = await loadArticSnapshot();
+    const updated = snapshot.generatedAt ? new Date(snapshot.generatedAt).toLocaleString('fa-IR') : 'نامشخص';
+    status.textContent = `اتصال موفق است: ${faNum(snapshot.works.length)} اثر از API رسمی Art Institute در فهرست استاتیک موجود است. آخرین همگام‌سازی: ${updated}. برای جست‌وجوی تازه، GitHub Actions را اجرا کن.`;
     status.classList.remove('error', 'warning');
   } catch (error) {
-    status.textContent = `اتصال به Wikimedia Commons ناموفق بود: ${error.message || error}. دسترسی اینترنت و افزونه‌های مسدودکننده را بررسی کن.`;
+    status.textContent = `${error.message || error} در GitHub → Actions، اجرای «Atelier Pages + Art Institute data» را بررسی کن.`;
     status.classList.add('error');
-  } finally { button.disabled = false; button.textContent = 'آزمایش اتصال گالری'; }
+  } finally { button.disabled = false; button.textContent = 'بررسی فهرست موزه'; }
 }
-// Museum agent search is not used in the GitHub Pages edition; artist data is curated locally.
 async function searchArtists(query = 'Michelangelo') {
-  const json = await museumFetch('/agents/search', { q: query, size: 12, from: 0, fields: ['id','title','birth_date','death_date','description','is_artist','alt_titles','api_link'] });
+  const json = await museumFetch('/agents/search', { q: query, size: 12, from: 0 });
   return Array.isArray(json.data) ? json.data : [];
 }
 // The home hero is a live carousel driven by a curated list of eight artists. Artist images are loaded from Commons.

@@ -1,0 +1,73 @@
+name: Atelier Pages + Art Institute data
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '23 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync public-domain artworks from Art Institute API
+        run: node scripts/sync-artic-data.mjs
+
+      - name: Commit refreshed static museum data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/artic-artworks.json
+          if git diff --cached --quiet; then
+            echo "No changes to museum data."
+          else
+            git commit -m "chore: sync Art Institute artwork data"
+            git push || echo "::warning::Could not push the refreshed JSON snapshot back to main; this deployment will still use the generated snapshot."
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare static site artifact
+        run: |
+          rm -rf _site
+          mkdir -p _site/data
+          cp index.html app.js styles.css ambient.js _site/
+          cp data/artic-artworks.json _site/data/
+          touch _site/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -4,18 +4,27 @@
 
 - Static HTML: `index.html`
 - Styling and responsive museum theme: `styles.css`
-- Client-side behaviors and direct public API calls: `app.js`
+- Client-side behaviors and static snapshot search: `app.js`
+- GitHub Actions sync script: `scripts/sync-artic-data.mjs`
+- Generated museum data snapshot: `data/artic-artworks.json`
 - Lightweight atmospheric background: `ambient.js`
 - Personal data: browser `localStorage` (`atelier.personal.v1`)
 
 ## External data
 
-### Wikimedia Commons
+### Art Institute of Chicago
+
+- Official API: `https://api.artic.edu/api/v1/artworks/search`
+- The GitHub Actions workflow fetches public-domain works with available `image_id` values at deploy time and weekly.
+- Data is stored as a static JSON snapshot at `data/artic-artworks.json`; the browser filters this snapshot locally, so it does not request the museum API directly and does not need CORS.
+- Images use the official IIIF URL pattern: `https://www.artic.edu/iiif/2/{image_id}/full/843,/0/default.jpg`.
+- This is not an unlimited live search over every museum record; it searches the synced selection of eight artist queries and ten thematic queries. The workflow keeps the site GitHub-only.
+
+### Wikimedia Commons fallback
 
 - Search endpoint: `https://commons.wikimedia.org/w/api.php`
 - Requests include `origin=*` to support cross-origin JSON access.
-- Image results retain the file page URL, credit, and license metadata when exposed by the API.
-- Commons is the only artwork discovery source in this deployment to avoid server proxies and the Art Institute API's browser CORS issue in the user's environment.
+- Commons is used only when the synced Art Institute snapshot contains no matching visible works or the snapshot cannot be loaded. Image results retain the file page URL, credit, and license metadata when available.
 
 ### Internet Archive
 
@@ -26,7 +35,7 @@
 
 ## What GitHub Pages cannot do
 
-GitHub Pages serves static assets. It does not execute `api/`, Netlify Functions, Node.js or Python server code. This static edition intentionally excludes all server files and never requests same-origin `/api/artic`, `/api/iiif` or `/api/music/*` endpoints.
+GitHub Pages serves static assets. It does not execute `api/`, Netlify Functions, Node.js or Python server code. The official Art Institute API is therefore called by GitHub Actions before deployment; browsers load the resulting JSON snapshot. Internet Archive music and Wikimedia Commons fallback are requested directly from the browser.
 
 ## Personal storage
 

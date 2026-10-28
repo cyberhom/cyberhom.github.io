@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "source": "Art Institute of Chicago API",
+  "sourceUrl": "https://api.artic.edu/docs/",
+  "generatedAt": null,
+  "lastAttemptAt": null,
+  "lastSyncStatus": "pending-first-GitHub-Actions-run",
+  "successfulQueries": 0,
+  "attemptedQueries": 0,
+  "totalWorks": 0,
+  "note": "This placeholder is populated by .github/workflows/pages.yml using scripts/sync-artic-data.mjs.",
+  "warnings": [],
+  "works": []
+}
