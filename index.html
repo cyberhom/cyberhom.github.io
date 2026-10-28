@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0d0c">
+  <meta name="description" content="Atelier؛ دفتر شخصی نقاشی، کشف آثار هنری و یادداشت‌های تاریخ هنر.">
+  <title>Atelier — An Artistic Exploration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="ambient-scene" aria-hidden="true">
+    <canvas id="ambient-canvas"></canvas>
+    <span class="ambient-ring ambient-ring-one"></span>
+    <span class="ambient-ring ambient-ring-two"></span>
+    <span class="ambient-ring ambient-ring-three"></span>
+    <span class="ambient-filament ambient-filament-one"></span>
+    <span class="ambient-filament ambient-filament-two"></span>
+  </div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="آتلیه، صفحه خانه">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 4 42 14.5v19L24 44 6 33.5v-19L24 4Z"/><path d="M15 31 24 12l9 19M18.5 24h11"/></svg></span>
+        <span class="brand-copy"><strong>آتلیه</strong><small>ATELIER · دفتر هنری</small></span>
+      </a>
+
+      <div class="sidebar-caption">فضای شخصی تو</div>
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <button class="nav-link active" data-page="home" type="button"><span class="nav-icon">⌂</span><span>خانه</span></button>
+        <button class="nav-link" data-page="studio" type="button"><span class="nav-icon">✳</span><span>آتلیه‌ی من</span><span class="nav-count" id="nav-art-count">۰</span></button>
+        <button class="nav-link" data-page="discover" type="button"><span class="nav-icon">◉</span><span>گنجینه‌ی هنر</span></button>
+        <button class="nav-link" data-page="library" type="button"><span class="nav-icon">▤</span><span>قفسه‌ی مطالعه</span><span class="nav-count" id="nav-resource-count">۰</span></button>
+        <button class="nav-link" data-page="progress" type="button"><span class="nav-icon">↗</span><span>مسیر من</span></button>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="note-ornament">✦</span>
+        <p>«هنر دیدن، خودش نوعی آموختن است.»</p>
+        <small>یادداشتی برای امروز</small>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="privacy-mini"><span class="privacy-dot"></span><span>دفتر تو، روی دستگاه تو</span></div>
+        <button class="nav-link utility-link" id="export-btn" type="button"><span class="nav-icon">⇩</span><span>دریافت نسخه‌ی پشتیبان</span></button>
+        <button class="nav-link utility-link" id="import-btn" type="button"><span class="nav-icon">⇧</span><span>بازیابی نسخه‌ی پشتیبان</span></button>
+        <input id="import-file" type="file" accept="application/json,.json" hidden>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar museum-topbar">
+        <div class="museum-brand-group">
+          <a class="museum-wordmark" href="#home" data-go-page="home" aria-label="Atelier home">Atelier</a>
+          <details class="personal-menu museum-personal-menu">
+            <summary aria-label="My Atelier tools" title="My Atelier">✦</summary>
+            <div class="personal-menu-list">
+              <button data-page="studio" type="button">My Works / دفتر آثار من</button>
+              <button data-page="library" type="button">Study Shelf / قفسه‌ی مطالعه</button>
+              <button data-page="progress" type="button">My Progress / مسیر من</button>
+              <hr>
+              <button id="header-export-btn" type="button">Export backup / دریافت پشتیبان</button>
+              <button id="header-import-btn" type="button">Import backup / بازیابی پشتیبان</button>
+            </div>
+          </details>
+          <button class="museum-add-button" id="top-add-btn" type="button" aria-label="ثبت اثر جدید" title="ثبت اثر جدید">＋</button>
+        </div>
+        <nav class="museum-nav" aria-label="Main navigation">
+          <button class="museum-nav-link active" data-page="home" type="button">Home</button>
+          <button class="museum-nav-link" data-page="timeline" type="button">Timeline</button>
+          <button class="museum-nav-link" data-page="history" type="button">History</button>
+          <button class="museum-nav-link" data-page="artists" type="button">Artists</button>
+          <button class="museum-nav-link" data-page="discover" type="button">Artworks</button>
+          <button class="museum-nav-link" data-page="music" type="button">Listen</button>
+          <button class="museum-nav-link" data-page="facts" type="button">Facts</button>
+        </nav>
+        <div class="breadcrumbs" hidden><span>Atelier</span><span class="crumb-sep">/</span><strong id="page-crumb">Home</strong><span id="today-label"></span></div>
+      </header>
+
+      <!-- HOME -->
+      <section class="page active" id="page-home" data-page-content="home">
+        <section class="renaissance-hero" aria-label="Featured art and art history">
+          <div class="renaissance-copy">
+            <h1>An Artistic<br>Exploration</h1>
+            <p class="renaissance-intro">From Renaissance and Baroque to modern art — explore the painters, images, and ideas that continue to inspire a new way of seeing.</p>
+            <button class="explore-oval" data-page="history" type="button">Explore more <span aria-hidden="true">↗</span></button>
+            <ol class="hero-artist-list" id="hero-artist-list" aria-label="هنرمندان منتخب">
+              <li class="active"><button type="button" data-spotlight-id="botticelli"><span>Sandro Botticelli</span><small>1445–1510</small></button></li>
+              <li><button type="button" data-spotlight-id="michelangelo"><span>Michelangelo</span><small>1475–1564</small></button></li>
+              <li><button type="button" data-spotlight-id="caravaggio"><span>Caravaggio</span><small>1571–1610</small></button></li>
+            </ol>
+            <span class="hero-ghost-word" aria-hidden="true">Renaissance</span>
+          </div>
+          <article class="renaissance-center featured-artwork" id="featured-artwork" aria-label="اثر منتخب">
+            <div class="featured-loading-placeholder" id="featured-art-placeholder"><span>ATELIER · ARTIST SPOTLIGHT</span><strong>یک گالری زنده از هنرمندان محبوب</strong><p>در حال دریافت تصویر از آرشیو عمومی…</p><div class="loading-orbit" aria-hidden="true"></div></div>
+            <img class="featured-fallback-image" id="featured-artwork-img" src="" alt="" loading="eager" referrerpolicy="no-referrer" hidden>
+            <a class="featured-open" id="featured-open-link" href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" aria-label="دیدن منبع تصویر اثر">↗</a>
+            <div class="featured-caption"><span class="caption-kicker" id="featured-caption-kicker">ARTIST SPOTLIGHT</span><h3 id="featured-artwork-title">A Gallery of Her Favorites</h3><p id="featured-artwork-byline">Sandro Botticelli · Renaissance</p></div>
+            <div class="featured-carousel-controls" aria-label="کنترل گالری"><button id="featured-prev" type="button" aria-label="اثر قبلی">←</button><span id="featured-slide-count">01 / 08</span><button id="featured-next" type="button" aria-label="اثر بعدی">→</button></div>
+          </article>
+          <aside class="renaissance-side" id="renaissance-side-art">
+            <a class="renaissance-side-image" id="featured-side-link" href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" aria-label="دیدن منبع اثر بعدی">
+              <img id="featured-side-img" src="" alt="اثر هنرمند بعدی" loading="lazy" referrerpolicy="no-referrer" hidden>
+              <span class="side-image-placeholder" id="featured-side-placeholder">✦</span>
+            </a>
+            <p class="renaissance-side-kicker">NEXT IN THE GALLERY</p>
+            <h2 id="featured-side-title">A different way of seeing</h2>
+            <p id="featured-side-copy">از رنسانس تا هنر مدرن؛ هر هنرمند جهان را با زبان خودش می‌بیند.</p>
+            <button class="text-link" id="featured-side-open" data-page="artists" type="button">Meet the artists <span>←</span></button>
+            <span class="renaissance-side-index" id="featured-side-index">02 <small>/ 08</small></span>
+          </aside>
+        </section>
+
+        <section class="home-artist-rail" aria-labelledby="home-artist-rail-title">
+          <div class="section-heading home-artist-rail-heading"><div><div class="eyebrow">EIGHT ARTISTS · DIFFERENT WORLDS</div><h2 id="home-artist-rail-title">از رنسانس تا مدرنیسم</h2></div><button class="text-link" data-page="artists" type="button">دیدن همه‌ی هنرمندان <span>←</span></button></div>
+          <div class="featured-artist-rail" id="home-featured-artists" aria-live="polite">
+            <div class="artist-rail-loading"><span class="loading-orbit" aria-hidden="true"></span><span>در حال آماده‌کردن گالری هنرمندان…</span></div>
+          </div>
+        </section>
+
+        <div class="stat-strip">
+          <div class="stat-item"><span class="stat-icon">✳</span><div><span class="stat-number" id="stat-artworks">۰</span><span class="stat-label">اثر ثبت‌شده</span></div></div>
+          <div class="stat-item"><span class="stat-icon">✎</span><div><span class="stat-number" id="stat-ideas">۰</span><span class="stat-label">ایده‌ی نگه‌داشته‌شده</span></div></div>
+          <div class="stat-item"><span class="stat-icon">▤</span><div><span class="stat-number" id="stat-resources">۰</span><span class="stat-label">مطلب در قفسه</span></div></div>
+          <div class="stat-item"><span class="stat-icon">◷</span><div><span class="stat-number" id="stat-minutes">۰</span><span class="stat-label">دقیقه تمرین ثبت‌شده</span></div></div>
+        </div>
+
+        <div class="section-heading home-section-heading">
+          <div><div class="eyebrow">از میان گنجینه‌ها</div><h2>برای مکث امروز</h2></div>
+          <button class="text-link" data-go-page="discover" type="button">دیدن آثار بیشتر <span>←</span></button>
+        </div>
+        <section class="daily-card daily-card-wide">
+          <div class="daily-topline"><span class="daily-spark">✦</span><span>تمرین کوچک امروز</span></div>
+          <div class="daily-practice-copy"><div class="daily-number" id="prompt-number">۰۱</div><div><h3 id="prompt-title">پیش از کشیدن، خوب نگاه کن.</h3><p id="prompt-copy">یک شیء ساده انتخاب کن. دو دقیقه فقط به شکل کلی، نور و سایه‌اش نگاه کن؛ بعد بدون پاک‌کن طرح اولیه را بکش.</p></div></div>
+          <button class="text-link daily-action" id="log-prompt-btn" type="button">ثبت جلسه‌ی تمرین <span>←</span></button>
+          <div class="daily-footer"><span>ATELIER NOTES</span><span>VOL. 01</span></div>
+        </section>
+
+        <div class="home-lower-grid">
+          <section class="panel recent-panel">
+            <div class="section-heading compact-heading"><div><div class="eyebrow">از دفتر تو</div><h2>آخرین ثبت‌ها</h2></div><button class="text-link" data-go-page="studio" type="button">رفتن به آتلیه <span>←</span></button></div>
+            <div id="recent-works" class="recent-list"><div class="empty-inline">هنوز اثری ثبت نکرده‌ای. اولین طرح تو می‌تواند همین‌جا باشد.</div></div>
+          </section>
+          <section class="panel shelf-panel">
+            <div class="section-heading compact-heading"><div><div class="eyebrow">در مسیر یادگیری</div><h2>قفسه‌ی مطالعه</h2></div><button class="text-link" data-go-page="library" type="button">باز کردن قفسه <span>←</span></button></div>
+            <div id="home-resources" class="home-resource-list"><div class="empty-inline">پادکست‌ها، مستندها و مقاله‌هایی را که می‌خواهی ببینی اینجا نگه دار.</div></div>
+          </section>
+        </div>
+        <footer class="page-footer"><span>آتلیه؛ دفتر کوچکِ دیدن و ساختن.</span><span>ساخته‌شده برای یک مسیر شخصی</span></footer>
+      </section>
+
+      <!-- TIMELINE -->
+      <section class="page" id="page-timeline" data-page-content="timeline">
+        <div class="museum-page-heading"><p class="renaissance-kicker">A CHRONOLOGY OF IDEAS</p><h1>Timeline</h1><p>مسیر فشرده‌ای از جهان باستان تا هنر امروز؛ هر دوره را باز کن و از آن برای مطالعه یا تمرین الهام بگیر.</p></div>
+        <div class="history-timeline">
+          <article class="timeline-entry"><span class="timeline-date">c. 3000 BCE – 500 CE</span><div><h2>Ancient Worlds <em>جهان باستان</em></h2><p>هنر مصر، یونان و روم؛ آیین، قدرت، تناسب بدن و روایت تصویری در زندگی روزمره.</p><button class="text-link" data-search-term="ancient sculpture" data-page="discover" type="button">Explore works ↗</button></div></article>
+          <article class="timeline-entry"><span class="timeline-date">c. 500 – 1400</span><div><h2>Medieval Art <em>قرون وسطی</em></h2><p>از دست‌نوشته‌های مصور تا شیشه‌های رنگی کلیسا؛ نمادپردازی و روایت‌های مذهبی نقش مهمی داشتند.</p><button class="text-link" data-search-term="medieval art" data-page="discover" type="button">Explore works ↗</button></div></article>
+          <article class="timeline-entry timeline-highlight"><span class="timeline-date">c. 1400 – 1600</span><div><h2>The Renaissance <em>رنسانس</em></h2><p>توجه دوباره به میراث کلاسیک، مشاهده‌ی طبیعت، پرسپکتیو خطی و پژوهش درباره‌ی بدن انسان.</p><button class="text-link" data-search-term="Renaissance" data-page="discover" type="button">Explore works ↗</button></div></article>
+          <article class="timeline-entry"><span class="timeline-date">c. 1600 – 1750</span><div><h2>Baroque <em>باروک</em></h2><p>حرکت، تضاد نور و سایه، ترکیب‌بندی نمایشی و تأثیرگذاری احساسی.</p><button class="text-link" data-search-term="Baroque" data-page="discover" type="button">Explore works ↗</button></div></article>
+          <article class="timeline-entry"><span class="timeline-date">c. 1860 – 1900</span><div><h2>Impressionism <em>امپرسیونیسم</em></h2><p>توجه به نور، تغییرات لحظه‌ای رنگ و زندگی مدرن؛ نقاشی در فضای باز اهمیت بیشتری پیدا کرد.</p><button class="text-link" data-search-term="Impressionism" data-page="discover" type="button">Explore works ↗</button></div></article>
+          <article class="timeline-entry"><span class="timeline-date">1900 – Today</span><div><h2>Modern & Contemporary <em>مدرن و معاصر</em></h2><p>گسترش رسانه‌ها و ایده‌ها؛ از انتزاع و هنر مفهومی تا شیوه‌های ترکیبی و دیجیتال.</p><button class="text-link" data-search-term="modern art" data-page="discover" type="button">Explore works ↗</button></div></article>
+        </div>
+      </section>
+
+      <!-- HISTORY -->
+      <section class="page" id="page-history" data-page-content="history">
+        <div class="museum-page-heading"><p class="renaissance-kicker">CONTEXT · MOVEMENTS · MEANING</p><h1>History</h1><p>تاریخ هنر فقط فهرستی از تاریخ‌ها نیست؛ داستان این است که آدم‌ها در زمان‌ها و مکان‌های مختلف جهان را چگونه دیده‌اند.</p></div>
+        <div class="movement-grid">
+          <article class="movement-card"><span class="movement-no">01</span><p class="movement-period">۱۴۰۰–۱۶۰۰ · اروپا</p><h2>Renaissance</h2><p>بازخوانی هنر کلاسیک، پژوهش علمی و استفاده‌ی گسترده‌تر از پرسپکتیو و آناتومی در برخی مراکز هنری اروپا.</p><button class="text-link" data-search-term="Renaissance" data-page="discover" type="button">دیدن آثار <span>←</span></button></article>
+          <article class="movement-card"><span class="movement-no">02</span><p class="movement-period">حدود ۱۶۰۰–۱۷۵۰</p><h2>Baroque</h2><p>ترکیب‌بندی‌های پرتحرک، نورپردازی دراماتیک و تجربه‌ای مستقیم‌تر و احساسی‌تر برای بیننده.</p><button class="text-link" data-search-term="Baroque" data-page="discover" type="button">دیدن آثار <span>←</span></button></article>
+          <article class="movement-card"><span class="movement-no">03</span><p class="movement-period">حدود ۱۸۶۰–۱۹۰۰</p><h2>Impressionism</h2><p>ثبت اثر نور و جوّ لحظه؛ ضربه‌قلم‌های قابل‌مشاهده و موضوع‌هایی برگرفته از زندگی روزمره.</p><button class="text-link" data-search-term="Impressionism" data-page="discover" type="button">دیدن آثار <span>←</span></button></article>
+          <article class="movement-card"><span class="movement-no">04</span><p class="movement-period">سده‌ی بیستم به بعد</p><h2>Modernism</h2><p>به چالش کشیدن قواعد تثبیت‌شده و آزمودن شکل، ماده، رنگ و معنای خودِ اثر هنری.</p><button class="text-link" data-search-term="modern art" data-page="discover" type="button">دیدن آثار <span>←</span></button></article>
+        </div>
+        <div class="history-note"><span>✦</span><p><strong>روش مطالعه در Atelier</strong><br>وقتی اثری را می‌بینی، از خودت بپرس: چه چیزی در این اثر به دوره‌اش مربوط است؟ چه چیزی انتخاب شخصی هنرمند است؟ و اگر خودت آن را می‌کشیدی چه چیزی را تغییر می‌دادی؟</p></div>
+      </section>
+
+      <!-- ARTISTS -->
+      <section class="page" id="page-artists" data-page-content="artists">
+        <div class="museum-page-heading"><p class="renaissance-kicker">PEOPLE BEHIND THE WORKS</p><h1>Artists</h1><p>یک نگارخانه‌ی منتخب از هنرمندهایی که دوست دارد؛ از رنسانس و باروک تا نقاشی مدرن و هنر مکزیک. تصاویر آثار از آرشیو عمومی Wikimedia Commons بارگذاری می‌شوند.</p></div>
+        <form class="discover-search artist-search" id="artist-search-form"><span class="search-symbol">⌕</span><input id="artist-query" type="search" placeholder="جست‌وجوی نام، دوره یا سبک…" autocomplete="off" aria-label="فیلتر هنرمندان"><button class="button button-primary" type="submit">فیلتر</button></form>
+        <div class="artist-era-filters" id="artist-era-filters" role="group" aria-label="فیلتر دوره‌ی هنری">
+          <button class="artist-era-filter active" type="button" data-artist-era="all">همه‌ی دوره‌ها <span>۸</span></button>
+          <button class="artist-era-filter" type="button" data-artist-era="renaissance">رنسانس</button>
+          <button class="artist-era-filter" type="button" data-artist-era="baroque">باروک</button>
+          <button class="artist-era-filter" type="button" data-artist-era="nineteenth">قرن ۱۸ و ۱۹</button>
+          <button class="artist-era-filter" type="button" data-artist-era="modern">مدرن و معاصر</button>
+        </div>
+        <div id="artists-status" class="api-status" role="status">هشت هنرمند بر اساس دوره مرتب شده‌اند. تصویر هرکدام به‌صورت زنده بارگذاری می‌شود.</div>
+        <div id="artists-grid" class="artists-grid"></div>
+        <p class="museum-source-note">تصاویر گنجینه از <a href="https://commons.wikimedia.org/" target="_blank" rel="noreferrer">Wikimedia Commons</a> دریافت می‌شوند. Atelier در نسخه‌ی GitHub Pages فقط از فایل‌های استاتیک تشکیل شده و برای جست‌وجو یا تصویر به پروکسی سمت سرور نیاز ندارد.</p>
+      </section>
+
+      <!-- CLASSICAL LISTENING ROOM -->
+      <section class="page" id="page-music" data-page-content="music">
+        <div class="museum-page-heading music-masthead">
+          <p class="renaissance-kicker">THE CLASSICAL LISTENING ROOM</p>
+          <h1>Listen <em>closely.</em></h1>
+          <p>از یک قطعه‌ی آشنا تا اجرایی تازه؛ آهنگ‌ساز یا نام اثر را جست‌وجو کن و همان‌جا در آتلیه گوش بده.</p>
+        </div>
+        <form class="discover-search music-search" id="music-search-form">
+          <span class="search-symbol" aria-hidden="true">♫</span>
+          <input id="music-query" type="search" placeholder="مثلاً Clair de Lune — Debussy" autocomplete="off" aria-label="جست‌وجوی موسیقی کلاسیک" maxlength="180">
+          <button class="button button-primary" id="music-search-button" type="submit">جست‌وجو</button>
+        </form>
+        <div class="music-quick-searches" aria-label="جست‌وجوهای پیشنهادی">
+          <span>برای شروع:</span>
+          <button type="button" data-music-query="Clair de Lune Debussy piano">Debussy</button>
+          <button type="button" data-music-query="Beethoven Moonlight Sonata full performance">Beethoven</button>
+          <button type="button" data-music-query="Chopin Nocturne piano performance">Chopin</button>
+          <button type="button" data-music-query="Vivaldi Four Seasons complete performance">Vivaldi</button>
+          <button type="button" data-music-query="Bach cello suites solo cello">Bach</button>
+        </div>
+        <div id="music-status" class="api-status music-status" role="status">آهنگ‌ساز یا نام قطعه را جست‌وجو کن؛ اجراهای موجود در Internet Archive را همین‌جا پخش کن. نسخه‌ی GitHub Pages بدون سرور و بدون کلید API کار می‌کند.</div>
+        <div class="music-layout">
+          <section class="music-results-panel" aria-label="نتایج جست‌وجوی موسیقی">
+            <div class="discover-results-heading music-results-heading">
+              <div><div class="eyebrow">SELECT A PERFORMANCE</div><h2 id="music-results-title">اجراهای پیشنهادی</h2></div>
+              <span class="result-count" id="music-results-count">هنوز جست‌وجویی انجام نشده</span>
+            </div>
+            <div id="music-results" class="music-results-grid">
+              <div class="music-empty-state"><span class="music-note-mark">♫</span><strong>یک قطعه را جست‌وجو کن</strong><p>نتایج قابل‌پخش در همین صفحه نمایش داده می‌شوند.</p></div>
+            </div>
+            <div class="music-more-row"><button class="button button-outline" id="music-load-more" type="button" hidden>نتایج بیشتر</button></div>
+          </section>
+          <aside class="music-player-panel" aria-label="پخش‌کننده‌ی موسیقی">
+            <div class="music-player-topline"><span class="music-pulse" aria-hidden="true"></span><span>NOW PLAYING</span><span id="music-player-index">—</span></div>
+            <div class="music-player-frame-wrap" id="music-player-frame-wrap">
+              <div class="music-player-empty" id="music-player-empty"><div class="music-vinyl" aria-hidden="true"><span></span></div><p>اتاق شنیدن</p><small>برای پخش، یکی از اجراها را انتخاب کن.</small></div>
+              <img id="music-player-cover" class="music-player-cover" alt="" hidden>
+              <iframe id="music-player-frame" title="پخش‌کننده‌ی آرشیو موسیقی" src="about:blank" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture; web-share" allowfullscreen hidden></iframe>
+            </div>
+            <audio id="music-player-audio" class="music-player-audio" controls preload="none" hidden aria-label="پخش‌کننده‌ی موسیقی کلاسیک"></audio>
+            <div class="music-now-playing">
+              <p class="eyebrow">SELECTED PERFORMANCE</p>
+              <h2 id="music-now-title">هنوز اجرایی انتخاب نشده</h2>
+              <p id="music-now-channel">جست‌وجو در Internet Archive</p>
+              <p id="music-license-info" class="music-license-info">اطلاعات مجوز پس از انتخاب اجرا نمایش داده می‌شود.</p>
+              <a id="music-license-link" class="music-license-link" href="https://archive.org/" target="_blank" rel="noopener noreferrer" hidden>جزئیات مجوز ↗</a>
+              <a id="music-open-archive" href="https://archive.org/" target="_blank" rel="noopener noreferrer" hidden>باز کردن صفحه‌ی منبع ↗</a>
+            </div>
+            <div class="music-player-controls"><button id="music-prev-track" type="button" disabled aria-label="اجرای قبلی">← قبلی</button><span id="music-queue-count">صف پخش خالی است</span><button id="music-next-track" type="button" disabled aria-label="اجرای بعدی">بعدی →</button></div>
+            <p class="music-rights-note">پخش مستقیم فایل صوتی یا پلیر خود Internet Archive انجام می‌شود. موجودبودن فایل و شرایط استفاده برای هر مورد متفاوت است؛ جزئیات مجوز را در صفحه‌ی منبع بررسی کن.</p>
+          </aside>
+        </div>
+        <div class="music-source-note">جست‌وجو: <a href="https://archive.org/advancedsearch.php" target="_blank" rel="noopener noreferrer">Internet Archive Advanced Search API</a> · فایل‌ها و اطلاعات اجرا: <a href="https://archive.org/developers/" target="_blank" rel="noopener noreferrer">Internet Archive Metadata API</a></div>
+      </section>
+
+      <!-- FACTS -->
+      <section class="page" id="page-facts" data-page-content="facts">
+        <div class="museum-page-heading"><p class="renaissance-kicker">SMALL DETAILS · BIG IDEAS</p><h1>Facts</h1><p>چند نکته‌ی کوتاه برای شروع نگاه دقیق‌تر به آثار و تاریخ هنر.</p></div>
+        <div class="facts-grid">
+          <article class="fact-card"><span>01 / SPACE</span><h2>پرسپکتیو خطی</h2><p>در یک ساختار رایج پرسپکتیو خطی، خطوط موازیِ دورشونده در تصویر به نقطه یا نقاط گریز همگرا می‌شوند؛ روشی برای ساختن توهم عمق روی سطح دوبعدی.</p></article>
+          <article class="fact-card"><span>02 / LIGHT</span><h2>کیاروسکورو</h2><p>اصطلاحی برای استفاده از تضاد روشنایی و تاریکی به‌منظور برجسته‌کردن حجم و ایجاد حس عمق یا درام.</p></article>
+          <article class="fact-card"><span>03 / MATERIAL</span><h2>رنگ‌روغن</h2><p>خشک‌شدن آهسته‌تر رنگ‌روغن نسبت به بسیاری از رنگ‌های پایه‌آب می‌تواند امکان ترکیب رنگ و کار تدریجی روی لایه‌ها را فراهم کند.</p></article>
+          <article class="fact-card"><span>04 / LOOKING</span><h2>تمرین دیدن</h2><p>قبل از نام‌گذاری سوژه، یک بار فقط به شکل‌ها، جهت خطوط، نسبت‌ها و توزیع تیرگی و روشنی نگاه کن. توصیف مشاهده‌شده را از تفسیر جدا نگه دار.</p></article>
+          <article class="fact-card"><span>05 / CONTEXT</span><h2>اثر و زمانه</h2><p>سفارش‌دهنده، مواد در دسترس، مخاطب و محل نمایش می‌توانند در شکل و معنای یک اثر نقش داشته باشند؛ زمینه مهم است، اما همه‌چیز را توضیح نمی‌دهد.</p></article>
+          <article class="fact-card"><span>06 / PRACTICE</span><h2>کپی برای یادگیری</h2><p>مطالعه یا کپی آموزشی از یک اثر می‌تواند تمرین مفیدی برای دیدن ترکیب‌بندی و رنگ باشد؛ اثر مرجع و نام هنرمند را همیشه ثبت کن.</p></article>
+        </div>
+      </section>
+
+      <!-- STUDIO -->
+      <section class="page" id="page-studio" data-page-content="studio">
+        <div class="page-title-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> فضای ساختن</div><h1>آتلیه‌ی <em>من</em></h1><p class="page-intro">اثرها و فکرهایت را نگه دار؛ نه برای کامل بودن، برای دیدن مسیرت.</p></div><button class="button button-primary" data-open-modal="artwork" type="button">＋ ثبت اثر</button></div>
+        <div class="studio-tabs" role="tablist" aria-label="بخش‌های آتلیه"><button class="studio-tab active" data-studio-tab="works" type="button">آثار من <span id="works-tab-count">۰</span></button><button class="studio-tab" data-studio-tab="ideas" type="button">دفتر ایده‌ها <span id="ideas-tab-count">۰</span></button></div>
+        <div id="studio-works-view" class="studio-view active"><div class="filter-row"><span class="muted-label">گالری خصوصی</span><label class="search-box small-search"><span>⌕</span><input id="my-art-search" type="search" placeholder="جست‌وجو میان آثار..." aria-label="جست‌وجو میان آثار من"></label></div><div id="my-art-grid" class="artwork-grid own-grid"></div></div>
+        <div id="studio-ideas-view" class="studio-view"><div class="ideas-toolbar"><p class="muted-label">ایده‌های نیمه‌کاره هم ارزش نگه‌داشتن دارند.</p><button class="button button-outline" data-open-modal="idea" type="button">＋ ثبت ایده</button></div><div id="ideas-list" class="ideas-list"></div></div>
+      </section>
+
+      <!-- DISCOVER -->
+      <section class="page" id="page-discover" data-page-content="discover">
+        <div class="discover-masthead"><div class="eyebrow"><span class="eyebrow-line"></span> پنجره‌ای رو به تاریخ هنر</div><h1>گنجینه‌ی <em>هنر</em></h1><p class="page-intro">در آرشیو عمومی تصویرها جست‌وجو کن؛ نتایج از Wikimedia Commons می‌آیند و برای هر تصویر می‌توانی صفحه‌ی منبع و مجوز را بررسی کنی. هر اثر را به گنجینه‌ی شخصی‌ات بسپار.</p></div>
+        <form class="discover-search" id="discover-search-form"><span class="search-symbol">⌕</span><input id="discover-query" type="search" placeholder="نام هنرمند، اثر یا سبک را جست‌وجو کن..." autocomplete="off" aria-label="جست‌وجوی آثار هنری"><button class="button button-primary" type="submit">جست‌وجو</button></form>
+        <div class="topic-row"><span>برای شروع:</span><button class="topic-chip" data-search-term="Impressionism" type="button">امپرسیونیسم</button><button class="topic-chip" data-search-term="Renaissance" type="button">رنسانس</button><button class="topic-chip" data-search-term="Vincent van Gogh" type="button">ون‌گوگ</button><button class="topic-chip" data-search-term="still life" type="button">طبیعت بی‌جان</button><button class="topic-chip" data-search-term="portrait" type="button">پرتره</button></div>
+        <div class="discover-results-heading"><div><div class="eyebrow">مجموعه‌ی دیجیتال</div><h2 id="discover-heading">آثاری برای کشف</h2></div><div class="results-tools"><span class="result-count" id="discover-count">در حال دریافت آثار…</span><button class="saved-filter" id="show-favorites-btn" type="button">♡ گنجینه‌ی من <span id="favorite-count">۰</span></button></div></div>
+        <div class="api-status-row"><div id="discover-status" class="api-status" role="status">در حال اتصال به آرشیو عمومی تصاویر…</div><button class="button button-outline api-test-button" id="api-test-btn" type="button">آزمایش اتصال گالری</button></div>
+        <div id="discover-grid" class="artwork-grid discover-grid"></div>
+        <div class="discover-bottom"><p>منبع تصاویر: <a href="https://commons.wikimedia.org/" target="_blank" rel="noreferrer">Wikimedia Commons</a>. روی پیوند منبع هر اثر بزن تا صفحه‌ی اصلی، اعتبار و اطلاعات مجوز را ببینی.</p><button class="button button-outline" id="load-more-btn" type="button" hidden>آثار بیشتر</button></div>
+      </section>
+
+      <!-- LIBRARY -->
+      <section class="page" id="page-library" data-page-content="library">
+        <div class="page-title-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> برای تماشا و شنیدن</div><h1>قفسه‌ی <em>مطالعه</em></h1><p class="page-intro">پادکست‌ها، مستندها، مقاله‌ها و هر چیزی که می‌خواهی بعداً با حوصله دنبال کنی.</p></div><button class="button button-primary" data-open-modal="resource" type="button">＋ افزودن به قفسه</button></div>
+        <div class="library-toolbar"><div class="segmented-filter" role="group" aria-label="فیلتر نوع منابع"><button class="active" data-resource-filter="all" type="button">همه</button><button data-resource-filter="podcast" type="button">پادکست</button><button data-resource-filter="documentary" type="button">مستند</button><button data-resource-filter="article" type="button">مقاله و سایت</button><button data-resource-filter="other" type="button">سایر</button></div><label class="search-box small-search"><span>⌕</span><input id="resource-search" type="search" placeholder="جست‌وجو در قفسه..." aria-label="جست‌وجو در قفسه"></label></div>
+        <div class="library-summary" id="library-summary"></div><div id="resource-list" class="resource-list"></div>
+      </section>
+
+      <!-- PROGRESS -->
+      <section class="page" id="page-progress" data-page-content="progress">
+        <div class="page-title-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> به مسیرت نگاه کن</div><h1>مسیر <em>من</em></h1><p class="page-intro">پیشرفت همیشه یک جهش بزرگ نیست؛ گاهی فقط چند دقیقه نشستن و تمرین کردن است.</p></div><button class="button button-primary" data-open-modal="session" type="button">＋ ثبت جلسه</button></div>
+        <div class="progress-overview" id="progress-overview"></div>
+        <section class="panel chart-panel"><div class="section-heading compact-heading"><div><div class="eyebrow">هفت روز اخیر</div><h2>زمانی که برای هنر گذاشتی</h2></div><span class="chart-unit">دقیقه تمرین در روز</span></div><div class="weekly-chart" id="weekly-chart"></div></section>
+        <div class="progress-lower-grid"><section class="panel session-panel"><div class="section-heading compact-heading"><div><div class="eyebrow">قدم‌های کوچک</div><h2>جلسه‌های اخیر</h2></div></div><div id="session-list" class="session-list"></div></section><section class="panel privacy-panel"><span class="privacy-large-icon">⌂</span><div class="eyebrow">حریم خصوصی</div><h2>دفترت مال خودت است.</h2><p>اطلاعات این نسخه روی همین مرورگر ذخیره می‌شود و به حساب کاربری یا سرور دیگری فرستاده نمی‌شود. برای انتقال داده‌ها از نسخه‌ی پشتیبان استفاده کن.</p><div class="privacy-actions"><button class="button button-outline" id="privacy-export-btn" type="button">⇩ دریافت پشتیبان</button><button class="button button-danger-quiet" id="clear-data-btn" type="button">پاک‌کردن همه‌ی داده‌ها</button></div></section></div>
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <dialog class="app-modal" id="app-modal" aria-labelledby="modal-title">
+    <div class="modal-heading"><div><div class="eyebrow" id="modal-eyebrow">دفتر آتلیه</div><h2 id="modal-title">ثبت اطلاعات</h2></div><button class="modal-close" id="modal-close" type="button" aria-label="بستن پنجره">×</button></div>
+    <div id="modal-body"></div>
+  </dialog>
+  <input type="file" id="art-image-input" accept="image/*" hidden>
+  <script defer src="ambient.js"></script>
+  <script>
+    // In case JavaScript is disabled, keep the page content understandable.
+    document.documentElement.classList.add('js-ready');
+  </script>
+</body>
+</html>
