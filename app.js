@@ -12,6 +12,8 @@ let musicSearchRequestId = 0;
 let musicTrackRequestId = 0;
 const musicSearchCache = new Map();
 const musicTrackCache = new Map();
+const MUSIC_SEARCH_STORAGE_KEY = 'atelier.internet-archive.search-cache.v2';
+const MUSIC_SEARCH_CACHE_TTL = 6 * 60 * 60 * 1000;
 // Art Institute metadata is synchronized at build time by GitHub Actions into a static JSON snapshot.
 // IIIF images are loaded directly from the museum; Commons remains an explicitly attributed fallback.
 let iiifBase = 'https://www.artic.edu/iiif/2';
@@ -951,63 +953,172 @@ $('#clear-data-btn').addEventListener('click', () => {
 });
 
 // GitHub Pages static implementation of the Internet Archive APIs (no /api server routes).
+// Keep search queries narrow and avoid expensive description-field searches and server-side sorting.
 const IA_SEARCH_ENDPOINT = 'https://archive.org/advancedsearch.php';
+const IA_SCRAPE_ENDPOINT = 'https://archive.org/services/search/v1/scrape';
 const IA_METADATA_ENDPOINT = 'https://archive.org/metadata/';
-const IA_STOP_WORDS = new Set(['the','and','for','from','with','full','performance','recording','classical','music','complete','version','live','audio','high','quality','official','track']);
+const IA_STOP_WORDS = new Set(['the','and','for','from','with','full','performance','recording','classical','music','complete','version','live','audio','high','quality','official','track','de','of','in','a','an','op']);
 const IA_AUDIO_PRIORITY = {'.mp3':100,'.m4a':95,'.aac':90,'.ogg':88,'.oga':87,'.opus':85,'.wav':80,'.flac':75,'.aiff':65,'.aif':64};
-async function fetchInternetArchiveJSON(url, timeoutMs = 12000) {
+
+function readPersistentMusicSearch(cacheKey) {
+  try {
+    const all = JSON.parse(localStorage.getItem(MUSIC_SEARCH_STORAGE_KEY) || '{}');
+    const entry = all && typeof all === 'object' ? all[cacheKey] : null;
+    return entry && entry.data && Array.isArray(entry.data.items) ? entry : null;
+  } catch (_) { return null; }
+}
+function savePersistentMusicSearch(cacheKey, entry) {
+  try {
+    const all = JSON.parse(localStorage.getItem(MUSIC_SEARCH_STORAGE_KEY) || '{}');
+    all[cacheKey] = { savedAt: entry.savedAt || Date.now(), data: entry.data };
+    const keys = Object.keys(all).sort((a,b) => Number(all[b]?.savedAt || 0) - Number(all[a]?.savedAt || 0));
+    for (const key of keys.slice(24)) delete all[key];
+    localStorage.setItem(MUSIC_SEARCH_STORAGE_KEY, JSON.stringify(all));
+  } catch (_) { /* Private browsing or full storage must not break search. */ }
+}
+
+async function fetchInternetArchiveJSON(url, timeoutMs = 22000) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {
-    const response = await fetch(url, { method: 'GET', mode: 'cors', credentials: 'omit', headers: { Accept: 'application/json' }, signal: controller.signal });
+    const response = await fetch(url, {
+      method: 'GET', mode: 'cors', credentials: 'omit', cache: 'no-cache',
+      headers: { Accept: 'application/json' }, signal: controller.signal
+    });
     let payload = {};
     try { payload = await response.json(); } catch (_) {}
-    if (!response.ok) throw new Error(payload?.error || payload?.message || `Internet Archive HTTP ${response.status}`);
+    if (!response.ok) {
+      const error = new Error(payload?.error || payload?.message || `Internet Archive HTTP ${response.status}`);
+      error.code = `IA_HTTP_${response.status}`;
+      error.status = response.status;
+      throw error;
+    }
     return payload;
   } catch (error) {
-    if (error?.name === 'AbortError') throw new Error('پاسخ Internet Archive بیش از حد طول کشید. دوباره تلاش کن.');
-    if (error instanceof TypeError) throw new Error('مرورگر نتوانست به Internet Archive وصل شود؛ اتصال شبکه یا محدودیت مرورگر را بررسی کن.');
+    if (error?.name === 'AbortError') {
+      const timeoutError = new Error('پاسخ جست‌وجوی Internet Archive دیر رسید. درخواست سبک‌تر را هم امتحان می‌کنم.');
+      timeoutError.code = 'IA_TIMEOUT';
+      throw timeoutError;
+    }
+    if (error instanceof TypeError) {
+      const networkError = new Error('اتصال مرورگر به Internet Archive برقرار نشد؛ ممکن است شبکه یا سرویس موقتاً در دسترس نباشد.');
+      networkError.code = 'IA_NETWORK';
+      throw networkError;
+    }
     throw error;
   } finally { clearTimeout(timer); }
 }
+
 function buildIAQuery(query, loose = false) {
   const terms = (String(query || '').normalize('NFKC').toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu) || [])
-    .filter((term, i, all) => term.length > 2 && !IA_STOP_WORDS.has(term) && all.indexOf(term) === i).slice(0, 7);
+    .filter((term, i, all) => term.length > 2 && !IA_STOP_WORDS.has(term) && all.indexOf(term) === i)
+    .slice(0, 4);
   if (!terms.length) throw new Error('نام قطعه یا آهنگ‌ساز را با حداقل دو نویسه وارد کن.');
-  const selected = loose ? terms.slice(0, 3) : terms;
-  const clauses = selected.map(term => `(title:${term} OR creator:${term} OR subject:${term} OR description:${term})`);
-  return `mediatype:audio AND (${clauses.join(loose ? ' OR ' : ' AND ')})`;
+  // The old query searched descriptions for every token and sorted all matches by downloads.
+  // That can be slow on the public archive. Search only title/creator/subject and let relevance rank results.
+  const clauses = terms.map(term => `(title:${term} OR creator:${term} OR subject:${term})`);
+  const joiner = loose ? ' OR ' : ' AND ';
+  return `mediatype:audio AND (${clauses.join(joiner)})`;
 }
-async function searchInternetArchiveStatic(query, offset = 0, maxResults = 12) {
-  const q = String(query || '').trim().slice(0, 180);
-  if (q.length < 2) throw new Error('نام قطعه یا آهنگ‌ساز را با حداقل دو نویسه وارد کن.');
-  const startAt = Math.max(0, Math.min(10000, Number.parseInt(offset, 10) || 0));
-  const rows = Math.max(1, Math.min(12, Number.parseInt(maxResults, 10) || 12));
-  const run = async loose => {
-    const params = new URLSearchParams();
-    params.set('q', buildIAQuery(q, loose));
-    for (const field of ['identifier','title','creator','date','description','subject','licenseurl','mediatype','year']) params.append('fl[]', field);
-    params.set('rows', String(rows)); params.set('start', String(startAt)); params.set('output', 'json'); params.append('sort[]', 'downloads desc');
-    return fetchInternetArchiveJSON(`${IA_SEARCH_ENDPOINT}?${params.toString()}`, 15000);
-  };
-  let payload = await run(false);
-  let response = payload?.response || {};
-  if (!(response.docs || []).length && startAt === 0) { payload = await run(true); response = payload?.response || {}; }
-  const docs = Array.isArray(response.docs) ? response.docs : [];
-  const items = docs.map(doc => {
+
+function normalizeIAItems(docs) {
+  const toText = value => Array.isArray(value) ? value.filter(Boolean).map(String).join(', ') : (value == null ? '' : String(value));
+  return (Array.isArray(docs) ? docs : []).map(doc => {
     const identifier = archiveIdentifier(doc.identifier);
     if (!identifier) return null;
-    const toText = value => Array.isArray(value) ? value.filter(Boolean).map(String).join(', ') : (value == null ? '' : String(value));
-    return { identifier, title: toText(doc.title) || 'اجرای بدون عنوان', creator: toText(doc.creator) || 'اجراکننده در فراداده ثبت نشده', description: toText(doc.description).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').slice(0, 600), date: toText(doc.date || doc.year), subject: toText(doc.subject), licenseUrl: toText(doc.licenseurl), thumbnail: `https://archive.org/services/img/${encodeURIComponent(identifier)}`, itemUrl: `https://archive.org/details/${encodeURIComponent(identifier)}`, source: 'Internet Archive' };
+    return {
+      identifier,
+      title: toText(doc.title) || 'اجرای بدون عنوان',
+      creator: toText(doc.creator) || 'اجراکننده در فراداده ثبت نشده',
+      description: toText(doc.description).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').slice(0, 350),
+      date: toText(doc.date || doc.year),
+      subject: toText(doc.subject),
+      licenseUrl: toText(doc.licenseurl),
+      thumbnail: `https://archive.org/services/img/${encodeURIComponent(identifier)}`,
+      itemUrl: `https://archive.org/details/${encodeURIComponent(identifier)}`,
+      source: 'Internet Archive'
+    };
   }).filter(Boolean);
-  const total = Number(response.numFound || 0);
-  const next = startAt + docs.length;
-  return { items, nextPageToken: next < total && next <= 10000 ? String(next) : '', totalResults: total, source: 'Internet Archive Advanced Search API', licenseNote: 'مجوز و شرایط استفاده برای هر فایل متفاوت است؛ صفحه‌ی منبع را بررسی کن.' };
 }
+
+async function searchInternetArchiveScrape(query, cursor = '', maxResults = 12, loose = true) {
+  const params = new URLSearchParams();
+  params.set('q', buildIAQuery(query, loose));
+  params.set('fields', 'identifier,title,creator,date,subject,licenseurl,mediatype,year');
+  params.set('count', '100'); // Scraping API minimum count is 100; only render a small first slice.
+  if (cursor) params.set('cursor', cursor);
+  const payload = await fetchInternetArchiveJSON(`${IA_SCRAPE_ENDPOINT}?${params.toString()}`, 14000);
+  const allItems = normalizeIAItems(payload?.items || []);
+  return {
+    items: allItems.slice(0, Math.max(1, Math.min(12, Number(maxResults) || 12))),
+    nextPageToken: payload?.cursor ? `scrape:${payload.cursor}` : '',
+    totalResults: Number(payload?.total || allItems.length),
+    source: 'Internet Archive Scraping API',
+    licenseNote: 'مجوز و شرایط استفاده برای هر فایل متفاوت است؛ صفحه‌ی منبع را بررسی کن.'
+  };
+}
+
+async function searchInternetArchiveStatic(query, pageToken = '', maxResults = 12) {
+  const q = String(query || '').trim().slice(0, 180);
+  if (q.length < 2) throw new Error('نام قطعه یا آهنگ‌ساز را با حداقل دو نویسه وارد کن.');
+  const rows = Math.max(1, Math.min(12, Number.parseInt(maxResults, 10) || 12));
+  const token = String(pageToken || '');
+  if (token.startsWith('scrape:')) {
+    return searchInternetArchiveScrape(q, token.slice(7), rows, true);
+  }
+  const startAt = Math.max(0, Math.min(10000, Number.parseInt(token, 10) || 0));
+  const runAdvanced = async (loose, timeoutMs) => {
+    const params = new URLSearchParams();
+    params.set('q', buildIAQuery(q, loose));
+    // Keep the payload small. Descriptions are fetched only for the selected recording.
+    for (const field of ['identifier','title','creator','date','subject','licenseurl','mediatype','year']) params.append('fl[]', field);
+    params.set('rows', String(rows));
+    params.set('start', String(startAt));
+    params.set('output', 'json');
+    // Intentionally no downloads sort: sorting the entire matching set made queries slower.
+    return fetchInternetArchiveJSON(`${IA_SEARCH_ENDPOINT}?${params.toString()}`, timeoutMs);
+  };
+
+  let payload;
+  try {
+    payload = await runAdvanced(false, 20000);
+    let response = payload?.response || {};
+    if (!(response.docs || []).length && startAt === 0) payload = await runAdvanced(true, 12000);
+    response = payload?.response || {};
+    const docs = Array.isArray(response.docs) ? response.docs : [];
+    const items = normalizeIAItems(docs);
+    if (!items.length && startAt === 0) {
+      try {
+        const scrapeFallback = await searchInternetArchiveScrape(q, '', rows, true);
+        if (scrapeFallback.items.length) return scrapeFallback;
+      } catch (scrapeError) {
+        console.info('Internet Archive returned no Advanced Search results and Scraping fallback was unavailable.', scrapeError);
+      }
+    }
+    const total = Number(response.numFound || 0);
+    const next = startAt + docs.length;
+    return {
+      items, nextPageToken: next < total && next <= 10000 ? String(next) : '',
+      totalResults: total, source: 'Internet Archive Advanced Search API',
+      licenseNote: 'مجوز و شرایط استفاده برای هر فایل متفاوت است؛ صفحه‌ی منبع را بررسی کن.'
+    };
+  } catch (primaryError) {
+    console.warn('Internet Archive Advanced Search failed; trying the lighter Scraping API.', primaryError);
+    try {
+      // This is the documented public fallback endpoint and avoids the slow sorted Advanced Search request.
+      return await searchInternetArchiveScrape(q, '', rows, true);
+    } catch (fallbackError) {
+      fallbackError.code = fallbackError.code || primaryError.code || 'IA_SEARCH_FAILED';
+      fallbackError.message = 'جست‌وجوی Internet Archive پاسخ نداد؛ مسیر جایگزین هم موفق نشد. اگر این عبارت قبلاً جست‌وجو شده، نتیجه‌ی ذخیره‌شده نمایش داده می‌شود. در غیر این صورت چند لحظه بعد دوباره امتحان کن.';
+      throw fallbackError;
+    }
+  }
+}
+
 async function resolveInternetArchiveTrackStatic(identifier) {
   const id = archiveIdentifier(identifier);
   if (!id) throw new Error('شناسه‌ی اجرای موسیقی معتبر نیست.');
-  const metadata = await fetchInternetArchiveJSON(`${IA_METADATA_ENDPOINT}${encodeURIComponent(id)}`, 15000);
+  const metadata = await fetchInternetArchiveJSON(`${IA_METADATA_ENDPOINT}${encodeURIComponent(id)}`, 22000);
   const record = metadata?.metadata || {};
   if (!Object.keys(record).length) throw new Error('اطلاعات این اجرا در Internet Archive پیدا نشد.');
   const audioFiles = (Array.isArray(metadata.files) ? metadata.files : []).map(file => {
@@ -1188,6 +1299,17 @@ async function selectMusicTrack(index) {
   } catch (error) {
     if (requestId !== musicTrackRequestId) return;
     console.warn('Atelier track preparation failed:', error);
+    // If metadata lookup stalls, the archive's own embedded player may still be able to play this item.
+    if (error?.code === 'IA_TIMEOUT' || error?.code === 'IA_NETWORK') {
+      frame.src = `https://archive.org/embed/${encodeURIComponent(id)}`;
+      frame.title = `${item.title || 'Classical recording'} — Internet Archive player`;
+      frame.hidden = false;
+      $('#music-player-empty').hidden = true;
+      $('#music-player-cover').hidden = true;
+      $('#music-status').textContent = 'دریافت اطلاعات فایل کند بود؛ پلیر خود Internet Archive را امتحان کن.';
+      $('#music-status').classList.add('warning');
+      return;
+    }
     $('#music-player-empty').hidden = false;
     $('#music-player-empty p').textContent = 'این اجرا فعلاً قابل پخش نیست';
     $('#music-player-empty small').textContent = 'یک نتیجه‌ی دیگر را امتحان کن یا منبع را باز کن.';
@@ -1215,11 +1337,28 @@ async function searchClassicalMusic(query, { append = false, pageToken = '' } = 
   const cacheKey = `${cleanedQuery.toLocaleLowerCase()}|${pageToken}`;
   try {
     let cached = musicSearchCache.get(cacheKey);
-    if (!cached || Date.now() - cached.savedAt > 5 * 60 * 1000) {
-      const offset = pageToken && /^\d+$/.test(String(pageToken)) ? Number(pageToken) : 0;
-      const data = await searchInternetArchiveStatic(cleanedQuery, offset, 12);
-      cached = { data, savedAt: Date.now() };
-      musicSearchCache.set(cacheKey, cached);
+    const now = Date.now();
+    const diskCached = readPersistentMusicSearch(cacheKey);
+    if (!cached || now - cached.savedAt > 5 * 60 * 1000) {
+      if (diskCached && now - Number(diskCached.savedAt || 0) < MUSIC_SEARCH_CACHE_TTL) {
+        cached = diskCached;
+        musicSearchCache.set(cacheKey, cached);
+      } else {
+        try {
+          const data = await searchInternetArchiveStatic(cleanedQuery, pageToken, 12);
+          cached = { data, savedAt: Date.now() };
+          musicSearchCache.set(cacheKey, cached);
+          savePersistentMusicSearch(cacheKey, cached);
+        } catch (searchError) {
+          // If the public archive is slow today, preserve working results from a previous visit.
+          if (diskCached && Array.isArray(diskCached.data?.items) && diskCached.data.items.length) {
+            cached = { ...diskCached, staleFallback: true };
+            musicSearchCache.set(cacheKey, cached);
+          } else {
+            throw searchError;
+          }
+        }
+      }
     }
     if (requestId !== musicSearchRequestId) return;
     const data = cached.data || {};
@@ -1232,7 +1371,11 @@ async function searchClassicalMusic(query, { append = false, pageToken = '' } = 
       resetMusicPlayer();
     }
     renderMusicResults();
-    if (musicResults.length) {
+    if (cached.staleFallback) {
+      $('#music-status').textContent = 'Internet Archive فعلاً کند است؛ نتیجه‌های ذخیره‌شده‌ی قبلی برای همین جست‌وجو نمایش داده شده‌اند.';
+      $('#music-status').classList.remove('error');
+      $('#music-status').classList.add('warning');
+    } else if (musicResults.length) {
       $('#music-status').textContent = `${faNum(musicResults.length)} مورد برای «${cleanedQuery}» در Internet Archive پیدا شد. روی یک مورد بزن تا فایل صوتی آن بررسی و پخش شود.`;
       $('#music-status').classList.remove('error', 'warning');
     } else {
