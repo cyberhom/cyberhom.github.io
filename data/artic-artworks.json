@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "source": "Art Institute of Chicago API",
   "sourceUrl": "https://api.artic.edu/docs/",
-  "generatedAt": "2026-10-28T17:12:05.515Z",
-  "lastAttemptAt": "2026-10-28T17:12:05.515Z",
+  "generatedAt": "2026-11-02T12:38:20.344Z",
+  "lastAttemptAt": "2026-11-02T12:38:20.344Z",
   "lastSyncStatus": "ok",
   "successfulQueries": 18,
   "attemptedQueries": 23,
-  "totalWorks": 294,
+  "totalWorks": 295,
   "note": "Static snapshot produced by GitHub Actions. Only public-domain works with image IDs are included. The browser searches this snapshot; it does not proxy live queries.",
   "warnings": [],
   "works": [
     {
-      "_score": 75.859856,
+      "_score": 75.5115,
       "id": 80530,
       "title": "Virgin and Child with an Angel",
       "date_display": "1475–85",
@@ -65,7 +65,7 @@
       "image_id": "b59cc3e9-a7c0-5aa1-1a22-bb472bb2e6d4"
     },
     {
-      "_score": 54.34122,
+      "_score": 54.24846,
       "id": 80526,
       "title": "Virgin and Child with Two Angels",
       "date_display": "1485–95",
@@ -113,7 +113,7 @@
       "image_id": "eb49ab17-f2d9-275a-ee71-e8f0016b34aa"
     },
     {
-      "_score": 43.05052,
+      "_score": 42.977036,
       "id": 85117,
       "title": "Portrait Bust of a Young Man",
       "date_display": "after 1829",
@@ -139,7 +139,7 @@
       "description": null
     },
     {
-      "_score": 87.56159,
+      "_score": 87.40188,
       "id": 4163,
       "title": "Archers Shooting at a Herm, Triumph of Bacchus, and Other Studies",
       "date_display": "n.d.",
@@ -168,7 +168,7 @@
       "description": null
     },
     {
-      "_score": 77.74494,
+      "_score": 77.603134,
       "id": 81705,
       "title": "Legs and Feet of Male Nude",
       "date_display": "1812/50",
@@ -196,7 +196,7 @@
       "description": null
     },
     {
-      "_score": 77.21579,
+      "_score": 77.07494,
       "id": 55033,
       "title": "Moses",
       "date_display": "1700s",
@@ -221,7 +221,7 @@
       "description": null
     },
     {
-      "_score": 77.16417,
+      "_score": 77.02342,
       "id": 82032,
       "title": "Kneeling Mother Embracing Child",
       "date_display": "c. 1550",
@@ -250,7 +250,7 @@
       "description": null
     },
     {
-      "_score": 76.39005,
+      "_score": 76.25072,
       "id": 95634,
       "title": "Left Hand of Moses",
       "date_display": "1725/30",
@@ -276,7 +276,7 @@
       "description": null
     },
     {
-      "_score": 74.80268,
+      "_score": 74.666245,
       "id": 6940,
       "title": "Drunkenness of Noah",
       "date_display": "n.d.",
@@ -302,7 +302,7 @@
       "description": null
     },
     {
-      "_score": 73.85631,
+      "_score": 73.721596,
       "id": 81703,
       "title": "Ascending Male Nude",
       "date_display": "n.d.",
@@ -327,7 +327,7 @@
       "description": null
     },
     {
-      "_score": 70.33997,
+      "_score": 70.21167,
       "id": 85921,
       "title": "Seated Male Nude",
       "date_display": "n.d.",
@@ -352,7 +352,7 @@
       "description": null
     },
     {
-      "_score": 70.24904,
+      "_score": 70.1209,
       "id": 85718,
       "title": "Two Devils",
       "date_display": "n.d.",
@@ -377,7 +377,7 @@
       "description": null
     },
     {
-      "_score": 69.87837,
+      "_score": 69.75091,
       "id": 85831,
       "title": "Ascending Male Nude",
       "date_display": "n.d.",
@@ -400,7 +400,7 @@
       "description": null
     },
     {
-      "_score": 68.21757,
+      "_score": 68.09314,
       "id": 96146,
       "title": "Deposition of Christ",
       "date_display": "n.d.",
@@ -428,7 +428,7 @@
       "description": null
     },
     {
-      "_score": 67.322754,
+      "_score": 67.19995,
       "id": 85688,
       "title": "Seated Male Nude",
       "date_display": "n.d.",
@@ -453,7 +453,7 @@
       "description": null
     },
     {
-      "_score": 65.77798,
+      "_score": 65.658,
       "id": 123545,
       "title": "Bacchus (recto); Architectural Sketches (verso)",
       "date_display": "n.d.",
@@ -484,7 +484,7 @@
       "description": null
     },
     {
-      "_score": 65.64549,
+      "_score": 65.52576,
       "id": 95758,
       "title": "The Risen Christ",
       "date_display": "18th/19th century",
@@ -507,7 +507,7 @@
       "description": null
     },
     {
-      "_score": 64.08431,
+      "_score": 63.967426,
       "id": 95897,
       "title": "Half-Length Figure",
       "date_display": "n.d.",
@@ -531,7 +531,7 @@
       "description": null
     },
     {
-      "_score": 64.08431,
+      "_score": 63.967426,
       "id": 114900,
       "title": "Two Struggling Figures",
       "date_display": "1867",
@@ -555,7 +555,7 @@
       "description": null
     },
     {
-      "_score": 61.476994,
+      "_score": 61.364857,
       "id": 85735,
       "title": "Family Group: Ozias, King of Judah, Nursed by his Mother",
       "date_display": "n.d.",
@@ -586,7 +586,7 @@
       "description": null
     },
     {
-      "_score": 61.192318,
+      "_score": 61.080704,
       "id": 81701,
       "title": "Male Head",
       "date_display": "n.d.",
@@ -613,7 +613,7 @@
       "description": null
     },
     {
-      "_score": 56.29487,
+      "_score": 56.192184,
       "id": 114901,
       "title": "Two Struggling Figures",
       "date_display": "c. 1867",
@@ -636,7 +636,7 @@
       "description": null
     },
     {
-      "_score": 53.02083,
+      "_score": 52.924114,
       "id": 115356,
       "title": "Travelers Resting for Nourishment",
       "date_display": "n.d.",
@@ -661,7 +661,7 @@
       "description": null
     },
     {
-      "_score": 52.44391,
+      "_score": 52.34825,
       "id": 81988,
       "title": "Two Peasants with Donkey",
       "date_display": "n.d.",
@@ -684,7 +684,7 @@
       "description": null
     },
     {
-      "_score": 14.890946,
+      "_score": 14.753006,
       "id": 274468,
       "title": "Rochambeau",
       "date_display": "1869",
@@ -705,7 +705,7 @@
       "description": null
     },
     {
-      "_score": 14247.557,
+      "_score": 13892.257,
       "id": 27987,
       "title": "Jacques and Berthe Lipchitz",
       "date_display": "1916",
@@ -737,7 +737,7 @@
       "image_id": "7e649536-b186-c3f5-3e6d-0d22d5d798ef"
     },
     {
-      "_score": 679.3377,
+      "_score": 669.0373,
       "id": 27281,
       "title": "Madam Pompadour",
       "date_display": "1915",
@@ -764,7 +764,7 @@
       "style_title": null
     },
     {
-      "_score": 864.8241,
+      "_score": 844.6483,
       "id": 80586,
       "title": "Portrait of a Woman",
       "date_display": "c. 1917/19",
@@ -784,7 +784,7 @@
       "description": null
     },
     {
-      "_score": 41.25537,
+      "_score": 40.82197,
       "id": 45254,
       "title": "Caryatid",
       "date_display": "c. 1913",
@@ -810,7 +810,7 @@
       "description": null
     },
     {
-      "_score": 40.67846,
+      "_score": 40.251118,
       "id": 26728,
       "title": "Diego Rivera",
       "date_display": "1915",
@@ -834,7 +834,7 @@
       "description": null
     },
     {
-      "_score": 39.7927,
+      "_score": 39.37467,
       "id": 87627,
       "title": "Portrait of a Young Woman",
       "date_display": "n.d.",
@@ -861,7 +861,7 @@
       "description": null
     },
     {
-      "_score": 39.741364,
+      "_score": 39.32387,
       "id": 13577,
       "title": "Head of Anatolia",
       "date_display": "1900/20",
@@ -886,7 +886,7 @@
       "description": null
     },
     {
-      "_score": 38.76663,
+      "_score": 38.359375,
       "id": 45257,
       "title": "Caryatid: Rose and Blue",
       "date_display": "1912–14",
@@ -914,7 +914,7 @@
       "description": null
     },
     {
-      "_score": 38.436043,
+      "_score": 38.03226,
       "id": 127723,
       "title": "Seated Nude",
       "date_display": "1918",
@@ -936,7 +936,7 @@
       "description": null
     },
     {
-      "_score": 36.954586,
+      "_score": 36.566364,
       "id": 110994,
       "title": "Benito",
       "date_display": "1916",
@@ -959,7 +959,7 @@
       "description": null
     },
     {
-      "_score": 36.286514,
+      "_score": 35.90531,
       "id": 150819,
       "title": "Portrait of Vallin",
       "date_display": "1918",
@@ -982,7 +982,7 @@
       "description": null
     },
     {
-      "_score": 36.082073,
+      "_score": 35.703022,
       "id": 110582,
       "title": "Bust of Zborowski",
       "date_display": "n.d.",
@@ -1004,7 +1004,7 @@
       "description": null
     },
     {
-      "_score": 35.67616,
+      "_score": 35.301373,
       "id": 186313,
       "title": "Portrait of Paul Alexandre",
       "date_display": "c. 1909",
@@ -1026,7 +1026,7 @@
       "style_title": null
     },
     {
-      "_score": 93.02436,
+      "_score": 90.91618,
       "id": 80084,
       "title": "The Crucifixion",
       "date_display": "1627",
@@ -1069,7 +1069,7 @@
       "short_description": null
     },
     {
-      "_score": 96.277084,
+      "_score": 96.12578,
       "id": 14690,
       "title": "Fragment",
       "date_display": "Late 14th/15th century",
@@ -1091,7 +1091,7 @@
       "artist_title": null
     },
     {
-      "_score": 91.42024,
+      "_score": 90.99656,
       "id": 5848,
       "title": "Landscape with Saint John on Patmos",
       "date_display": "1640",
@@ -1135,7 +1135,7 @@
       "short_description": null
     },
     {
-      "_score": 91.25918,
+      "_score": 90.88616,
       "id": 22857,
       "title": "The Garden of Paradise",
       "date_display": "c. 1500–c. 1520",
@@ -1190,7 +1190,7 @@
       "description": null
     },
     {
-      "_score": 87.44357,
+      "_score": 86.30201,
       "id": 110760,
       "title": "The Adventures of Ulysses",
       "date_display": "1435–45",
@@ -1223,7 +1223,7 @@
       "description": null
     },
     {
-      "_score": 138.5388,
+      "_score": 136.60854,
       "id": 84709,
       "title": "Still Life with Game Fowl",
       "date_display": "c. 1600–3",
@@ -1267,7 +1267,7 @@
       "short_description": null
     },
     {
-      "_score": 88.62255,
+      "_score": 88.23432,
       "id": 25740,
       "title": "Scenes from the Life of Saint John the Baptist",
       "date_display": "1490/95",
@@ -1307,7 +1307,7 @@
       "description": null
     },
     {
-      "_score": 112.84189,
+      "_score": 110.593956,
       "id": 87479,
       "title": "The Assumption of the Virgin",
       "date_display": "1577–79",
@@ -1363,7 +1363,7 @@
       "image_id": "47fd1564-93f5-f30b-7786-013421133b4a"
     },
     {
-      "_score": 88.18872,
+      "_score": 86.41442,
       "id": 95998,
       "title": "Old Man with a Gold Chain",
       "date_display": "1631",
@@ -1407,7 +1407,7 @@
       "image_id": "3eaab3a3-2b47-9fdd-121c-050f6b8d9ccb"
     },
     {
-      "_score": 83.56226,
+      "_score": 82.414856,
       "id": 59847,
       "title": "Cupid Chastised",
       "date_display": "1613",
@@ -1466,7 +1466,7 @@
       "image_id": "0f951635-312c-0829-451b-553f461c5518"
     },
     {
-      "_score": 84.02928,
+      "_score": 83.62834,
       "id": 110673,
       "title": "Mater Dolorosa (Sorrowing Virgin)",
       "date_display": "c. 1490",
@@ -1510,7 +1510,7 @@
       "short_description": null
     },
     {
-      "_score": 80.5907,
+      "_score": 79.58889,
       "id": 15468,
       "title": "Saint George and the Dragon",
       "date_display": "1434–35",
@@ -1574,7 +1574,7 @@
       "image_id": "8a0e4ac9-43ea-bc3e-884b-ee27f8a10501"
     },
     {
-      "_score": 82.3546,
+      "_score": 82.25103,
       "id": 1895,
       "title": "Panel",
       "date_display": "16th century",
@@ -1599,7 +1599,29 @@
       "artist_title": null
     },
     {
-      "_score": 77.41605,
+      "_score": 77.09627,
+      "id": 14693,
+      "title": "Fragment",
+      "date_display": "1401-1425",
+      "place_of_origin": "Italy",
+      "medium_display": "Silk and gilt-animal-substrate-wrapped linen, warp-float faced 2:1 'S' twill weave with weft-float faced 1:3 'S' twill interlacings of secondary binding warps and supplementary patterning wefts",
+      "credit_line": "Gift of Mr. and Mrs. John V. Farwell, III",
+      "is_public_domain": true,
+      "term_titles": [
+        "Renaissance",
+        "textile",
+        "weaving",
+        "silk (fiber)"
+      ],
+      "style_title": "Renaissance",
+      "classification_title": "textile",
+      "image_id": "155c11f8-0e76-501f-12eb-bd1f6d06aaa2",
+      "short_description": null,
+      "description": null,
+      "artist_title": null
+    },
+    {
+      "_score": 77.07942,
       "id": 16246,
       "title": "The Continence of Scipio",
       "date_display": "c. 1455",
@@ -1639,29 +1661,7 @@
       "description": null
     },
     {
-      "_score": 77.21762,
-      "id": 14693,
-      "title": "Fragment",
-      "date_display": "1401-1425",
-      "place_of_origin": "Italy",
-      "medium_display": "Silk and gilt-animal-substrate-wrapped linen, warp-float faced 2:1 'S' twill weave with weft-float faced 1:3 'S' twill interlacings of secondary binding warps and supplementary patterning wefts",
-      "credit_line": "Gift of Mr. and Mrs. John V. Farwell, III",
-      "is_public_domain": true,
-      "term_titles": [
-        "Renaissance",
-        "textile",
-        "weaving",
-        "silk (fiber)"
-      ],
-      "style_title": "Renaissance",
-      "classification_title": "textile",
-      "image_id": "155c11f8-0e76-501f-12eb-bd1f6d06aaa2",
-      "short_description": null,
-      "description": null,
-      "artist_title": null
-    },
-    {
-      "_score": 76.599495,
+      "_score": 76.23223,
       "id": 184371,
       "title": "The Nativity",
       "date_display": "1504–7",
@@ -1710,7 +1710,7 @@
       "image_id": "40fdb1d6-93fe-2916-78fb-f56a1ac261f1"
     },
     {
-      "_score": 85.44932,
+      "_score": 83.668335,
       "id": 129756,
       "title": "Saint Anthony Abbot",
       "date_display": "1440–41",
@@ -1753,7 +1753,7 @@
       "image_id": "3db93232-7c80-7663-f683-fe3bb672cf24"
     },
     {
-      "_score": 94.3402,
+      "_score": 92.45036,
       "id": 11434,
       "title": "Salome with the Head of Saint John the Baptist",
       "date_display": "c. 1639–42",
@@ -1808,7 +1808,7 @@
       "image_id": "8eccb189-92f3-353a-3337-c0778c2680d9"
     },
     {
-      "_score": 73.93715,
+      "_score": 73.580086,
       "id": 110759,
       "title": "Alessandro de' Medici",
       "date_display": "1534–35",
@@ -1856,7 +1856,7 @@
       "short_description": null
     },
     {
-      "_score": 101.42726,
+      "_score": 99.42927,
       "id": 21907,
       "title": "Saint Francis Kneeling in Meditation",
       "date_display": "c. 1595–c. 1600",
@@ -1916,7 +1916,7 @@
       "image_id": "b703b636-976c-b35b-8a8e-f8df3f5ba003"
     },
     {
-      "_score": 74.72806,
+      "_score": 123.45137,
       "id": 11,
       "title": "Self-Portrait",
       "date_display": "1878",
@@ -1939,7 +1939,7 @@
       "description": null
     },
     {
-      "_score": 92.675575,
+      "_score": 90.82938,
       "id": 67362,
       "title": "Saint Martin and the Beggar",
       "date_display": "c. 1597–c. 1600",
@@ -1995,7 +1995,7 @@
       "image_id": "52098776-6e2e-9683-e258-7b1cec8660dd"
     },
     {
-      "_score": 91.36853,
+      "_score": 89.5164,
       "id": 111670,
       "title": "King Solomon Receiving the Queen of Sheba",
       "date_display": "1515–20",
@@ -2040,7 +2040,7 @@
       "short_description": null
     },
     {
-      "_score": 72.359856,
+      "_score": 72.01731,
       "id": 21937,
       "title": "Adoration of the Magi",
       "date_display": "c. 1519",
@@ -2087,7 +2087,7 @@
       "short_description": null
     },
     {
-      "_score": 71.71834,
+      "_score": 71.46359,
       "id": 52560,
       "title": "Corpus of Christ, from the Altarpiece of the Crucifixion",
       "date_display": "1391–99",
@@ -2131,7 +2131,7 @@
       "image_id": "d1666499-6fde-bb14-1b47-7e86209d3b58"
     },
     {
-      "_score": 71.31419,
+      "_score": 70.972496,
       "id": 234781,
       "title": "Christ Carrying the Cross",
       "date_display": "c. 1515–17",
@@ -2179,7 +2179,7 @@
       "image_id": "13a251ba-2c7a-2d0c-3f65-820c0e1f1a39"
     },
     {
-      "_score": 89.43853,
+      "_score": 87.61791,
       "id": 111671,
       "title": "King David Receiving the Cistern Water of Bethlehem",
       "date_display": "1515–20",
@@ -2223,7 +2223,7 @@
       "short_description": null
     },
     {
-      "_score": 91.36035,
+      "_score": 89.65238,
       "id": 16156,
       "title": "Saint John the Baptist Entering the Wilderness",
       "date_display": "1455–60",
@@ -2276,7 +2276,7 @@
       "short_description": null
     },
     {
-      "_score": 70.682945,
+      "_score": 70.374855,
       "id": 111622,
       "title": "The Crucifixion",
       "date_display": "c. 1487",
@@ -2329,7 +2329,7 @@
       "short_description": null
     },
     {
-      "_score": 83.66847,
+      "_score": 81.76681,
       "id": 19336,
       "title": "The Resurrection",
       "date_display": "c. 1619-20",
@@ -2378,7 +2378,7 @@
       "short_description": null
     },
     {
-      "_score": 135.45871,
+      "_score": 133.50447,
       "id": 19333,
       "title": "Kitchen Still Life",
       "date_display": "c. 1640",
@@ -2416,7 +2416,7 @@
       "description": null
     },
     {
-      "_score": 169.07504,
+      "_score": 166.64626,
       "id": 62042,
       "title": "Still Life with Dead Game, Fruits, and Vegetables in a Market",
       "date_display": "1614",
@@ -2464,7 +2464,7 @@
       "image_id": "d9bde524-38b2-4262-3338-e4d06a50746d"
     },
     {
-      "_score": 83.97869,
+      "_score": 82.15872,
       "id": 24684,
       "title": "Francesco de' Medici",
       "date_display": "c. 1560",
@@ -2498,7 +2498,7 @@
       "short_description": null
     },
     {
-      "_score": 89.123085,
+      "_score": 88.410385,
       "id": 21934,
       "title": "Kitchen Scene",
       "date_display": "1618–20",
@@ -2546,7 +2546,7 @@
       "image_id": "68452725-eba5-06e3-46d2-50c678a5d672"
     },
     {
-      "_score": 101.169495,
+      "_score": 99.10326,
       "id": 160030,
       "title": "The Ecstasy of Saint Francis",
       "date_display": "1601",
@@ -2589,7 +2589,7 @@
       "short_description": null
     },
     {
-      "_score": 90.707954,
+      "_score": 88.813034,
       "id": 120172,
       "title": "Penitent Saint Peter",
       "date_display": "c. 1630",
@@ -2635,7 +2635,7 @@
       "short_description": null
     },
     {
-      "_score": 82.05769,
+      "_score": 81.453896,
       "id": 87515,
       "title": "Job",
       "date_display": "c. 1618–c. 1630",
@@ -2674,7 +2674,7 @@
       "short_description": null
     },
     {
-      "_score": 81.18699,
+      "_score": 80.60418,
       "id": 109220,
       "title": "Annunciation to the Shepherds",
       "date_display": "c. 1710",
@@ -2718,7 +2718,7 @@
       "description": null
     },
     {
-      "_score": 77.99799,
+      "_score": 77.350975,
       "id": 6831,
       "title": "Saint John the Baptist in the Wilderness",
       "date_display": "c. 1622",
@@ -2770,7 +2770,7 @@
       "short_description": null
     },
     {
-      "_score": 77.95281,
+      "_score": 77.29194,
       "id": 16495,
       "title": "Rinaldo and the Magus of Ascalon",
       "date_display": "c. 1742–45",
@@ -2828,7 +2828,7 @@
       "image_id": "bd2dd3d8-14f3-7acc-baf7-1033694d3740"
     },
     {
-      "_score": 75.83802,
+      "_score": 75.182106,
       "id": 16492,
       "title": "Armida Abandoned by Rinaldo",
       "date_display": "c. 1742–45",
@@ -2889,7 +2889,7 @@
       "image_id": "4d2eeeeb-817c-2b00-68e8-4f4c75f7f061"
     },
     {
-      "_score": 82.35827,
+      "_score": 81.4031,
       "id": 16488,
       "title": "Armida Encounters the Sleeping Rinaldo",
       "date_display": "c. 1742–45",
@@ -2957,7 +2957,7 @@
       "image_id": "633f464c-203f-f7b9-a251-7a2073f4b05d"
     },
     {
-      "_score": 73.55648,
+      "_score": 72.90849,
       "id": 16485,
       "title": "Rinaldo and Armida in Her Garden",
       "date_display": "c. 1742–45",
@@ -3023,7 +3023,7 @@
       "image_id": "1623c4af-9ac2-fd80-9e73-05f7d402c6bd"
     },
     {
-      "_score": 111.247284,
+      "_score": 109.73569,
       "id": 27992,
       "title": "A Sunday on La Grande Jatte — 1884",
       "date_display": "1884–86, border added 1888–89",
@@ -3083,7 +3083,42 @@
       "image_id": "2d484387-2509-5e8e-2c43-22f9981972eb"
     },
     {
-      "_score": 67.52717,
+      "_score": 67.12827,
+      "id": 73413,
+      "title": "Bust of a Youth (Saint John the Baptist)",
+      "date_display": "1630-40",
+      "place_of_origin": "Italy",
+      "description": "<p>This work might appear to be a portrait, but the costume and expression indicate that it represents a mythological or biblical figure. The young man is shown in the act of speaking, his mouth open as if caught mid-sentence. This detail suggests that the figure is likely Saint John the Baptist; one of his roles was that of a preacher who foretold the coming of Jesus Christ. The dramatic turn of the youth’s head suggests that he is addressing an unseen conversant, a dynamic and inventive means of engaging with the viewer. The sculpture’s small scale indicates that it was likely made for private contemplation.</p>\n<p>The figure’s deeply carved corkscrew curls, soft skin, and parted lips are all characteristic of the sculptor Francesco Mochi, whose work is notable for its energetic lines, dramatic movement, and subtle psychology. One of the most talented and individual sculptors in seventeenth-century Rome, Mochi possessed an extraordinary technical aptitude both in carving marble and in depicting carefully nuanced expression in his figures.</p>\n",
+      "medium_display": "Marble on variegated black marble socle",
+      "credit_line": "From the collection of the estate of Federico Gentili di Giuseppe; purchased with funds provided by Mrs. Harold T. Martin through the Antiquarian Society; Major Acquisitions Centennial Endowment; through prior gift of Arthur Rubloff; European Decorative Arts Purchase Fund",
+      "is_public_domain": true,
+      "artist_title": "Francesco Mochi",
+      "term_titles": [
+        "bust/head",
+        "Baroque",
+        "marble",
+        "sculpting",
+        "youth",
+        "metamorphic rock",
+        "rock",
+        "inorganic material",
+        "sculpture",
+        "children",
+        "busts",
+        "Italian",
+        "carving",
+        "stonework",
+        "17th Century",
+        "head",
+        "Saint John the Baptist"
+      ],
+      "style_title": "Baroque",
+      "classification_title": "bust/head",
+      "image_id": "4e37b182-cc1e-ef86-3eb2-de7d5b9db717",
+      "short_description": null
+    },
+    {
+      "_score": 66.91253,
       "id": 16434,
       "title": "Virgin and Child with Saints Dominic and Hyacinth",
       "date_display": "1730–35",
@@ -3145,42 +3180,7 @@
       "image_id": "19f0e672-2924-b42b-70af-d28ff46f23cc"
     },
     {
-      "_score": 67.06342,
-      "id": 73413,
-      "title": "Bust of a Youth (Saint John the Baptist)",
-      "date_display": "1630-40",
-      "place_of_origin": "Italy",
-      "description": "<p>This work might appear to be a portrait, but the costume and expression indicate that it represents a mythological or biblical figure. The young man is shown in the act of speaking, his mouth open as if caught mid-sentence. This detail suggests that the figure is likely Saint John the Baptist; one of his roles was that of a preacher who foretold the coming of Jesus Christ. The dramatic turn of the youth’s head suggests that he is addressing an unseen conversant, a dynamic and inventive means of engaging with the viewer. The sculpture’s small scale indicates that it was likely made for private contemplation.</p>\n<p>The figure’s deeply carved corkscrew curls, soft skin, and parted lips are all characteristic of the sculptor Francesco Mochi, whose work is notable for its energetic lines, dramatic movement, and subtle psychology. One of the most talented and individual sculptors in seventeenth-century Rome, Mochi possessed an extraordinary technical aptitude both in carving marble and in depicting carefully nuanced expression in his figures.</p>\n",
-      "medium_display": "Marble on variegated black marble socle",
-      "credit_line": "From the collection of the estate of Federico Gentili di Giuseppe; purchased with funds provided by Mrs. Harold T. Martin through the Antiquarian Society; Major Acquisitions Centennial Endowment; through prior gift of Arthur Rubloff; European Decorative Arts Purchase Fund",
-      "is_public_domain": true,
-      "artist_title": "Francesco Mochi",
-      "term_titles": [
-        "bust/head",
-        "Baroque",
-        "marble",
-        "sculpting",
-        "youth",
-        "metamorphic rock",
-        "rock",
-        "inorganic material",
-        "sculpture",
-        "children",
-        "busts",
-        "Italian",
-        "carving",
-        "stonework",
-        "17th Century",
-        "head",
-        "Saint John the Baptist"
-      ],
-      "style_title": "Baroque",
-      "classification_title": "bust/head",
-      "image_id": "4e37b182-cc1e-ef86-3eb2-de7d5b9db717",
-      "short_description": null
-    },
-    {
-      "_score": 66.578674,
+      "_score": 66.039406,
       "id": 41211,
       "title": "Portrait of Philip IV",
       "date_display": "c. 1632",
@@ -3232,7 +3232,7 @@
       "description": null
     },
     {
-      "_score": 105.02614,
+      "_score": 102.75186,
       "id": 20684,
       "title": "Paris Street; Rainy Day",
       "date_display": "1877",
@@ -3282,7 +3282,7 @@
       "image_id": "f8fd76e9-c396-5678-36ed-6a348c904d27"
     },
     {
-      "_score": 65.67945,
+      "_score": 64.55586,
       "id": 9,
       "title": "Interior of St. Mark's, Venice",
       "date_display": "1869",
@@ -3310,7 +3310,7 @@
       "description": null
     },
     {
-      "_score": 92.69756,
+      "_score": 91.25153,
       "id": 16568,
       "title": "Water Lilies",
       "date_display": "1906",
@@ -3356,7 +3356,7 @@
       "short_description": null
     },
     {
-      "_score": 95.71434,
+      "_score": 93.68074,
       "id": 28560,
       "title": "The Bedroom",
       "date_display": "1889",
@@ -3411,7 +3411,7 @@
       "image_id": "6644829f-f292-c5c4-a73c-0356a6fdbf0d"
     },
     {
-      "_score": 95.62851,
+      "_score": 94.140976,
       "id": 863,
       "title": "Pastoral Landscape with Ruins",
       "date_display": "1664",
@@ -3450,53 +3450,7 @@
       "short_description": null
     },
     {
-      "_score": 90.59021,
-      "id": 94841,
-      "title": "The Song of the Lark",
-      "date_display": "1884",
-      "place_of_origin": "France",
-      "description": "<p>A lone peasant girl pauses her work to listen to a lark singing in the distance. Her emotional response to this moment of natural beauty is accentuated by the glow of the sun rising behind her, suffusing the landscape with golden light.</p>\n<p>Jules Breton specialized in scenes of rustic life in the countryside. Having been raised in the rural village of Courrières in northern France, he admired the people living there for their resourcefulness and connection to nature and gained immense popularity by painting them in his idealized style.</p>\n",
-      "short_description": "This painting by Jules Adolphe Breton was among the first to enter the Art Institute's collection when the museum opened in 1893. It quickly became one of the most popular paintings at the museum. By the 1920s, reproductions were hanging on classroom walls across the United States. In 1934, it was named “America’s Best Loved Picture” in a contest sponsored by the <em>Chicago Daily News</em>.",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Henry Field Memorial Collection",
-      "is_public_domain": true,
-      "artist_title": "Jules Breton",
-      "term_titles": [
-        "oil on canvas",
-        "oil paint (paint)",
-        "oil painting",
-        "19th century",
-        "woman",
-        "sky",
-        "horizon",
-        "landscape",
-        "rural life",
-        "french",
-        "oil paintings (visual works)",
-        "paint",
-        "canvas",
-        "paint",
-        "painting",
-        "painting",
-        "painting (image making)",
-        "painting techniques",
-        "bird",
-        "farm",
-        "field",
-        "girl",
-        "labor",
-        "peasants",
-        "sun",
-        "sunrises",
-        "painting",
-        "european painting"
-      ],
-      "style_title": "19th century",
-      "classification_title": "oil on canvas",
-      "image_id": "48b2de88-ba73-8e19-f448-d1cef4a1c847"
-    },
-    {
-      "_score": 61.34222,
+      "_score": 60.83337,
       "id": 80560,
       "title": "Isabella of Bourbon, Wife of Philip IV of Spain",
       "date_display": "c. 1632",
@@ -3551,7 +3505,53 @@
       "description": null
     },
     {
-      "_score": 89.607254,
+      "_score": 89.17413,
+      "id": 94841,
+      "title": "The Song of the Lark",
+      "date_display": "1884",
+      "place_of_origin": "France",
+      "description": "<p>A lone peasant girl pauses her work to listen to a lark singing in the distance. Her emotional response to this moment of natural beauty is accentuated by the glow of the sun rising behind her, suffusing the landscape with golden light.</p>\n<p>Jules Breton specialized in scenes of rustic life in the countryside. Having been raised in the rural village of Courrières in northern France, he admired the people living there for their resourcefulness and connection to nature and gained immense popularity by painting them in his idealized style.</p>\n",
+      "short_description": "This painting by Jules Adolphe Breton was among the first to enter the Art Institute's collection when the museum opened in 1893. It quickly became one of the most popular paintings at the museum. By the 1920s, reproductions were hanging on classroom walls across the United States. In 1934, it was named “America’s Best Loved Picture” in a contest sponsored by the <em>Chicago Daily News</em>.",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Henry Field Memorial Collection",
+      "is_public_domain": true,
+      "artist_title": "Jules Breton",
+      "term_titles": [
+        "oil on canvas",
+        "oil paint (paint)",
+        "oil painting",
+        "19th century",
+        "woman",
+        "sky",
+        "horizon",
+        "landscape",
+        "rural life",
+        "french",
+        "oil paintings (visual works)",
+        "paint",
+        "canvas",
+        "paint",
+        "painting",
+        "painting",
+        "painting (image making)",
+        "painting techniques",
+        "bird",
+        "farm",
+        "field",
+        "girl",
+        "labor",
+        "peasants",
+        "sun",
+        "sunrises",
+        "painting",
+        "european painting"
+      ],
+      "style_title": "19th century",
+      "classification_title": "oil on canvas",
+      "image_id": "48b2de88-ba73-8e19-f448-d1cef4a1c847"
+    },
+    {
+      "_score": 88.20654,
       "id": 874,
       "title": "Landscape",
       "date_display": "c. 1895",
@@ -3597,7 +3597,7 @@
       "description": null
     },
     {
-      "_score": 98.933495,
+      "_score": 96.96756,
       "id": 80607,
       "title": "Self-Portrait",
       "date_display": "1887",
@@ -3648,7 +3648,7 @@
       "image_id": "47c5bcb8-62ef-e5d7-55e7-f5121f409a30"
     },
     {
-      "_score": 60.479073,
+      "_score": 59.448616,
       "id": 4,
       "title": "Priest and Boy",
       "date_display": "n.d.",
@@ -3673,7 +3673,7 @@
       "description": null
     },
     {
-      "_score": 88.40452,
+      "_score": 86.68951,
       "id": 14655,
       "title": "Two Sisters (On the Terrace)",
       "date_display": "1881",
@@ -3733,7 +3733,7 @@
       "image_id": "3a608f55-d76e-fa96-d0b1-0789fbc48f1e"
     },
     {
-      "_score": 112.28516,
+      "_score": 109.53206,
       "id": 64729,
       "title": "Early Morning, Tarpon Springs",
       "date_display": "1892",
@@ -3761,7 +3761,7 @@
       "image_id": "ef96e79b-f481-8114-0804-4bd39c101983"
     },
     {
-      "_score": 95.048134,
+      "_score": 93.730156,
       "id": 138,
       "title": "Flower Girl in Holland",
       "date_display": "1887",
@@ -3790,7 +3790,7 @@
       "image_id": "e72305c9-1a1c-8a36-7450-582619366338"
     },
     {
-      "_score": 87.12179,
+      "_score": 85.39788,
       "id": 111442,
       "title": "The Child's Bath",
       "date_display": "1893",
@@ -3825,7 +3825,7 @@
       "image_id": "3b885ae0-4d46-5fe4-d70a-00474827f02c"
     },
     {
-      "_score": 672.67017,
+      "_score": 657.13434,
       "id": 71573,
       "title": "A Holiday",
       "date_display": "c. 1915",
@@ -3852,7 +3852,7 @@
       "short_description": null
     },
     {
-      "_score": 101.80813,
+      "_score": 99.3796,
       "id": 4749,
       "title": "Mrs. George Swinton (Elizabeth Ebsworth)",
       "date_display": "1897",
@@ -3882,7 +3882,7 @@
       "image_id": "074c1b1b-fe92-01ce-9e62-cc99369142dd"
     },
     {
-      "_score": 98.552505,
+      "_score": 96.19565,
       "id": 80499,
       "title": "Dorothea and Francesca",
       "date_display": "1898",
@@ -3911,7 +3911,7 @@
       "image_id": "ed1b3063-8ce3-d4bc-50cb-b96f13f015e2"
     },
     {
-      "_score": 97.51774,
+      "_score": 95.17314,
       "id": 7503,
       "title": "The Annunciation",
       "date_display": "1887",
@@ -3938,32 +3938,7 @@
       "image_id": "e35161fb-cd78-b757-8000-15ba3ebb0fc3"
     },
     {
-      "_score": 97.44997,
-      "id": 14309,
-      "title": "Coast Scene, Bathers",
-      "date_display": "1884–85",
-      "place_of_origin": "United States",
-      "description": "<p>In this intimately scaled seascape, James McNeill Whistler employed the sparest of compositional elements to evoke a coastal atmosphere. Broad horizontal bands of blues and gray suggest sky, ocean, and sand, with dabs of thin pigment giving economical, yet expressive form to around a dozen figures on the windswept beach. Whistler dedicated much of his artistic practice to capturing the mood and color harmonies of marine scenes. <em>Coast Scene, Bathers</em> was painted en plein air, a practice to which the artist returned in the 1880s. It marked a distinctive shift from his studio-produced <em>Nocturnes</em> of the previous decade.</p>\n",
-      "short_description": "James McNeill Whistler dedicated much of his artistic practice to capturing the mood and color harmonies of marine scenes. In this intimately scaled seascape, he employed the sparest of compositional elements to evoke a coastal atmosphere. Broad horizontal bands of blues and gray suggest sky, ocean, and sand, with dabs of thin pigment giving economical yet expressive form to around a dozen figures on the windswept beach.",
-      "medium_display": "Oil on panel",
-      "credit_line": "Walter S. Brewster Collection",
-      "is_public_domain": true,
-      "artist_title": "James McNeill Whistler",
-      "term_titles": [
-        "painting",
-        "landscapes",
-        "oil paint (paint)",
-        "Impressionism",
-        "organic material",
-        "american arts",
-        "Modernism"
-      ],
-      "style_title": "Impressionism",
-      "classification_title": "painting",
-      "image_id": "5888c23a-635f-396a-117b-2223032c0201"
-    },
-    {
-      "_score": 97.43756,
+      "_score": 95.10737,
       "id": 191183,
       "title": "Madame Paul Escudier (Louise Lefevre)",
       "date_display": "1882",
@@ -3992,7 +3967,32 @@
       "image_id": "c6da9f8c-643b-f331-0f8f-a9b6a844caf6"
     },
     {
-      "_score": 85.018875,
+      "_score": 95.093544,
+      "id": 14309,
+      "title": "Coast Scene, Bathers",
+      "date_display": "1884–85",
+      "place_of_origin": "United States",
+      "description": "<p>In this intimately scaled seascape, James McNeill Whistler employed the sparest of compositional elements to evoke a coastal atmosphere. Broad horizontal bands of blues and gray suggest sky, ocean, and sand, with dabs of thin pigment giving economical, yet expressive form to around a dozen figures on the windswept beach. Whistler dedicated much of his artistic practice to capturing the mood and color harmonies of marine scenes. <em>Coast Scene, Bathers</em> was painted en plein air, a practice to which the artist returned in the 1880s. It marked a distinctive shift from his studio-produced <em>Nocturnes</em> of the previous decade.</p>\n",
+      "short_description": "James McNeill Whistler dedicated much of his artistic practice to capturing the mood and color harmonies of marine scenes. In this intimately scaled seascape, he employed the sparest of compositional elements to evoke a coastal atmosphere. Broad horizontal bands of blues and gray suggest sky, ocean, and sand, with dabs of thin pigment giving economical yet expressive form to around a dozen figures on the windswept beach.",
+      "medium_display": "Oil on panel",
+      "credit_line": "Walter S. Brewster Collection",
+      "is_public_domain": true,
+      "artist_title": "James McNeill Whistler",
+      "term_titles": [
+        "painting",
+        "landscapes",
+        "oil paint (paint)",
+        "Impressionism",
+        "organic material",
+        "american arts",
+        "Modernism"
+      ],
+      "style_title": "Impressionism",
+      "classification_title": "painting",
+      "image_id": "5888c23a-635f-396a-117b-2223032c0201"
+    },
+    {
+      "_score": 83.80175,
       "id": 64724,
       "title": "The Home of the Heron",
       "date_display": "1893",
@@ -4022,7 +4022,7 @@
       "short_description": null
     },
     {
-      "_score": 97.11958,
+      "_score": 94.8029,
       "id": 26650,
       "title": "On a Balcony",
       "date_display": "1878–79",
@@ -4050,7 +4050,7 @@
       "short_description": "Shown at the 1880 Impressionist exhibition, 'On a Balcony' depicts a woman in a private garden surrounded by flowers rendered in energetic brushstrokes of red, blue, yellow, and pink. Cassatt signaled the modernity of her subject through the woman’s choice of reading material: she peruses a newspaper rather than a novel, demonstrating that even at home, Cassatt’s subjects are connected to the contemporary world."
     },
     {
-      "_score": 97.00589,
+      "_score": 94.67361,
       "id": 121377,
       "title": "Boats at Rest",
       "date_display": "c. 1895",
@@ -4076,7 +4076,7 @@
       "short_description": null
     },
     {
-      "_score": 96.82745,
+      "_score": 94.53419,
       "id": 663,
       "title": "Alice",
       "date_display": "1892",
@@ -4104,7 +4104,7 @@
       "description": null
     },
     {
-      "_score": 96.59213,
+      "_score": 94.35063,
       "id": 28849,
       "title": "A City Park",
       "date_display": "c. 1887",
@@ -4135,7 +4135,7 @@
       "image_id": "72a76270-d6f4-e744-d47b-307873a8e8ff"
     },
     {
-      "_score": 96.327446,
+      "_score": 93.98374,
       "id": 90333,
       "title": "An Alcove in the Art Students' League",
       "date_display": "1888",
@@ -4158,39 +4158,7 @@
       "image_id": "607d4ff1-578f-79ee-9980-ed133c743e64"
     },
     {
-      "_score": 95.294945,
-      "id": 44018,
-      "title": "Croquet Scene",
-      "date_display": "1866",
-      "place_of_origin": "United States",
-      "description": "<p>One of America’s foremost painters, Winslow Homer began his career as an illustrator during the Civil War. In the late 1860s, he turned his acute observational and technical skills toward oil painting, depicting figures bathed in sunlight out-of-doors. These early paintings, often executed in series, feature scenes of upper-class leisure pursuits—in this case, women and men competing with one another in the popular sport of croquet, which had recently been introduced to the United States from the British Isles. In <em>Croquet Scene</em>, one of five paintings Homer completed on the subject, progress on “the grand round” seems fairly advanced. The crouching male figure positions the ball belonging to the woman dressed in red. She is about to croquet (or “send up the country”) another ball, probably belonging to the woman in the left foreground, who shields her eyes against the bright afternoon sun. Notable for its bold patterning, strong contours, and brilliant light effects, the painting epitomizes the spirit of a breezy summer afternoon.</p>\n",
-      "short_description": "One of America’s foremost painters, Winslow Homer began his career as an illustrator. In the late 1860s, he turned to oil painting, depicting figures bathed in sunlight. These early paintings feature scenes of upper-class leisure pursuits—in this case, women and men playing the popular sport of croquet, a game that had recently been introduced to the United States from the British Isles.",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Friends of American Art Collection; Goodman Fund",
-      "is_public_domain": true,
-      "artist_title": "Winslow Homer",
-      "term_titles": [
-        "painting",
-        "oil paint (paint)",
-        "Impressionism",
-        "fashion",
-        "oil painting",
-        "Realism",
-        "organic material",
-        "american arts",
-        "women",
-        "weather/seasons",
-        "leisure",
-        "men",
-        "painting (image making)",
-        "Modernism"
-      ],
-      "style_title": "Impressionism",
-      "classification_title": "painting",
-      "image_id": "f7b2db45-f393-653c-07ef-84319b0cdb92"
-    },
-    {
-      "_score": 150.21217,
+      "_score": 148.16663,
       "id": 111436,
       "title": "The Basket of Apples",
       "date_display": "c. 1893",
@@ -4235,7 +4203,39 @@
       "short_description": null
     },
     {
-      "_score": 95.10429,
+      "_score": 93.08355,
+      "id": 44018,
+      "title": "Croquet Scene",
+      "date_display": "1866",
+      "place_of_origin": "United States",
+      "description": "<p>One of America’s foremost painters, Winslow Homer began his career as an illustrator during the Civil War. In the late 1860s, he turned his acute observational and technical skills toward oil painting, depicting figures bathed in sunlight out-of-doors. These early paintings, often executed in series, feature scenes of upper-class leisure pursuits—in this case, women and men competing with one another in the popular sport of croquet, which had recently been introduced to the United States from the British Isles. In <em>Croquet Scene</em>, one of five paintings Homer completed on the subject, progress on “the grand round” seems fairly advanced. The crouching male figure positions the ball belonging to the woman dressed in red. She is about to croquet (or “send up the country”) another ball, probably belonging to the woman in the left foreground, who shields her eyes against the bright afternoon sun. Notable for its bold patterning, strong contours, and brilliant light effects, the painting epitomizes the spirit of a breezy summer afternoon.</p>\n",
+      "short_description": "One of America’s foremost painters, Winslow Homer began his career as an illustrator. In the late 1860s, he turned to oil painting, depicting figures bathed in sunlight. These early paintings feature scenes of upper-class leisure pursuits—in this case, women and men playing the popular sport of croquet, a game that had recently been introduced to the United States from the British Isles.",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Friends of American Art Collection; Goodman Fund",
+      "is_public_domain": true,
+      "artist_title": "Winslow Homer",
+      "term_titles": [
+        "painting",
+        "oil paint (paint)",
+        "Impressionism",
+        "fashion",
+        "oil painting",
+        "Realism",
+        "organic material",
+        "american arts",
+        "women",
+        "weather/seasons",
+        "leisure",
+        "men",
+        "painting (image making)",
+        "Modernism"
+      ],
+      "style_title": "Impressionism",
+      "classification_title": "painting",
+      "image_id": "f7b2db45-f393-653c-07ef-84319b0cdb92"
+    },
+    {
+      "_score": 92.82989,
       "id": 31816,
       "title": "After the Bullfight",
       "date_display": "1873",
@@ -4264,7 +4264,7 @@
       "image_id": "7a314af6-336f-b6a4-809c-15659313a757"
     },
     {
-      "_score": 93.23009,
+      "_score": 91.21766,
       "id": 16571,
       "title": "Arrival of the Normandy Train, Gare Saint-Lazare",
       "date_display": "1877",
@@ -4312,7 +4312,7 @@
       "image_id": "0f1cc0e0-e42e-be16-3f71-2022da38cb93"
     },
     {
-      "_score": 92.92701,
+      "_score": 90.803894,
       "id": 56905,
       "title": "Nocturne: Blue and Gold—Southampton Water",
       "date_display": "1872",
@@ -4345,7 +4345,7 @@
       "image_id": "50034c7f-ce51-00f1-430e-a6f7efc233fc"
     },
     {
-      "_score": 92.846275,
+      "_score": 90.59437,
       "id": 151108,
       "title": "The Mill Pond",
       "date_display": "1889",
@@ -4369,7 +4369,7 @@
       "image_id": "f837e639-5a6c-3043-3c2c-a4d5ece3bf1d"
     },
     {
-      "_score": 92.78513,
+      "_score": 90.541504,
       "id": 84088,
       "title": "Violet and Silver—The Deep Sea",
       "date_display": "1893",
@@ -4394,33 +4394,7 @@
       "short_description": null
     },
     {
-      "_score": 91.89874,
-      "id": 8971,
-      "title": "Coast of Maine",
-      "date_display": "1893",
-      "place_of_origin": "United States",
-      "description": "<p>Winslow Homer observed the shoreline in various weather conditions and seasons after moving to live in near isolation in Prouts Neck, Maine, in 1883. Amid the remote and dramatic landscape, he depicted seascapes void of human life, focusing instead on an emotional response to nature. His marine scenes are larger than his earlier works, the size of the canvases emphasize the vastness and power of the sea. Homer alluded to the violence of water through the sharply diagonal shoreline and vigorous brushwork. The flat areas of color that he employed to represent the rugged rocks simultaneously hint at abstraction.</p>\n",
-      "short_description": "Winslow Homer observed the shoreline in various weather conditions and seasons after moving to live in near isolation in Prouts Neck, Maine, in 1883. Amid the remote and dramatic landscape, he depicted seascapes void of human life, focusing instead on an emotional response to nature. His marine scenes, larger than his earlier works, emphasize the vastness and power of the sea.",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Arthur Jerome Eddy Memorial Collection",
-      "is_public_domain": true,
-      "artist_title": "Winslow Homer",
-      "term_titles": [
-        "painting",
-        "oil paint (paint)",
-        "Impressionism",
-        "landscapes",
-        "organic material",
-        "american arts",
-        "Realism",
-        "Modernism"
-      ],
-      "style_title": "Impressionism",
-      "classification_title": "painting",
-      "image_id": "de060306-b5a3-5139-cad9-57e9c274d7c3"
-    },
-    {
-      "_score": 91.784836,
+      "_score": 89.79075,
       "id": 87088,
       "title": "Water Lily Pond",
       "date_display": "1900",
@@ -4467,7 +4441,33 @@
       "image_id": "8534685d-1102-e1e3-e194-94f6e925e8b0"
     },
     {
-      "_score": 91.16976,
+      "_score": 89.68302,
+      "id": 8971,
+      "title": "Coast of Maine",
+      "date_display": "1893",
+      "place_of_origin": "United States",
+      "description": "<p>Winslow Homer observed the shoreline in various weather conditions and seasons after moving to live in near isolation in Prouts Neck, Maine, in 1883. Amid the remote and dramatic landscape, he depicted seascapes void of human life, focusing instead on an emotional response to nature. His marine scenes are larger than his earlier works, the size of the canvases emphasize the vastness and power of the sea. Homer alluded to the violence of water through the sharply diagonal shoreline and vigorous brushwork. The flat areas of color that he employed to represent the rugged rocks simultaneously hint at abstraction.</p>\n",
+      "short_description": "Winslow Homer observed the shoreline in various weather conditions and seasons after moving to live in near isolation in Prouts Neck, Maine, in 1883. Amid the remote and dramatic landscape, he depicted seascapes void of human life, focusing instead on an emotional response to nature. His marine scenes, larger than his earlier works, emphasize the vastness and power of the sea.",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Arthur Jerome Eddy Memorial Collection",
+      "is_public_domain": true,
+      "artist_title": "Winslow Homer",
+      "term_titles": [
+        "painting",
+        "oil paint (paint)",
+        "Impressionism",
+        "landscapes",
+        "organic material",
+        "american arts",
+        "Realism",
+        "Modernism"
+      ],
+      "style_title": "Impressionism",
+      "classification_title": "painting",
+      "image_id": "de060306-b5a3-5139-cad9-57e9c274d7c3"
+    },
+    {
+      "_score": 89.201805,
       "id": 11723,
       "title": "Woman at Her Toilette",
       "date_display": "1875–80",
@@ -4515,7 +4515,7 @@
       "image_id": "78c80988-6524-cec7-c661-a4c0a706d06f"
     },
     {
-      "_score": 158.95137,
+      "_score": 158.4028,
       "id": 180976,
       "title": "Miniature Vessel in the Form of a Portrait Head with Painted Cheeks",
       "date_display": "100 BCE–500 CE",
@@ -4545,7 +4545,7 @@
       "description": null
     },
     {
-      "_score": 113.489006,
+      "_score": 113.02555,
       "id": 250080,
       "title": "Untitled (Painted Portrait of Charles Coit)",
       "date_display": "1855/56",
@@ -4580,7 +4580,7 @@
       "artist_title": null
     },
     {
-      "_score": 110.34762,
+      "_score": 109.87036,
       "id": 250181,
       "title": "Untitled (Portrait of a Man Painting)",
       "date_display": "1865",
@@ -4611,7 +4611,7 @@
       "artist_title": null
     },
     {
-      "_score": 102.69859,
+      "_score": 100.58117,
       "id": 862,
       "title": "Portrait of an Artist",
       "date_display": "1644",
@@ -4655,7 +4655,7 @@
       "description": null
     },
     {
-      "_score": 93.34417,
+      "_score": 91.39327,
       "id": 193664,
       "title": "The Captive Slave (Ira Aldridge)",
       "date_display": "1827",
@@ -4699,7 +4699,7 @@
       "image_id": "5490fd49-dd52-4fd7-7d41-d871dcffae55"
     },
     {
-      "_score": 90.52386,
+      "_score": 88.587654,
       "id": 15708,
       "title": "Portrait of a Man with Gray Hair",
       "date_display": "1810–20",
@@ -4738,7 +4738,7 @@
       "description": null
     },
     {
-      "_score": 90.16448,
+      "_score": 88.34927,
       "id": 25825,
       "title": "Woman at the Piano",
       "date_display": "1875–76",
@@ -4790,7 +4790,7 @@
       "description": null
     },
     {
-      "_score": 90.101036,
+      "_score": 88.23913,
       "id": 87467,
       "title": "Édouard Manet",
       "date_display": "1867",
@@ -4840,7 +4840,7 @@
       "short_description": null
     },
     {
-      "_score": 89.44845,
+      "_score": 87.58048,
       "id": 62371,
       "title": "Madame Cezanne in a Yellow Chair",
       "date_display": "1888–90",
@@ -4883,7 +4883,7 @@
       "short_description": null
     },
     {
-      "_score": 89.15279,
+      "_score": 87.299805,
       "id": 27307,
       "title": "Madame de Pastoret and Her Son",
       "date_display": "1791–92",
@@ -4933,7 +4933,7 @@
       "image_id": "72227c9e-413c-8930-477d-5a90e0a2123c"
     },
     {
-      "_score": 89.06513,
+      "_score": 87.26803,
       "id": 27949,
       "title": "Madame Roulin Rocking the Cradle (La berceuse)",
       "date_display": "1889",
@@ -4985,7 +4985,7 @@
       "image_id": "6f3ca8b9-fef6-edfc-a71c-3e7b471d5f6c"
     },
     {
-      "_score": 87.90543,
+      "_score": 86.09254,
       "id": 94840,
       "title": "Young Woman at an Open Half-Door",
       "date_display": "1645",
@@ -5023,7 +5023,7 @@
       "image_id": "91c51644-871f-cda9-82bb-94f4973ae339"
     },
     {
-      "_score": 85.8572,
+      "_score": 84.10329,
       "id": 81512,
       "title": "Interrupted Reading",
       "date_display": "c. 1870",
@@ -5067,7 +5067,7 @@
       "image_id": "1c2d32a7-790c-501a-e124-00f28cf5052d"
     },
     {
-      "_score": 85.42394,
+      "_score": 83.66,
       "id": 25832,
       "title": "Jean Renoir Sewing",
       "date_display": "1899–1900",
@@ -5116,7 +5116,7 @@
       "short_description": null
     },
     {
-      "_score": 85.3274,
+      "_score": 83.53244,
       "id": 88632,
       "title": "Madame François Buron",
       "date_display": "1769",
@@ -5162,7 +5162,7 @@
       "image_id": "77f1c8e3-16c6-1147-f4aa-4cfc8bd3eb8b"
     },
     {
-      "_score": 85.16212,
+      "_score": 83.427536,
       "id": 111317,
       "title": "Amédée-David, the Comte de Pastoret",
       "date_display": "1823–26",
@@ -5214,7 +5214,7 @@
       "image_id": "8d119fd0-2f57-f20e-a3f5-a573904001e9"
     },
     {
-      "_score": 85.13815,
+      "_score": 83.37288,
       "id": 864,
       "title": "Portrait of a Man with a Pink",
       "date_display": "1500–10",
@@ -5254,7 +5254,7 @@
       "short_description": null
     },
     {
-      "_score": 84.92672,
+      "_score": 83.19358,
       "id": 16600,
       "title": "Lucie Berard (Child in White)",
       "date_display": "1883",
@@ -5305,7 +5305,7 @@
       "short_description": null
     },
     {
-      "_score": 84.75019,
+      "_score": 83.04015,
       "id": 60812,
       "title": "Merahi metua no Tehamana (Tehamana Has Many Parents or The Ancestors of Tehamana)",
       "date_display": "1893",
@@ -5363,7 +5363,7 @@
       "image_id": "48268fc7-2eb4-ded6-1293-e91f27b66478"
     },
     {
-      "_score": 83.98455,
+      "_score": 82.23916,
       "id": 8969,
       "title": "Beggar with Oysters (Philosopher)",
       "date_display": "1865–67",
@@ -5403,7 +5403,7 @@
       "image_id": "4e074d70-4424-331b-ec89-0776a45d6825"
     },
     {
-      "_score": 81.41797,
+      "_score": 79.77885,
       "id": 16622,
       "title": "Madame Léon Clapisson",
       "date_display": "1883",
@@ -5454,7 +5454,7 @@
       "description": null
     },
     {
-      "_score": 80.99673,
+      "_score": 79.36006,
       "id": 14650,
       "title": "Alfred Sisley",
       "date_display": "1876",
@@ -5502,7 +5502,7 @@
       "description": null
     },
     {
-      "_score": 80.51939,
+      "_score": 78.83789,
       "id": 59944,
       "title": "The Laundress",
       "date_display": "1877–79",
@@ -5548,7 +5548,7 @@
       "short_description": null
     },
     {
-      "_score": 80.2202,
+      "_score": 78.61916,
       "id": 34461,
       "title": "Polynesian Woman with Children",
       "date_display": "1901",
@@ -5600,7 +5600,7 @@
       "image_id": "cc5cdb81-14cf-27e9-eda8-94c08244ebaa"
     },
     {
-      "_score": 186.42819,
+      "_score": 183.5739,
       "id": 66042,
       "title": "Trompe-l'Oeil Still Life with a Flower Garland and a Curtain",
       "date_display": "1658",
@@ -5636,7 +5636,7 @@
       "image_id": "4a04138f-43d8-cd9f-5ac4-478cd8828210"
     },
     {
-      "_score": 170.63333,
+      "_score": 167.90298,
       "id": 111377,
       "title": "For Sunday's Dinner",
       "date_display": "1888",
@@ -5661,7 +5661,7 @@
       "short_description": null
     },
     {
-      "_score": 166.9437,
+      "_score": 164.17957,
       "id": 181777,
       "title": "The Irish Question",
       "date_display": "1880s",
@@ -5686,7 +5686,7 @@
       "image_id": "6754947f-4ccf-b3ff-41ee-45b738534769"
     },
     {
-      "_score": 166.44302,
+      "_score": 164.12877,
       "id": 16549,
       "title": "Apples and Grapes",
       "date_display": "1880",
@@ -5733,7 +5733,7 @@
       "image_id": "c12058f4-188f-c6ed-f0fe-52b32acfb296"
     },
     {
-      "_score": 165.66534,
+      "_score": 163.31752,
       "id": 44892,
       "title": "Fish (Still Life)",
       "date_display": "1864",
@@ -5782,7 +5782,7 @@
       "image_id": "0cbe27e8-2fec-3445-bc48-ce40a8f2dc25"
     },
     {
-      "_score": 161.65404,
+      "_score": 159.29106,
       "id": 21682,
       "title": "Still Life",
       "date_display": "c. 1625",
@@ -5826,7 +5826,7 @@
       "short_description": null
     },
     {
-      "_score": 157.75888,
+      "_score": 155.2754,
       "id": 44065,
       "title": "Just Dessert",
       "date_display": "1891",
@@ -5852,7 +5852,7 @@
       "short_description": null
     },
     {
-      "_score": 156.9994,
+      "_score": 154.85538,
       "id": 64957,
       "title": "Grapes, Lemons, Pears, and Apples",
       "date_display": "1887",
@@ -5902,7 +5902,7 @@
       "image_id": "f11bd233-6cc3-4221-59eb-f7363be4119e"
     },
     {
-      "_score": 154.13257,
+      "_score": 151.66626,
       "id": 182381,
       "title": "An Abundance of Fruit",
       "date_display": "c. 1860",
@@ -5927,7 +5927,7 @@
       "style_title": null
     },
     {
-      "_score": 153.98625,
+      "_score": 151.56216,
       "id": 145807,
       "title": "Thistles",
       "date_display": "1883–89",
@@ -5953,7 +5953,7 @@
       "image_id": "79b94ddd-e208-1993-01ab-98f75174fe88"
     },
     {
-      "_score": 151.40312,
+      "_score": 149.22508,
       "id": 100829,
       "title": "Magnolias on Light Blue Velvet Cloth",
       "date_display": "1885–95",
@@ -5984,7 +5984,7 @@
       "style_title": null
     },
     {
-      "_score": 149.90244,
+      "_score": 147.90619,
       "id": 16617,
       "title": "Chrysanthemums",
       "date_display": "1881–82",
@@ -6038,7 +6038,7 @@
       "short_description": null
     },
     {
-      "_score": 148.7476,
+      "_score": 146.47801,
       "id": 2156,
       "title": "Lights of Other Days",
       "date_display": "1906",
@@ -6063,32 +6063,7 @@
       "short_description": null
     },
     {
-      "_score": 148.62982,
-      "id": 131407,
-      "title": "Wine, Cheese, and Fruit",
-      "date_display": "1857",
-      "place_of_origin": "Pennsylvania",
-      "description": "<p>Succulent grapes, crumbling cheese, sparkling wine in elegant glasses, and cognac in tumblers are depicted in this opulent dessert picture by John Francis. Originally an itinerant portrait painter, Francis turned to still life in the mid-19th century when the availability of daguerreotype portraits rendered his trade obsolete. The penchant for household embellishment among the Victorian middle class created a lively market for still-life paintings, which were often hung in dining rooms. While spirits are featured prominently in this painting, the glasses that are less than half full and the presence of the water indicate balance and restraint, referring to the mid-century growth of the temperance movement, which promoted the ideals of moderation and self-control.</p>\n",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Purchased with funds provided by Charles C. Haffner III and Mrs. Herbert Alexander Vance; Wesley M. Dixon Jr., Fund",
-      "is_public_domain": true,
-      "artist_title": "John F. Francis",
-      "term_titles": [
-        "painting",
-        "oil paint (paint)",
-        "still life",
-        "organic material",
-        "american arts",
-        "dining",
-        "drinking"
-      ],
-      "classification_title": "painting",
-      "image_id": "a2f4085a-6715-212a-c5fa-aa88a4692df0",
-      "short_description": null,
-      "style_title": null
-    },
-    {
-      "_score": 148.46335,
+      "_score": 146.41783,
       "id": 16629,
       "title": "Fruits of the Midi",
       "date_display": "1881",
@@ -6137,7 +6112,32 @@
       "description": null
     },
     {
-      "_score": 145.33234,
+      "_score": 146.25156,
+      "id": 131407,
+      "title": "Wine, Cheese, and Fruit",
+      "date_display": "1857",
+      "place_of_origin": "Pennsylvania",
+      "description": "<p>Succulent grapes, crumbling cheese, sparkling wine in elegant glasses, and cognac in tumblers are depicted in this opulent dessert picture by John Francis. Originally an itinerant portrait painter, Francis turned to still life in the mid-19th century when the availability of daguerreotype portraits rendered his trade obsolete. The penchant for household embellishment among the Victorian middle class created a lively market for still-life paintings, which were often hung in dining rooms. While spirits are featured prominently in this painting, the glasses that are less than half full and the presence of the water indicate balance and restraint, referring to the mid-century growth of the temperance movement, which promoted the ideals of moderation and self-control.</p>\n",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Purchased with funds provided by Charles C. Haffner III and Mrs. Herbert Alexander Vance; Wesley M. Dixon Jr., Fund",
+      "is_public_domain": true,
+      "artist_title": "John F. Francis",
+      "term_titles": [
+        "painting",
+        "oil paint (paint)",
+        "still life",
+        "organic material",
+        "american arts",
+        "dining",
+        "drinking"
+      ],
+      "classification_title": "painting",
+      "image_id": "a2f4085a-6715-212a-c5fa-aa88a4692df0",
+      "short_description": null,
+      "style_title": null
+    },
+    {
+      "_score": 143.28314,
       "id": 120154,
       "title": "Still Life—Strawberries, Nuts, &c.",
       "date_display": "1822",
@@ -6171,7 +6171,7 @@
       "image_id": "1cddae1c-99d5-462f-4aa6-128c0732ac11"
     },
     {
-      "_score": 142.23862,
+      "_score": 139.99947,
       "id": 69533,
       "title": "Bird's Nest and Ferns",
       "date_display": "1863",
@@ -6197,7 +6197,7 @@
       "description": null
     },
     {
-      "_score": 717.02966,
+      "_score": 706.1578,
       "id": 64001,
       "title": "Apples",
       "date_display": "1916",
@@ -6225,7 +6225,7 @@
       "style_title": null
     },
     {
-      "_score": 138.12498,
+      "_score": 135.98476,
       "id": 156596,
       "title": "Fruit Piece",
       "date_display": "1860",
@@ -6252,7 +6252,7 @@
       "style_title": null
     },
     {
-      "_score": 135.95532,
+      "_score": 134.06497,
       "id": 153797,
       "title": "Still Life: Wood Tankard and Metal Pitcher",
       "date_display": "1880",
@@ -6301,32 +6301,7 @@
       "description": null
     },
     {
-      "_score": 135.14417,
-      "id": 154496,
-      "title": "Rack Picture for Dr. Nones",
-      "date_display": "1879",
-      "place_of_origin": "Philadelphia",
-      "description": "<p>This type of trompe l’oeil (fools the eye) painting simulates an old-fashioned bulletin board that held important, yet ephemeral documents like letters and newspaper clippings under strips of ribbon. Such “rack picture” still lifes functioned as biographical portraits, in this case for Dr. Samuel Smith Nones, the prominent Philadelphia dentist who commissioned this work. Adjacent to the central letter to Dr. S. S. Nones are envelopes addressed to medical colleagues and one to Nones’s brother. The painting’s illusionistic fragments cleverly define the dentist’s professional and personal identity, narrating a rich tale of camaraderie and achievement for an inner circle of viewers. William A. Mitchell, the father of the youngest dentist in the group, likely executed the composition.</p>\n",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Mr. and Mrs. Frederick G. Wacker Jr. Endowment Fund; through prior gift of Mrs. Albert J. Beveridge in memory of Abby Louise Spencer Eddy",
-      "is_public_domain": true,
-      "artist_title": "William A. Mitchell",
-      "term_titles": [
-        "oil paint (paint)",
-        "painting",
-        "Realism",
-        "still life",
-        "canvas",
-        "american arts",
-        "letters (correspondence)"
-      ],
-      "style_title": "Realism",
-      "classification_title": "painting",
-      "image_id": "22609746-bd4b-c9b6-8293-dfd393f00c20",
-      "short_description": null
-    },
-    {
-      "_score": 135.00333,
+      "_score": 133.11435,
       "id": 154121,
       "title": "Calf's Head and Ox Tongue",
       "date_display": "c. 1882",
@@ -6369,7 +6344,32 @@
       "image_id": "0274aa9e-95d1-2a8e-12e3-2b09d7749b4f"
     },
     {
-      "_score": 133.52203,
+      "_score": 132.98169,
+      "id": 154496,
+      "title": "Rack Picture for Dr. Nones",
+      "date_display": "1879",
+      "place_of_origin": "Philadelphia",
+      "description": "<p>This type of trompe l’oeil (fools the eye) painting simulates an old-fashioned bulletin board that held important, yet ephemeral documents like letters and newspaper clippings under strips of ribbon. Such “rack picture” still lifes functioned as biographical portraits, in this case for Dr. Samuel Smith Nones, the prominent Philadelphia dentist who commissioned this work. Adjacent to the central letter to Dr. S. S. Nones are envelopes addressed to medical colleagues and one to Nones’s brother. The painting’s illusionistic fragments cleverly define the dentist’s professional and personal identity, narrating a rich tale of camaraderie and achievement for an inner circle of viewers. William A. Mitchell, the father of the youngest dentist in the group, likely executed the composition.</p>\n",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Mr. and Mrs. Frederick G. Wacker Jr. Endowment Fund; through prior gift of Mrs. Albert J. Beveridge in memory of Abby Louise Spencer Eddy",
+      "is_public_domain": true,
+      "artist_title": "William A. Mitchell",
+      "term_titles": [
+        "oil paint (paint)",
+        "painting",
+        "Realism",
+        "still life",
+        "canvas",
+        "american arts",
+        "letters (correspondence)"
+      ],
+      "style_title": "Realism",
+      "classification_title": "painting",
+      "image_id": "22609746-bd4b-c9b6-8293-dfd393f00c20",
+      "short_description": null
+    },
+    {
+      "_score": 131.6685,
       "id": 62450,
       "title": "Still Life with a Basket of Fruit and a Bunch of Asparagus",
       "date_display": "1630",
@@ -6418,7 +6418,7 @@
       "short_description": null
     },
     {
-      "_score": 132.46451,
+      "_score": 130.412,
       "id": 65930,
       "title": "Still Life No. 15",
       "date_display": "c. 1917",
@@ -6442,7 +6442,7 @@
       "short_description": null
     },
     {
-      "_score": 132.00722,
+      "_score": 129.96997,
       "id": 84096,
       "title": "Dead Birds and Shot Bags",
       "date_display": "c. 1660",
@@ -6478,7 +6478,7 @@
       "short_description": null
     },
     {
-      "_score": 130.56654,
+      "_score": 128.71614,
       "id": 20534,
       "title": "Roses in a Bowl",
       "date_display": "1881",
@@ -6524,7 +6524,7 @@
       "description": null
     },
     {
-      "_score": 711.23395,
+      "_score": 728.10364,
       "id": 91415,
       "title": "Vessel with Painted Landscape",
       "date_display": "180 BCE–500 CE",
@@ -6563,7 +6563,7 @@
       "description": null
     },
     {
-      "_score": 594.73566,
+      "_score": 610.04614,
       "id": 4717,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 1",
       "date_display": "1813",
@@ -6585,7 +6585,7 @@
       "description": null
     },
     {
-      "_score": 437.09705,
+      "_score": 447.17694,
       "id": 269223,
       "title": "Landscape Painting",
       "date_display": "1868-1900",
@@ -6609,7 +6609,7 @@
       "description": null
     },
     {
-      "_score": 339.55157,
+      "_score": 347.67004,
       "id": 192263,
       "title": "Two Figures (related to the painting Tahitian Landscape)",
       "date_display": "1891/93",
@@ -6631,7 +6631,7 @@
       "description": null
     },
     {
-      "_score": 208.93423,
+      "_score": 214.3129,
       "id": 222711,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 8",
       "date_display": "1813",
@@ -6653,7 +6653,7 @@
       "description": null
     },
     {
-      "_score": 203.77747,
+      "_score": 209.02338,
       "id": 222697,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 4",
       "date_display": "1813",
@@ -6675,7 +6675,7 @@
       "description": null
     },
     {
-      "_score": 203.77747,
+      "_score": 209.02338,
       "id": 222710,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 7",
       "date_display": "1813",
@@ -6697,7 +6697,7 @@
       "description": null
     },
     {
-      "_score": 203.77747,
+      "_score": 209.02338,
       "id": 222712,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 9",
       "date_display": "1813",
@@ -6719,7 +6719,7 @@
       "description": null
     },
     {
-      "_score": 172.21194,
+      "_score": 176.64525,
       "id": 222695,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 2",
       "date_display": "1813",
@@ -6741,7 +6741,7 @@
       "description": null
     },
     {
-      "_score": 172.21194,
+      "_score": 176.64525,
       "id": 222713,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 10",
       "date_display": "1813–14",
@@ -6763,7 +6763,7 @@
       "description": null
     },
     {
-      "_score": 172.21194,
+      "_score": 176.64525,
       "id": 222714,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 11",
       "date_display": "1813",
@@ -6785,7 +6785,7 @@
       "description": null
     },
     {
-      "_score": 155.56943,
+      "_score": 159.5743,
       "id": 222698,
       "title": "A Treatise on Landscape Painting and Effect in Water Colours: From the First Rudiments, to the Finished Picture No. 5",
       "date_display": "1813",
@@ -6807,7 +6807,7 @@
       "description": null
     },
     {
-      "_score": 106.290344,
+      "_score": 104.687965,
       "id": 90048,
       "title": "Distant View of Niagara Falls",
       "date_display": "1830",
@@ -6832,7 +6832,7 @@
       "style_title": null
     },
     {
-      "_score": 98.00202,
+      "_score": 96.54497,
       "id": 146701,
       "title": "Mountain Brook",
       "date_display": "1863",
@@ -6856,7 +6856,7 @@
       "style_title": null
     },
     {
-      "_score": 95.539,
+      "_score": 94.09572,
       "id": 68792,
       "title": "A Marine",
       "date_display": "c. 1874–75",
@@ -6879,7 +6879,7 @@
       "style_title": null
     },
     {
-      "_score": 91.454414,
+      "_score": 90.07284,
       "id": 120163,
       "title": "Capture of the Tripoli by the Enterprise",
       "date_display": "1806–12",
@@ -6902,7 +6902,7 @@
       "style_title": null
     },
     {
-      "_score": 90.95751,
+      "_score": 89.58344,
       "id": 64715,
       "title": "After a Summer Shower",
       "date_display": "1894",
@@ -6925,7 +6925,7 @@
       "description": null
     },
     {
-      "_score": 90.75054,
+      "_score": 89.3796,
       "id": 57163,
       "title": "New England Scenery",
       "date_display": "1839",
@@ -6948,7 +6948,7 @@
       "style_title": null
     },
     {
-      "_score": 89.03743,
+      "_score": 87.69237,
       "id": 68388,
       "title": "Catskill Mountains",
       "date_display": "1870",
@@ -6971,7 +6971,7 @@
       "style_title": null
     },
     {
-      "_score": 87.46785,
+      "_score": 86.26388,
       "id": 81533,
       "title": "The Races at Longchamp",
       "date_display": "1866",
@@ -7022,7 +7022,7 @@
       "image_id": "e9ce5aca-4c34-c8dd-b8a1-91b3e3197211"
     },
     {
-      "_score": 86.30326,
+      "_score": 85.140526,
       "id": 43145,
       "title": "View of Delphi with a Procession",
       "date_display": "1673",
@@ -7073,7 +7073,7 @@
       "image_id": "2e7e28aa-a77b-c7f8-852b-708c1171f928"
     },
     {
-      "_score": 85.77603,
+      "_score": 84.48024,
       "id": 30701,
       "title": "The Old Mill",
       "date_display": "1849",
@@ -7096,7 +7096,7 @@
       "style_title": null
     },
     {
-      "_score": 85.15335,
+      "_score": 83.96389,
       "id": 61616,
       "title": "Oil Sketch for \"A Sunday on La Grande Jatte — 1884\"",
       "date_display": "1884",
@@ -7150,7 +7150,29 @@
       "short_description": null
     },
     {
-      "_score": 99.22052,
+      "_score": 98.660416,
+      "id": 80040,
+      "title": "“What idiots! You paint a religious picture for them and they laugh.... they don't even have a devotion to art!...,” plate 4 from Croquis Pris Au Salon par Daumier",
+      "date_display": "1865",
+      "place_of_origin": "France",
+      "medium_display": "Lithograph in black on white wove paper",
+      "credit_line": "William McCallin McKee Memorial Endowment",
+      "is_public_domain": true,
+      "artist_title": "Honoré-Victorin Daumier",
+      "term_titles": [
+        "lithograph",
+        "paper (fiber product)",
+        "print",
+        "prints and drawing"
+      ],
+      "classification_title": "lithograph",
+      "image_id": "a0830def-d5f6-9568-6a57-63dfffb758d2",
+      "short_description": null,
+      "style_title": null,
+      "description": null
+    },
+    {
+      "_score": 97.23292,
       "id": 65509,
       "title": "The Feast in the House of Simon",
       "date_display": "c. 1608–14",
@@ -7205,29 +7227,7 @@
       "image_id": "75886aaa-002a-2047-a05c-baf73f0ac093"
     },
     {
-      "_score": 99.05137,
-      "id": 80040,
-      "title": "“What idiots! You paint a religious picture for them and they laugh.... they don't even have a devotion to art!...,” plate 4 from Croquis Pris Au Salon par Daumier",
-      "date_display": "1865",
-      "place_of_origin": "France",
-      "medium_display": "Lithograph in black on white wove paper",
-      "credit_line": "William McCallin McKee Memorial Endowment",
-      "is_public_domain": true,
-      "artist_title": "Honoré-Victorin Daumier",
-      "term_titles": [
-        "lithograph",
-        "paper (fiber product)",
-        "print",
-        "prints and drawing"
-      ],
-      "classification_title": "lithograph",
-      "image_id": "a0830def-d5f6-9568-6a57-63dfffb758d2",
-      "short_description": null,
-      "style_title": null,
-      "description": null
-    },
-    {
-      "_score": 93.11343,
+      "_score": 91.20328,
       "id": 111615,
       "title": "The Destruction of Pharaoh's Army",
       "date_display": "1792",
@@ -7271,7 +7271,7 @@
       "description": null
     },
     {
-      "_score": 93.01111,
+      "_score": 91.08465,
       "id": 16499,
       "title": "Jesus Mocked by the Soldiers",
       "date_display": "1865",
@@ -7322,7 +7322,7 @@
       "short_description": null
     },
     {
-      "_score": 90.99734,
+      "_score": 89.29616,
       "id": 16159,
       "title": "Ecce Agnus Dei",
       "date_display": "1455–60",
@@ -7375,7 +7375,7 @@
       "short_description": null
     },
     {
-      "_score": 90.4355,
+      "_score": 88.59429,
       "id": 10509,
       "title": "Saint Helen Testing the True Cross",
       "date_display": "c. 1545",
@@ -7422,7 +7422,7 @@
       "short_description": null
     },
     {
-      "_score": 88.98258,
+      "_score": 87.22306,
       "id": 110242,
       "title": "The Temptation of Saint Jerome",
       "date_display": "1541–48",
@@ -7492,7 +7492,7 @@
       "image_id": "8b529ec9-7a47-28bf-8d09-3c993fa5d4aa"
     },
     {
-      "_score": 88.68744,
+      "_score": 86.900055,
       "id": 158137,
       "title": "The Death of St. Peter Martyr",
       "date_display": "1530–35",
@@ -7545,7 +7545,7 @@
       "short_description": null
     },
     {
-      "_score": 87.927986,
+      "_score": 86.1514,
       "id": 16313,
       "title": "Panels from the High Altar of the Charterhouse of Saint-Honoré, Thuison-les-Abbeville: The Ascension",
       "date_display": "c. 1495",
@@ -7597,53 +7597,7 @@
       "short_description": null
     },
     {
-      "_score": 87.66904,
-      "id": 36525,
-      "title": "Judith with the Head of Holofernes",
-      "date_display": "c. 1665",
-      "place_of_origin": "Italy",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Charles H. and Mary F. S. Worcester Collection",
-      "is_public_domain": true,
-      "artist_title": "Felice Ficherelli",
-      "term_titles": [
-        "oil on canvas",
-        "oil paint (paint)",
-        "painting",
-        "17th Century",
-        "women",
-        "Italian",
-        "oil paintings (visual works)",
-        "paint",
-        "canvas",
-        "paint",
-        "painting",
-        "oil painting",
-        "painting (image making)",
-        "painting techniques",
-        "blue",
-        "blue (color)",
-        "Christian subjects",
-        "Christianity",
-        "Italy",
-        "jewelry",
-        "necklace",
-        "religion",
-        "religious",
-        "religious figures",
-        "religious scenes",
-        "swords",
-        "painting",
-        "european painting"
-      ],
-      "style_title": "17th Century",
-      "classification_title": "oil on canvas",
-      "image_id": "5a7c5a7a-39f2-a172-9d98-2544c49d39f6",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 87.54394,
+      "_score": 85.941246,
       "id": 10022,
       "title": "Virgin of the Immaculate Conception",
       "date_display": "1710–20",
@@ -7689,7 +7643,53 @@
       "description": null
     },
     {
-      "_score": 87.36583,
+      "_score": 85.87754,
+      "id": 36525,
+      "title": "Judith with the Head of Holofernes",
+      "date_display": "c. 1665",
+      "place_of_origin": "Italy",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Charles H. and Mary F. S. Worcester Collection",
+      "is_public_domain": true,
+      "artist_title": "Felice Ficherelli",
+      "term_titles": [
+        "oil on canvas",
+        "oil paint (paint)",
+        "painting",
+        "17th Century",
+        "women",
+        "Italian",
+        "oil paintings (visual works)",
+        "paint",
+        "canvas",
+        "paint",
+        "painting",
+        "oil painting",
+        "painting (image making)",
+        "painting techniques",
+        "blue",
+        "blue (color)",
+        "Christian subjects",
+        "Christianity",
+        "Italy",
+        "jewelry",
+        "necklace",
+        "religion",
+        "religious",
+        "religious figures",
+        "religious scenes",
+        "swords",
+        "painting",
+        "european painting"
+      ],
+      "style_title": "17th Century",
+      "classification_title": "oil on canvas",
+      "image_id": "5a7c5a7a-39f2-a172-9d98-2544c49d39f6",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 85.74723,
       "id": 16169,
       "title": "The Beheading of Saint John the Baptist",
       "date_display": "1455–60",
@@ -7746,7 +7746,7 @@
       "image_id": "af91bb7d-0af4-ef10-5b4d-052da0b6e21a"
     },
     {
-      "_score": 87.25732,
+      "_score": 85.48498,
       "id": 15305,
       "title": "Virgin and Child Adored by Saint Francis",
       "date_display": "c. 1606",
@@ -7782,7 +7782,7 @@
       "description": null
     },
     {
-      "_score": 86.50991,
+      "_score": 84.78627,
       "id": 59897,
       "title": "Christ Carrying the Cross",
       "date_display": "c. 1425",
@@ -7843,7 +7843,7 @@
       "short_description": null
     },
     {
-      "_score": 84.968094,
+      "_score": 83.328735,
       "id": 16183,
       "title": "Saint Augustine's Vision of Saints Jerome and John the Baptist",
       "date_display": "1476",
@@ -7889,7 +7889,7 @@
       "short_description": null
     },
     {
-      "_score": 84.3466,
+      "_score": 82.66718,
       "id": 19322,
       "title": "Christ Washing the Disciples' Feet",
       "date_display": "c. 1630",
@@ -7934,7 +7934,7 @@
       "description": null
     },
     {
-      "_score": 83.66565,
+      "_score": 82.13606,
       "id": 15716,
       "title": "Saint Christopher Meets Satan; Saint Christopher before the King of Lycia",
       "date_display": "1480–85",
@@ -8013,50 +8013,59 @@
       "description": null
     },
     {
-      "_score": 83.4832,
-      "id": 30901,
-      "title": "The Denial of Saint Peter",
-      "date_display": "c. 1626",
-      "place_of_origin": "Netherlands",
-      "description": "<p>For this depiction of Peter denying that he is a follower of Jesus (seen under arrest in the background at right), Utrecht artist Hendrick ter Brugghen embraced the strong contrast of light and shadow and emotional urgency popularized by Italian painter Caravaggio. The dancing sparks of the fire illuminate the servant’s condemnatory finger and shroud the fearful saint in shadow, underlining the Dutch taste for naturalistic treatments of lighting in the 17th century.</p>\n",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Charles H. and Mary F. S. Worcester Collection",
+      "_score": 81.88582,
+      "id": 16179,
+      "title": "The Dream of Saint Jerome",
+      "date_display": "1476",
+      "place_of_origin": "Italy",
+      "description": "<p>This painting and its companion, <a href=\"https://www.artic.edu/artworks/16183/saint-augustine-s-vision-of-saints-jerome-and-john-the-baptist\"><em>Saint Augustine’s Vision</em></a>, depict scenes from the life of Saint Jerome, the scholar credited with translating the Bible from Hebrew into Latin, a more widely known language at the time, so that more people would be able to read it. The first scene shows Jerome’s dream of being punished by a heavenly council for preferring ancient Greek and Roman texts to the Christian Bible. In the second painting, Saint Augustine is composing Jerome’s eulogy when he is interrupted by a vision of the saint accompanied by John the Baptist, who praises Jerome as his equal.</p>\n",
+      "medium_display": "Tempera on panel",
+      "credit_line": "Mr. and Mrs. Martin A. Ryerson Collection",
       "is_public_domain": true,
-      "artist_title": "Hendrick Terbrugghen",
+      "artist_title": "Matteo di Giovanni",
       "term_titles": [
-        "oil on canvas",
-        "Christian subjects",
-        "17th Century",
-        "oil painting",
-        "oil paint (paint)",
-        "Christianity",
-        "fire",
-        "woman",
-        "men",
+        "tempera",
         "saints",
-        "biblical",
+        "15th century",
+        "panel painting",
+        "tempera",
+        "violence",
+        "translation",
+        "scholars",
+        "hermits",
+        "religious scenes",
+        "religious figures",
+        "religious",
+        "religion",
+        "Narrative",
+        "men",
+        "Christianity",
+        "Christian subjects",
+        "architecture",
+        "architecture",
+        "architechture",
         "painting techniques",
         "painting (image making)",
         "painting",
-        "painting",
+        "wood (plant material)",
+        "plant material",
+        "panel (wood)",
+        "organic material",
         "paint",
-        "canvas",
-        "paint",
-        "oil paintings (visual works)",
-        "dutch",
-        "religion",
-        "religious",
-        "religious scenes",
+        "Italian",
         "painting",
-        "european painting"
+        "european painting",
+        "Century of Progress",
+        "world's fairs",
+        "Chicago World's Fairs"
       ],
-      "style_title": "17th Century",
-      "classification_title": "oil on canvas",
-      "image_id": "4bddb973-9b39-42e4-6c53-795ecdc26dc6",
+      "style_title": "15th century",
+      "classification_title": "tempera",
+      "image_id": "336a83f3-c184-add1-ee03-f295aa97a0b0",
       "short_description": null
     },
     {
-      "_score": 1019.5255,
+      "_score": 995.9882,
       "id": 109819,
       "title": "Lozenge Composition with Yellow, Black, Blue, Red, and Gray",
       "date_display": "1921",
@@ -8090,7 +8099,7 @@
       "image_id": "25f660ee-f1db-d13b-42a5-56df97c98ba7"
     },
     {
-      "_score": 968.80084,
+      "_score": 946.464,
       "id": 8991,
       "title": "Improvisation No. 30 (Cannons)",
       "date_display": "1913",
@@ -8125,7 +8134,7 @@
       "image_id": "b5bc6b66-9e6e-fe57-dcec-fc49e820e904"
     },
     {
-      "_score": 950.0034,
+      "_score": 927.84045,
       "id": 129849,
       "title": "Houses at Murnau",
       "date_display": "1909",
@@ -8145,7 +8154,7 @@
       "description": null
     },
     {
-      "_score": 911.7866,
+      "_score": 890.601,
       "id": 152437,
       "title": "Fisherman's Cottage",
       "date_display": "1906",
@@ -8166,7 +8175,7 @@
       "description": null
     },
     {
-      "_score": 903.9565,
+      "_score": 882.9528,
       "id": 144467,
       "title": "Farm near Duivendrecht",
       "date_display": "c. 1916",
@@ -8187,7 +8196,7 @@
       "style_title": null
     },
     {
-      "_score": 796.2516,
+      "_score": 784.1785,
       "id": 8980,
       "title": "Landscape with Two Poplars",
       "date_display": "1912",
@@ -8215,7 +8224,7 @@
       "description": null
     },
     {
-      "_score": 759.36145,
+      "_score": 747.2639,
       "id": 65821,
       "title": "Composition (No. 1) Gray-Red",
       "date_display": "1935",
@@ -8241,7 +8250,7 @@
       "style_title": null
     },
     {
-      "_score": 749.7274,
+      "_score": 738.35974,
       "id": 9021,
       "title": "The Bewitched Mill",
       "date_display": "1913",
@@ -8274,7 +8283,7 @@
       "style_title": null
     },
     {
-      "_score": 738.17804,
+      "_score": 726.4179,
       "id": 8983,
       "title": "Painting with Troika",
       "date_display": "January 18, 1911",
@@ -8301,7 +8310,7 @@
       "style_title": null
     },
     {
-      "_score": 39.42478,
+      "_score": 38.99957,
       "id": 134047,
       "title": "Acrobat",
       "date_display": "1926",
@@ -8325,7 +8334,7 @@
       "description": null
     },
     {
-      "_score": 715.62225,
+      "_score": 704.77167,
       "id": 181460,
       "title": "Day (Truth)",
       "date_display": "1896/98",
@@ -8346,7 +8355,7 @@
       "description": null
     },
     {
-      "_score": 40.113693,
+      "_score": 39.70245,
       "id": 70466,
       "title": "The Solitude of the Soul",
       "date_display": "Modeled in plaster 1901; sculpted in marble 1914",
@@ -8372,7 +8381,7 @@
       "style_title": null
     },
     {
-      "_score": 696.39105,
+      "_score": 680.16925,
       "id": 58839,
       "title": "Woman (Elevation)",
       "date_display": "Modeled 1912–15, cast 1927",
@@ -8398,7 +8407,7 @@
       "image_id": "1f2b1e2f-4e91-c59f-057b-2833213e3219"
     },
     {
-      "_score": 681.98517,
+      "_score": 666.1564,
       "id": 22194,
       "title": "Hermine David",
       "date_display": "1907",
@@ -8422,7 +8431,7 @@
       "description": null
     },
     {
-      "_score": 662.05457,
+      "_score": 647.6923,
       "id": 64916,
       "title": "The Serf",
       "date_display": "1900–03, cast c. 1908",
@@ -8447,7 +8456,7 @@
       "style_title": null
     },
     {
-      "_score": 660.0601,
+      "_score": 644.66504,
       "id": 65908,
       "title": "The Dark Mountain",
       "date_display": "1909",
@@ -8469,7 +8478,7 @@
       "description": null
     },
     {
-      "_score": 653.60223,
+      "_score": 638.37714,
       "id": 65937,
       "title": "Landscape No. 3, Cash Entry Mines, New Mexico",
       "date_display": "1920",
@@ -8493,29 +8502,7 @@
       "image_id": "9b6f838e-5424-d030-2d2f-c9380830d631"
     },
     {
-      "_score": 647.5828,
-      "id": 148413,
-      "title": "Head of Apollo",
-      "date_display": "1900–1909",
-      "place_of_origin": "France",
-      "medium_display": "Bronze",
-      "credit_line": "Bequest of Florene May Schoenborn",
-      "is_public_domain": true,
-      "artist_title": "Emile-Antoine Bourdelle",
-      "term_titles": [
-        "bronze",
-        "metal",
-        "sculpture",
-        "modern and contemporary art"
-      ],
-      "classification_title": "bronze",
-      "image_id": "3bd8a6ad-484c-6c57-666d-26a70d1713b1",
-      "short_description": null,
-      "style_title": null,
-      "description": null
-    },
-    {
-      "_score": 645.5109,
+      "_score": 635.7234,
       "id": 27980,
       "title": "Woman on Rose Divan",
       "date_display": "1921",
@@ -8545,7 +8532,29 @@
       "description": null
     },
     {
-      "_score": 644.6708,
+      "_score": 632.5179,
+      "id": 148413,
+      "title": "Head of Apollo",
+      "date_display": "1900–1909",
+      "place_of_origin": "France",
+      "medium_display": "Bronze",
+      "credit_line": "Bequest of Florene May Schoenborn",
+      "is_public_domain": true,
+      "artist_title": "Emile-Antoine Bourdelle",
+      "term_titles": [
+        "bronze",
+        "metal",
+        "sculpture",
+        "modern and contemporary art"
+      ],
+      "classification_title": "bronze",
+      "image_id": "3bd8a6ad-484c-6c57-666d-26a70d1713b1",
+      "short_description": null,
+      "style_title": null,
+      "description": null
+    },
+    {
+      "_score": 629.63464,
       "id": 90207,
       "title": "Movement No. 10",
       "date_display": "1917",
@@ -8567,7 +8576,7 @@
       "description": null
     },
     {
-      "_score": 631.2112,
+      "_score": 621.6405,
       "id": 27962,
       "title": "James Vibert, Sculptor",
       "date_display": "1907",
@@ -8596,50 +8605,7 @@
       "description": null
     },
     {
-      "_score": 626.5448,
-      "id": 102216,
-      "title": "Stray Horse",
-      "date_display": "1906",
-      "place_of_origin": "France",
-      "medium_display": "Bronze",
-      "credit_line": "George F. Harding Collection",
-      "is_public_domain": true,
-      "artist_title": "E. Drappier",
-      "term_titles": [
-        "sculpture",
-        "modern and contemporary art"
-      ],
-      "classification_title": "sculpture",
-      "image_id": "2de06ffa-f5c9-e395-1423-be0e95d07b96",
-      "short_description": null,
-      "style_title": null,
-      "description": null
-    },
-    {
-      "_score": 623.86383,
-      "id": 118979,
-      "title": "El Zocodover, Toledo, Spain",
-      "date_display": "1910",
-      "place_of_origin": "United States",
-      "medium_display": "Oil on board",
-      "credit_line": "Anonymous loan",
-      "is_public_domain": true,
-      "artist_title": "Childe Hassam",
-      "term_titles": [
-        "oil paint (paint)",
-        "painting",
-        "Impressionism",
-        "cityscapes",
-        "modern and contemporary art"
-      ],
-      "style_title": "Impressionism",
-      "classification_title": "painting",
-      "image_id": "80b95c4e-8bed-3e21-1573-b339c6cda0f4",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 621.4909,
+      "_score": 612.0101,
       "id": 87045,
       "title": "Still Life with Geranium",
       "date_display": "1906",
@@ -8680,7 +8646,50 @@
       "style_title": null
     },
     {
-      "_score": 607.7531,
+      "_score": 611.9279,
+      "id": 102216,
+      "title": "Stray Horse",
+      "date_display": "1906",
+      "place_of_origin": "France",
+      "medium_display": "Bronze",
+      "credit_line": "George F. Harding Collection",
+      "is_public_domain": true,
+      "artist_title": "E. Drappier",
+      "term_titles": [
+        "sculpture",
+        "modern and contemporary art"
+      ],
+      "classification_title": "sculpture",
+      "image_id": "2de06ffa-f5c9-e395-1423-be0e95d07b96",
+      "short_description": null,
+      "style_title": null,
+      "description": null
+    },
+    {
+      "_score": 609.39844,
+      "id": 118979,
+      "title": "El Zocodover, Toledo, Spain",
+      "date_display": "1910",
+      "place_of_origin": "United States",
+      "medium_display": "Oil on board",
+      "credit_line": "Anonymous loan",
+      "is_public_domain": true,
+      "artist_title": "Childe Hassam",
+      "term_titles": [
+        "oil paint (paint)",
+        "painting",
+        "Impressionism",
+        "cityscapes",
+        "modern and contemporary art"
+      ],
+      "style_title": "Impressionism",
+      "classification_title": "painting",
+      "image_id": "80b95c4e-8bed-3e21-1573-b339c6cda0f4",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 598.43524,
       "id": 8987,
       "title": "Painting with Green Center",
       "date_display": "1913",
@@ -8709,7 +8718,7 @@
       "description": null
     },
     {
-      "_score": 605.5451,
+      "_score": 596.3636,
       "id": 68433,
       "title": "Sawmill, Outskirts of Paris",
       "date_display": "c. 1893/95",
@@ -8737,7 +8746,7 @@
       "description": null
     },
     {
-      "_score": 105.00307,
+      "_score": 103.63871,
       "id": 59798,
       "title": "Winged Figure",
       "date_display": "1889",
@@ -8762,7 +8771,7 @@
       "style_title": null
     },
     {
-      "_score": 102.62921,
+      "_score": 101.29569,
       "id": 72320,
       "title": "Elaine",
       "date_display": "1874",
@@ -8787,7 +8796,7 @@
       "style_title": null
     },
     {
-      "_score": 102.0181,
+      "_score": 100.775635,
       "id": 105466,
       "title": "The Battle between the Gods and the Giants",
       "date_display": "c. 1608",
@@ -8834,7 +8843,7 @@
       "image_id": "8111acce-c8ce-2ef3-5f32-61cd63905c7d"
     },
     {
-      "_score": 100.4706,
+      "_score": 99.212585,
       "id": 64996,
       "title": "Jupiter Rebuked by Venus",
       "date_display": "c. 1612",
@@ -8873,7 +8882,7 @@
       "image_id": "06f3c07e-c180-00ef-1f0e-5f1325461459"
     },
     {
-      "_score": 100.164795,
+      "_score": 98.96747,
       "id": 20579,
       "title": "Hercules and the Lernaean Hydra",
       "date_display": "1875–76",
@@ -8928,7 +8937,7 @@
       "short_description": null
     },
     {
-      "_score": 99.12387,
+      "_score": 97.95392,
       "id": 110507,
       "title": "In the Sea",
       "date_display": "1883",
@@ -8972,7 +8981,7 @@
       "image_id": "fa81bfb9-5a07-5e3c-33b4-4efde68981c8"
     },
     {
-      "_score": 94.50163,
+      "_score": 93.350365,
       "id": 110782,
       "title": "Diana and Actaeon",
       "date_display": "1585–92",
@@ -9015,7 +9024,7 @@
       "short_description": null
     },
     {
-      "_score": 92.41061,
+      "_score": 91.226585,
       "id": 74967,
       "title": "The Fates Gathering in the Stars",
       "date_display": "1887",
@@ -9043,7 +9052,7 @@
       "short_description": null
     },
     {
-      "_score": 92.28945,
+      "_score": 91.204414,
       "id": 93782,
       "title": "The Death of Orpheus",
       "date_display": "c. 1870",
@@ -9093,7 +9102,7 @@
       "description": null
     },
     {
-      "_score": 90.063614,
+      "_score": 89.0748,
       "id": 4788,
       "title": "Lady Sarah Bunbury Sacrificing to the Graces",
       "date_display": "1763–65",
@@ -9158,7 +9167,7 @@
       "image_id": "5a047a1c-d36e-e88d-05e7-845d3936159b"
     },
     {
-      "_score": 88.15329,
+      "_score": 87.0938,
       "id": 111647,
       "title": "The Abduction of Europa",
       "date_display": "1654–56",
@@ -9200,7 +9209,7 @@
       "short_description": null
     },
     {
-      "_score": 83.8074,
+      "_score": 82.79055,
       "id": 20155,
       "title": "Apollo Granting Phaeton Permission to Drive the Chariot of the Sun",
       "date_display": "c. 1695",
@@ -9248,7 +9257,7 @@
       "description": "<p>There may have been seven mythological paintings in <a href=\"https://www.artic.edu/artists/42097/johann-michael-rottmayr\">this series</a>, each corresponding to a celestial body and a day of the week. In the 17th century, the cosmological correlations between the movements of the planets and the passing of time were demonstrated through stories like this one. Here, Apollo, the Roman sun god of Sunday, grants his pleading son Phaeton permission to drive his chariot, a journey that would bring the light of day across the sky. Apollo’s daughters, the Heliades, and Chronos, the god of time, look on with interest. Phaeton, a human, would ultimately crash and set the earth ablaze.</p>\n"
     },
     {
-      "_score": 83.69471,
+      "_score": 82.67922,
       "id": 12876,
       "title": "Diana and Endymion",
       "date_display": "c. 1695",
@@ -9296,7 +9305,7 @@
       "description": "<p>Johann Michael Rottmayr's <a href=\"https://www.artic.edu/artists/42097/johann-michael-rottmayr\">scenes from Greek and Roman mythology</a> in the collection of the Art Institute may have belonged to a series of seven paintings, each representing a celestial body. Here, the lunar goddess Diana, wearing a crescent moon headpiece, delicately embraces her beloved shepherd Endymion. Her rich blue cloak flies out behind her as if caught in a cosmic wind and her shining eyes fix on the cherub behind him who reminds her to keep quiet. In fact, there is no need to worry, as she has placed Endymion in an eternal sleep so that she can gaze lovingly upon him each night.</p>\n"
     },
     {
-      "_score": 83.34518,
+      "_score": 82.33984,
       "id": 50309,
       "title": "Hercules and Hesione",
       "date_display": "c. 1630",
@@ -9342,7 +9351,7 @@
       "description": null
     },
     {
-      "_score": 83.31358,
+      "_score": 82.30801,
       "id": 192691,
       "title": "Apollo and Marsyas",
       "date_display": "1888",
@@ -9391,7 +9400,7 @@
       "short_description": null
     },
     {
-      "_score": 81.2041,
+      "_score": 80.29027,
       "id": 57148,
       "title": "The Death of Procris",
       "date_display": "1770, retouched 1803",
@@ -9447,7 +9456,7 @@
       "description": null
     },
     {
-      "_score": 80.56289,
+      "_score": 79.71615,
       "id": 102098,
       "title": "Phaeton Driving the Chariot of Phoebus",
       "date_display": "1475–1500",
@@ -9509,7 +9518,7 @@
       "description": null
     },
     {
-      "_score": 79.79573,
+      "_score": 79.06513,
       "id": 581,
       "title": "Fan",
       "date_display": "1775/1800",
@@ -9544,7 +9553,7 @@
       "description": null
     },
     {
-      "_score": 79.12679,
+      "_score": 78.19137,
       "id": 59956,
       "title": "The Wedding of Peleus and Thetis",
       "date_display": "1636",
@@ -9610,51 +9619,7 @@
       "short_description": null
     },
     {
-      "_score": 78.03883,
-      "id": 111620,
-      "title": "The Abduction of the Sabine Women",
-      "date_display": "c. 1675",
-      "place_of_origin": "Italy",
-      "description": "<p>Perhaps the most acclaimed and well-traveled artist in Italy at the end of the 17th century, Luca Giordano first emulated, then transformed the styles of numerous celebrated artists, including <a href=\"https://www.artic.edu/artists/36487/peter-paul-rubens\">Peter Paul Rubens</a>. Giordano’s artistic studies informed this monumental depiction of the myth of the founding of Rome. The Romans, plagued by a shortage of brides, invited the neighboring Sabines to a festival and then violently kidnapped their young women. Using the rapid, bold brushwork that earned him the nickname <em>Luca fa presto</em> (Luca paints quickly), Giordano wove vivid gestures and compositional inspiration from earlier treatments of the subject into one of his most theatrical and geometrically complex works.</p>\n",
-      "medium_display": "Oil on canvas",
-      "credit_line": "Major Acquisitions Centennial Endowment; Charles H. and Mary F. S. Worcester Collection",
-      "is_public_domain": true,
-      "artist_title": "Luca Giordano",
-      "term_titles": [
-        "oil on canvas",
-        "mythology",
-        "oil paint (paint)",
-        "oil painting",
-        "17th Century",
-        "gestural",
-        "festivals",
-        "night scenes",
-        "night",
-        "architechture",
-        "men",
-        "Rome",
-        "Roman",
-        "violence",
-        "women",
-        "Italian",
-        "oil paintings (visual works)",
-        "paint",
-        "canvas",
-        "paint",
-        "painting",
-        "painting",
-        "painting (image making)",
-        "painting techniques",
-        "painting",
-        "european painting"
-      ],
-      "style_title": "17th Century",
-      "classification_title": "oil on canvas",
-      "image_id": "c01c7f64-0098-a2d5-56c2-3eb0b28f68ae",
-      "short_description": null
-    },
-    {
-      "_score": 77.85966,
+      "_score": 76.979294,
       "id": 111645,
       "title": "The Abduction of Europa",
       "date_display": "1654–56",
@@ -9716,7 +9681,51 @@
       "description": null
     },
     {
-      "_score": 77.18235,
+      "_score": 76.96624,
+      "id": 111620,
+      "title": "The Abduction of the Sabine Women",
+      "date_display": "c. 1675",
+      "place_of_origin": "Italy",
+      "description": "<p>Perhaps the most acclaimed and well-traveled artist in Italy at the end of the 17th century, Luca Giordano first emulated, then transformed the styles of numerous celebrated artists, including <a href=\"https://www.artic.edu/artists/36487/peter-paul-rubens\">Peter Paul Rubens</a>. Giordano’s artistic studies informed this monumental depiction of the myth of the founding of Rome. The Romans, plagued by a shortage of brides, invited the neighboring Sabines to a festival and then violently kidnapped their young women. Using the rapid, bold brushwork that earned him the nickname <em>Luca fa presto</em> (Luca paints quickly), Giordano wove vivid gestures and compositional inspiration from earlier treatments of the subject into one of his most theatrical and geometrically complex works.</p>\n",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Major Acquisitions Centennial Endowment; Charles H. and Mary F. S. Worcester Collection",
+      "is_public_domain": true,
+      "artist_title": "Luca Giordano",
+      "term_titles": [
+        "oil on canvas",
+        "mythology",
+        "oil paint (paint)",
+        "oil painting",
+        "17th Century",
+        "gestural",
+        "festivals",
+        "night scenes",
+        "night",
+        "architechture",
+        "men",
+        "Rome",
+        "Roman",
+        "violence",
+        "women",
+        "Italian",
+        "oil paintings (visual works)",
+        "paint",
+        "canvas",
+        "paint",
+        "painting",
+        "painting",
+        "painting (image making)",
+        "painting techniques",
+        "painting",
+        "european painting"
+      ],
+      "style_title": "17th Century",
+      "classification_title": "oil on canvas",
+      "image_id": "c01c7f64-0098-a2d5-56c2-3eb0b28f68ae",
+      "short_description": null
+    },
+    {
+      "_score": 76.28135,
       "id": 4089,
       "title": "Venus and Mars with Cupid and the Three Graces in a Landscape",
       "date_display": "1585–95",
@@ -9778,7 +9787,7 @@
       "description": null
     },
     {
-      "_score": 74.7833,
+      "_score": 73.74006,
       "id": 81566,
       "title": "The Sacred Grove, Beloved of the Arts and the Muses",
       "date_display": "1884–89",
@@ -9837,7 +9846,7 @@
       "short_description": null
     },
     {
-      "_score": 74.618385,
+      "_score": 73.59348,
       "id": 878,
       "title": "Wounded Eurydice",
       "date_display": "1868–70",
@@ -9878,6 +9887,982 @@
       "image_id": "f024968c-3cb1-f1cc-b1af-2a1d40b7e193",
       "short_description": null,
       "description": null
+    },
+    {
+      "_score": 47.00942,
+      "id": 153,
+      "title": "The Lost Pleiade",
+      "date_display": "1874–75",
+      "place_of_origin": "United States",
+      "description": "<p>In creating this sculpture, Randolph Rogers was inspired by the Roman author Ovid’s poem <em>Fasti</em>, which recounts the legend of the seven sister stars who lived among the constellations. Merope, the youngest sister, married Sisyphus and hid herself in shame because he was mortal. The sculpture depicts the outcast Merope as she seeks her celestial family. With its unclothed torso, <em>The Lost Pleiade</em> is the closest Rogers came to creating a complete nude. Although a conteporary viewers may not have understood the reference to <em>Fasti</em>, the title nonetheless reassured Victorian audiences that this partially nude woman had literary antecedents and was thus not intended as a sensual form.</p>\n",
+      "medium_display": "Marble",
+      "credit_line": "Gift of Mrs. E. S. Stickney",
+      "is_public_domain": true,
+      "artist_title": "Randolph Rogers",
+      "term_titles": [
+        "sculpture",
+        "marble",
+        "mythology",
+        "metamorphic rock",
+        "rock",
+        "inorganic material",
+        "american arts",
+        "female figures",
+        "people",
+        "portraits"
+      ],
+      "classification_title": "sculpture",
+      "image_id": "f9549068-ad7e-c9ce-6fed-5c7a429024fb",
+      "short_description": null,
+      "style_title": null
+    },
+    {
+      "_score": 73.127594,
+      "id": 102591,
+      "title": "Bust of Paris",
+      "date_display": "1809",
+      "place_of_origin": "Italy",
+      "description": "<p>The enormously popular Neoclassical sculptor Antonio Canova frequently made replicas or variants of his major works to satisfy the demand for his art. While executing a commission from Empress Josephine of France for a full-length statue of Paris (State Hermitage Museum, Saint Petersburg), Canova carved this bust for his friend Antoine Quatremère de Quincy, a French Neoclassical theorist and critic who greatly inﬂuenced the sculptor’s artistic ideals. It depicts the moment in Greek mythology when the shepherd Paris, called upon by Zeus to judge who was the most beautiful among Hera, Athena, and Aphrodite, turns to gaze at the three goddesses. Canova exploited the subject to create an ideal head, balancing the geometry of pure forms with the sensuousness of Paris’s expression. Upon receipt of the gift, Quatremère stated: “There is in [the bust] a mixture of the heroic and the voluptuous, the noble and the amorous. I do not believe that in any other work you have ever combined such life, softness, and chaste purity.” Documents indicate that Canova made four full-length marble statues and at least seven busts of Paris, a clear indication of the sculpture’s popularity.</p>\n",
+      "medium_display": "Marble",
+      "credit_line": "Harold Stuart Endowment; purchased with funds provided by Mrs. Harold T. Martin",
+      "is_public_domain": true,
+      "artist_title": "Antonio Canova",
+      "term_titles": [
+        "bust/head",
+        "Neoclassicism",
+        "sculpting",
+        "marble",
+        "mythology",
+        "mythical",
+        "Greek mythology",
+        "busts",
+        "nineteenth century",
+        "19th century",
+        "carving",
+        "Italian",
+        "metamorphic rock",
+        "rock",
+        "inorganic material",
+        "sculpture",
+        "hats",
+        "men",
+        "mythological figures"
+      ],
+      "style_title": "Neoclassicism",
+      "classification_title": "bust/head",
+      "image_id": "3e41420d-2bae-5863-1980-fd39a78e1ffe",
+      "short_description": null
+    },
+    {
+      "_score": 58.746014,
+      "id": 11143,
+      "title": "The Fear of Love",
+      "date_display": "1742",
+      "place_of_origin": "France",
+      "medium_display": "Terracotta",
+      "credit_line": "Richard T. Crane, Jr. Endowment",
+      "is_public_domain": true,
+      "artist_title": "Jean-Louis Lemoyne",
+      "term_titles": [
+        "statuette",
+        "terracotta",
+        "forming",
+        "18th Century",
+        "love",
+        "inorganic material",
+        "sculpture",
+        "cupids",
+        "french",
+        "terracotta (sculpture)",
+        "clay",
+        "firing (heating)",
+        "modeling (forming)",
+        "sculpting",
+        "sculpture techniques",
+        "cherubs",
+        "children",
+        "figure",
+        "nudes",
+        "woman"
+      ],
+      "style_title": "18th Century",
+      "classification_title": "statuette",
+      "image_id": "70f69d6a-2cac-0e55-9913-7027ca19f5cb",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 48.33684,
+      "id": 454,
+      "title": "Statuette of a Seated Girl",
+      "date_display": "330-320 BCE",
+      "place_of_origin": "Athens",
+      "medium_display": "terracotta",
+      "credit_line": "Museum Purchase Fund",
+      "is_public_domain": true,
+      "artist_title": "Ancient Greek",
+      "term_titles": [
+        "statuette",
+        "terracotta",
+        "molding",
+        "hellenistic",
+        "youth",
+        "earthenware",
+        "inorganic material",
+        "forming",
+        "attic",
+        "ceramics",
+        "sculpture",
+        "ancient art",
+        "Greek"
+      ],
+      "style_title": "hellenistic",
+      "classification_title": "statuette",
+      "image_id": "38ea638d-c8f7-f916-da08-ac7730b6ed5a",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 45.483364,
+      "id": 56166,
+      "title": "Relief of a Falling Warrior",
+      "date_display": "2nd century",
+      "place_of_origin": "Piraeus",
+      "description": "<p>Around 435 BCE, the Greek sculptor Pheidias adorned the front of the shield at the side of his gold-and-ivory statue of Athena in the Parthenon with scenes of Greeks battling Amazons in the Trojan War. In Roman times, certain figures from this complex struggle were lifted out of their original context and enlarged to become decorative reliefs for the walls of a colonnade or courtyard.</p>\n<p>Here a wounded Greek warrior collapses to the ground after being struck a mortal blow from behind. The dying warrior’s noble countenance, the fillet or ribbon tied around his forehead, and his powerful, athletic body epitomize what Pheidias and his pupils sought to project as the ideal of mature male dignity in the decade when Athens was at the height of its power in the eastern Mediterranean world. Some five centuries later, collectors such as the Roman emperor Hadrian sought this Pheidian style, translated from a circular golden shield to a rectangular marble relief, to decorate their palaces and villas. Athenian sculptors of the Roman era made a good living creating and exporting such memories of past glories. This relief and a number of others were found near Athens in the harbor of Piraeus, where they had been lost in a disaster, likely while awaiting shipment.</p>\n",
+      "short_description": "Roman artists adapted Greek imagery for new functions and contexts. Originally, this image of a wounded Greek warrior decorated the shield of the monumental gold-and-ivory statue of the goddess Athena in the Parthenon. Roughly five to six centuries later, the same figure was adapted from its original religious setting for use on this Roman architectural relief, likely for a public building or a lavish home.",
+      "medium_display": "Marble",
+      "credit_line": "Gift of Alfred E. Hamill",
+      "is_public_domain": true,
+      "artist_title": "Ancient Roman",
+      "term_titles": [
+        "marble",
+        "carving",
+        "Classical",
+        "sculpture",
+        "mythology",
+        "marble",
+        "metamorphic rock",
+        "rock",
+        "inorganic material",
+        "relief",
+        "sculpture techniques",
+        "imperial (roman)",
+        "stone",
+        "ancient art",
+        "ancient",
+        "warriors"
+      ],
+      "style_title": "Classical",
+      "classification_title": "sculpture",
+      "image_id": "9e4f8394-4072-5915-2eea-e55132035165"
+    },
+    {
+      "_score": 45.07196,
+      "id": 566,
+      "title": "Life Cast of the Hands and Face of Abraham Lincoln",
+      "date_display": "Cast in plaster 1860; cast in bronze by 1888",
+      "place_of_origin": "Chicago",
+      "medium_display": "Bronze",
+      "credit_line": "Gift of the artist",
+      "is_public_domain": true,
+      "artist_title": "Leonard Wells Volk",
+      "term_titles": [
+        "sculpture",
+        "bronze",
+        "Abraham Lincoln",
+        "copper alloy",
+        "nonferrous metal",
+        "metal",
+        "inorganic material",
+        "american arts",
+        "faces",
+        "hands",
+        "presidents"
+      ],
+      "classification_title": "sculpture",
+      "image_id": "8ad03fff-be28-ab22-689c-8f022b5e181c",
+      "short_description": null,
+      "style_title": null,
+      "description": null
+    },
+    {
+      "_score": 43.983532,
+      "id": 18754,
+      "title": "Bust of a Woman",
+      "date_display": "1851",
+      "place_of_origin": "France",
+      "description": "<p>This fictionalized portrayal is a companion piece to the <a href=\"https://www.artic.edu/artworks/18751/bust-of-said-abdullah-of-the-darfour-people\"><em>Bust of Saïd Abdullah</em></a>. Charles-Henri-Joseph Cordier initially titled this stylized and highly detailed sculpture <em>Vénus africaine</em> (African Venus), thus conflating the ancient Greek goddess of love and beauty with his rendering of a Black woman. Her parted lips and bare shoulders and chest evoke the erotic associations of her former namesake deity, while the draping of her costume suggests Classical refinement.</p>\n<p>In 1851 the anthropological gallery of the National History Museum in Paris commissioned casts of this work and the likeness of Abdullah. Cordier’s ethnographic busts reflect mid-19th-century discourse on aesthetics and colonization as well as pseudoscientific theories of race.</p>\n",
+      "medium_display": "Bronze",
+      "credit_line": "Ada Turnbull Hertle Fund",
+      "is_public_domain": true,
+      "artist_title": "Charles Henri Joseph Cordier",
+      "term_titles": [
+        "portraits: African subject",
+        "casting (process)",
+        "19th century",
+        "bronze",
+        "sculpture",
+        "bust/head",
+        "African",
+        "sculpture",
+        "women",
+        "woman",
+        "busts",
+        "portraits: female subject",
+        "portrait",
+        "bronze",
+        "french",
+        "sculpture techniques",
+        "orientalizing",
+        "copper alloy",
+        "nonferrous metal",
+        "metal",
+        "inorganic material"
+      ],
+      "style_title": "19th century",
+      "classification_title": "sculpture",
+      "image_id": "725d19ab-4bd4-e640-86f2-a119e0a154e0",
+      "short_description": null
+    },
+    {
+      "_score": 43.97548,
+      "id": 18751,
+      "title": "Bust of Saïd Abdullah of the Darfour People",
+      "date_display": "1848",
+      "place_of_origin": "France",
+      "description": "<p>This naturalistic yet idealized likeness depicts a formerly enslaved Sudanese man, Saïd Abdullah, who visited Charles-Henri-Joseph Cordier in his Paris studio. It reflects the 19th-century fascination with non-European costumes, customs, and physiognomies, called Orientalism, as well as the burgeoning field of anthropology. A plaster cast of this bust was Cordier’s first entry to the Paris Salon, in 1848, and one of the few sculpted images of Black figures shown publicly up to that point. The air of nobility this figure projects may reflect opposition to the practice of slavery, which had been abolished in the French colonies that same year.</p>\n",
+      "medium_display": "Bronze",
+      "credit_line": "Ada Turnbull Hertle Fund",
+      "is_public_domain": true,
+      "artist_title": "Charles Henri Joseph Cordier",
+      "term_titles": [
+        "bust/head",
+        "casting (process)",
+        "19th century",
+        "portraits: African subject",
+        "bronze",
+        "busts",
+        "sculpture",
+        "Male",
+        "man",
+        "African",
+        "bronze",
+        "french",
+        "sculpture techniques",
+        "orientalizing",
+        "portrait",
+        "portraits: male subject",
+        "copper alloy",
+        "nonferrous metal",
+        "metal",
+        "inorganic material",
+        "sculpture"
+      ],
+      "style_title": "19th century",
+      "classification_title": "bust/head",
+      "image_id": "6a0e3e40-1e36-2109-378f-3fc5d29176b3",
+      "short_description": null
+    },
+    {
+      "_score": 43.598564,
+      "id": 86380,
+      "title": "Buddha",
+      "date_display": "Tang dynasty (A.D. 618–907), c. 725/50",
+      "place_of_origin": "China",
+      "description": "<p>Following its introduction from India centuries earlier, Buddhism flourished in China under the powerfully cosmopolitan Tang dynasty. Characteristic of Tang style in its robust, tapered physique, this monumental figure exhibits iconographic features distinctive to the Buddha: tightly curled hair covering a cranial mound symbolizes his enlightenment; and a forehead depression that originally held a stone or jewel represents wisdom. The articulated folds of the deity's flowing robe integrate Indian sensuality with a distinctly Tang blend of realism and linear elegance. Capping the deity's right shoulder, this garment discreetly modifies a fully bare-chested style described in Indian monastic texts.</p>\n<p>The stepped pedestal rises from a base encircled by lotus petals pure white flowers that rise from muddy water and thereby evoke Buddhist beliefs in purity and the search for enlightenment. Above, musicians encircling the tapered stem evoke an ideal, celestial realm.</p>\n<p>Together with two attendant bodhisattvas in the Art Institute collection (1930.84 and 1930.85), this sculpture came to the museum in 1930 with a note of its discovery in a temple known as Cangfosi in northern Hebei province. Neither archaeological nor written records have been located to confirm this reported site. The scale and stone medium of these figures suggest that they were commissioned for a cave temple or shrine—a chamber carved into the face of a mountain or cliff.</p>\n",
+      "short_description": "Buddhism flourished in China under the Tang dynasty (618–907). This monumental Buddha exhibits the deity's distinctive features: tightly curled hair covering a cranial mound that symbolizes his enlightenment and a forehead depression that originally held a jewel representing wisdom. The pedestal base is ringed with lotus petals, white flowers that rise from muddy water and evoke Buddhist beliefs in purity and the search for enlightenment.",
+      "medium_display": "Limestone with traces of polychromy",
+      "credit_line": "Lucy Maud Buckingham Collection",
+      "is_public_domain": true,
+      "term_titles": [
+        "limestone",
+        "stone",
+        "Chinese (culture or style)",
+        "sculpture",
+        "asian art"
+      ],
+      "style_title": "Chinese (culture or style)",
+      "classification_title": "stone",
+      "image_id": "598c063a-8071-e4d5-675e-111961495738",
+      "artist_title": null
+    },
+    {
+      "_score": 43.11003,
+      "id": 21023,
+      "title": "Buddha Shakyamuni Seated in Meditation (Dhyanamudra)",
+      "date_display": "Chola period, about 12th century",
+      "place_of_origin": "Nagapattinam",
+      "description": "<p>This meditating Buddha comes from the coastal town of Nagapattinam in southern India, which was, as a result of settlers from Srivijaya (Indonesia), one of the few places where Buddhism was still flourishing in the twelfth century. The Buddha—with his elongated earlobes, the wheel marks on his palms, the <em>urna</em> between his brows, and the cranial protuberance covered with snail-shell curls—is seated in the posture of meditation, with his hands resting on his lap <em>(dhyanamudra)</em>, wearing a seemingly diaphanous monastic garment. As in other images from Nagapattinam, a flame emerges out of the Buddha’s cranial protuberance, probably signifying wisdom. This monumental granite sculpture originally would have graced a monastic site at Nagapattinam, which is also well known for its Buddhist bronzes. The Tamil inscription covering its back is no longer legible.</p>\n",
+      "short_description": "Seated in a posture called the lotus, this serene 12th-century Buddha rests his hands and feet atop one another as he gazes downward, his eyelids lowered, the touch of a smile on his lips. The symbols that distinguish him as a great being—such as the <em>urna</em> on his forehead and <em>ushnisha</em> on top of his head—are delicately carved in the hard granite.",
+      "medium_display": "Granite",
+      "credit_line": "Purchased with funds provided by Mr. and Mrs. Robert Andrew Brown",
+      "is_public_domain": true,
+      "term_titles": [
+        "granite (rock)",
+        "stone (unidentified)",
+        "sculpting",
+        "Buddha",
+        "South Asian",
+        "stone",
+        "stone",
+        "sculpture",
+        "asian art",
+        "chola"
+      ],
+      "style_title": "South Asian",
+      "classification_title": "stone (unidentified)",
+      "image_id": "0675f9a9-1a7b-c90a-3bb6-7f7be2afb678",
+      "artist_title": null
+    },
+    {
+      "_score": 43.088333,
+      "id": 719,
+      "title": "A Burgher of Calais (Jean d'Aire)",
+      "date_display": "Modeled 1889",
+      "place_of_origin": "France",
+      "description": "<p>This statue is a part of the famous sculptural group <em>The Burghers of Calais</em>, made by Auguste Rodin to commemorate a tragic episode from the 14th century, during the Hundred Years’ War between France and England. Rodin depicted the moment when six courageous men offered them-selves as hostages to Edward III, the king of England, in exchange for the liberation of the city of Calais from a siege that had been starving inhabitants for nearly a year. This plaster statue (painted to simulate bronze) was exhibited in the 1893 World’s Columbian Exposition, held in Chicago, and entered the Art Institute’s collection that year.</p>\n",
+      "medium_display": "Plaster",
+      "credit_line": "Gift of Mrs. Addie M. Hall Ellis",
+      "is_public_domain": true,
+      "artist_title": "Auguste Rodin",
+      "term_titles": [
+        "plaster",
+        "Post-Impressionism",
+        "sculpture",
+        "men",
+        "sculpture techniques",
+        "large scale",
+        "coating (material)",
+        "portraits",
+        "portraits: male subject",
+        "portrait",
+        "man",
+        "figure",
+        "figure",
+        "french",
+        "plaster",
+        "forming",
+        "modeling (forming)",
+        "sculpting",
+        "19th century",
+        "nineteenth century"
+      ],
+      "style_title": "Post-Impressionism",
+      "classification_title": "sculpture",
+      "image_id": "d0a72b06-f1ee-4464-d58c-5e39bc0534b3",
+      "short_description": null
+    },
+    {
+      "_score": 42.92417,
+      "id": 136981,
+      "title": "God Krishna Dancing on the Head of the Snake Demon Kaliya (Kaliyadamana)",
+      "date_display": "Vijayanagar period, 14th century",
+      "place_of_origin": "Tamil Nadu",
+      "medium_display": "Bronze",
+      "credit_line": "Kate S. Buckingham Fund",
+      "is_public_domain": true,
+      "term_titles": [
+        "bronze",
+        "bronze",
+        "South Asian",
+        "metal",
+        "sculpture",
+        "asian art"
+      ],
+      "style_title": "South Asian",
+      "classification_title": "bronze",
+      "image_id": "bc06c92f-4117-639f-9e9c-5fe927972be1",
+      "short_description": null,
+      "description": null,
+      "artist_title": null
+    },
+    {
+      "_score": 42.617317,
+      "id": 15596,
+      "title": "Buddha Seated in Meditation",
+      "date_display": "18th–19th century",
+      "place_of_origin": "Southeast Asia",
+      "medium_display": "SIlver, cast with base worked in repoussé",
+      "credit_line": "James W. and Marilynn Alsdorf Collection",
+      "is_public_domain": true,
+      "term_titles": [
+        "silver",
+        "silver",
+        "repoussé",
+        "Southeast Asian",
+        "metal",
+        "sculpture",
+        "asian art"
+      ],
+      "style_title": "Southeast Asian",
+      "classification_title": "silver",
+      "image_id": "635328dc-7f38-3a3a-9ce2-cb95b78c82db",
+      "short_description": null,
+      "description": null,
+      "artist_title": null
+    },
+    {
+      "_score": 42.469364,
+      "id": 50909,
+      "title": "Head of an Apostle",
+      "date_display": "c. 1210",
+      "place_of_origin": "France",
+      "description": "<p>This elongated head—with its piercing, almond-shaped eyes and prominent mouth with parted lips—projects a commanding presence in limestone, despite its absent body. The unidentified subject likely represents an apostle from the biblical New Testament: Such full-length and larger-than-life-size depictions of Jesus’s followers often decorated columns or door jambs in Gothic cathedrals. The stylistic qualities of this head correspond to the architectural decoration produced for the west facade of Notre-Dame Cathedral in Paris around 1200. The symmetry of the head, the locks carved into cascading waves, the leanness of the cheeks, and the physical grandeur lacking emotional content, all resemble sculptures on that part of the building.</p>\n<p>The missing nose attests to the head’s storied history. It was allegedly excavated in the mid-1800s during the modernization of Paris; revolutionaries might have deliberately damaged and buried it half a century earlier because of the cathedral’s long association with the monarchy. This provenance, however, remains unsubstantiated. Neutron activation analysis has shown that the limestone used for this object derives from the same quarry as other figures from Notre-Dame, as well as the cathedral at Sens, about seventy-five miles from Paris. This sculpture awaits further technical, stylistic, and provenance research to verify its origins.</p>\n",
+      "short_description": "This head probably comes from a full-length sculpture of one of the apostles flanking the portals of Notre-Dame Cathedral in Paris. With its references to ancient and Byzantine models, it bears all the stylistic hallmarks of the beginning of the Gothic style. Medieval sculpture like this was purposely damaged in the 1790s during the French Revolution because of its presumed royal associations.",
+      "medium_display": "Limestone",
+      "credit_line": "Kate S. Buckingham Endowment",
+      "is_public_domain": true,
+      "artist_title": "French",
+      "term_titles": [
+        "limestone",
+        "sculpting",
+        "men",
+        "limestone",
+        "medieval",
+        "bust/head",
+        "carbonate rock",
+        "sedimentary rock",
+        "rock",
+        "inorganic material",
+        "sculpture",
+        "Christianity",
+        "beards",
+        "Christian subjects",
+        "religious figures",
+        "religious",
+        "religion",
+        "bearded man",
+        "head",
+        "french",
+        "sculpture/stone",
+        "carving",
+        "sculpture techniques",
+        "stonework",
+        "13th century"
+      ],
+      "style_title": "medieval",
+      "classification_title": "limestone",
+      "image_id": "73eb91ee-cde0-2f6d-843f-4f263d5c409f"
+    },
+    {
+      "_score": 41.009037,
+      "id": 671,
+      "title": "Bust of Seleucus Nicator of Syria",
+      "date_display": "Late 19th century reproduction",
+      "place_of_origin": "Italy",
+      "medium_display": "Bronze",
+      "credit_line": "Gift of H. N. Higinbotham",
+      "is_public_domain": true,
+      "artist_title": "Sabatino de Angelis",
+      "term_titles": [
+        "bronze",
+        "19th century",
+        "portrait",
+        "metal",
+        "sculpture",
+        "ancient art",
+        "man"
+      ],
+      "style_title": "19th century",
+      "classification_title": "bronze",
+      "image_id": "334bed08-2b18-4fe8-6e69-031e4c9e40aa",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 40.820847,
+      "id": 7500,
+      "title": "Shukongojin",
+      "date_display": "13th century",
+      "place_of_origin": "Japan",
+      "description": "<p>Known also as the Thunderbolt Deity, this fierce protector of the Law of Buddhism brandishes a <em>vajra</em> that symbolizes the power of wisdom to penetrate ignorance and destroy evil. Shukongo-jin belongs to the same category of gods as the paired guardians (<em>nio</em>) often placed on either side of the gateways to Buddhist temples.</p>\n<p>Because Shukongo-jin was not intended to blend into a sculptural ensemble, artists frequently used the opportunity to portray him as an occasion for eccentric and exaggerated effects. This figure, for example, is comparatively small, but it still conveys the threat of explosive force appropriate to the deity’s role. He stands surrounded by churning waves, while a divine wind blows his garments about and fuels the flames that are his hair. The hyperrealism of his chiseled muscles and bulging veins is a characteristic feature of Japanese sculpture of this era.</p>\n",
+      "short_description": "This statue of Shukongojin, the Buddhist Thunderbolt Diety, would have originally stood guard at a temple and was intended to frighten away any thoughts or entities that might distract devotees in the sacred temple space. A fierce protector of the Law of Buddhism, he brandishes a <em>vajra</em>, a ritualistic weapon symbolizing the power of wisdom to penetrate ignorance and destroy evil.",
+      "medium_display": "Wood with traces of polychromy",
+      "credit_line": "Kate S. Buckingham Endowment",
+      "is_public_domain": true,
+      "term_titles": [
+        "wood",
+        "wood (plant material)",
+        "Japanese (culture or style)",
+        "sculpture",
+        "asian art"
+      ],
+      "style_title": "Japanese (culture or style)",
+      "classification_title": "wood",
+      "image_id": "fbc2e336-47f6-8e18-a3ee-0c7852c058d0",
+      "artist_title": null
+    },
+    {
+      "_score": 40.79826,
+      "id": 50921,
+      "title": "Capital with the Adoration of the Magi",
+      "date_display": "c. 1120",
+      "place_of_origin": "Spain",
+      "medium_display": "Limestone",
+      "credit_line": "Kate S. Buckingham Endowment",
+      "is_public_domain": true,
+      "artist_title": "Spanish",
+      "term_titles": [
+        "architectural sculpture",
+        "stone",
+        "carving",
+        "medieval",
+        "architechture",
+        "rock",
+        "inorganic material",
+        "sculpture",
+        "spanish",
+        "sculpture/stone",
+        "stone",
+        "limestone",
+        "limestone",
+        "sculpting",
+        "sculpture techniques",
+        "stonework",
+        "architectural",
+        "architectural fragment",
+        "architectural fragments",
+        "Christian subjects",
+        "Christianity",
+        "king",
+        "religion",
+        "religious",
+        "religious scenes"
+      ],
+      "style_title": "medieval",
+      "classification_title": "architectural sculpture",
+      "image_id": "b434df24-2cd7-9a3e-189a-6381b69cd46e",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 40.282494,
+      "id": 14668,
+      "title": "Cameo",
+      "date_display": "Late 18th century",
+      "place_of_origin": "Burslem",
+      "medium_display": "Stoneware (jasperware)",
+      "credit_line": "Gift of Mrs. Robert D. Graff",
+      "is_public_domain": true,
+      "artist_title": "Wedgwood Manufactory",
+      "term_titles": [
+        "cameo (sculpture)",
+        "jasper ware",
+        "sculpture",
+        "stoneware",
+        "ceramic",
+        "inorganic material",
+        "stoneware",
+        "european decorative arts",
+        "ceramics"
+      ],
+      "classification_title": "cameo (sculpture)",
+      "image_id": "cf5e3deb-9da3-17be-70cd-77cfda4e8063",
+      "short_description": null,
+      "style_title": null,
+      "description": null
+    },
+    {
+      "_score": 40.21151,
+      "id": 19118,
+      "title": "Door Boss: Bust of a Satyress",
+      "date_display": "c. 1580",
+      "place_of_origin": "Northern Italy",
+      "medium_display": "Bronze",
+      "credit_line": "Gift of Mr. and Mrs. Chester D. Tripp",
+      "is_public_domain": true,
+      "artist_title": "Northern Italian",
+      "term_titles": [
+        "functional object",
+        "bronze",
+        "satyr",
+        "sculpting",
+        "sixteenth century",
+        "copper alloy",
+        "nonferrous metal",
+        "metal",
+        "inorganic material",
+        "sculpture",
+        "busts",
+        "mythology",
+        "mythological figures",
+        "mythical",
+        "woman",
+        "bronze",
+        "Italian",
+        "metal",
+        "casting (process)",
+        "firing (heating)",
+        "sculpture techniques",
+        "16th Century"
+      ],
+      "style_title": "sixteenth century",
+      "classification_title": "functional object",
+      "image_id": "32c7afd7-bcc0-e5cd-9d4c-74dc04504bd6",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 40.11808,
+      "id": 30354,
+      "title": "Hercules and Antaeus",
+      "date_display": "1600–1625",
+      "place_of_origin": "Italy",
+      "description": "<p>Both this bronze and <a href=\"https://www.artic.edu/artworks/30358/hercules-and-lichas\">it’s companion</a> depict the legendary labors of Hercules, a frequent subject in Renaissance and later art. The figures may derive from a lost series of silver statuettes after models by sculptor <a href=\"https://www.artic.edu/artists/50313/giovanni-da-bologna\">Giambologna</a> and were likely cast by his leading workshop assistant, Pietro Tacca. They reflect Giambologna’s intense preoccupation with the human form in motion, which transforms a violent struggle into a ballet.</p>\n",
+      "medium_display": "Bronze",
+      "credit_line": "Robert Allerton Endowment",
+      "is_public_domain": true,
+      "artist_title": "Pietro Tacca",
+      "term_titles": [
+        "statuette",
+        "bronze",
+        "sculpting",
+        "17th Century",
+        "men",
+        "copper alloy",
+        "nonferrous metal",
+        "metal",
+        "inorganic material",
+        "sculpture",
+        "battles",
+        "bronze",
+        "figure",
+        "Italian",
+        "metal",
+        "casting (process)",
+        "firing (heating)",
+        "sculpture techniques",
+        "figures",
+        "nudes",
+        "sculpture",
+        "strength",
+        "wrestlers"
+      ],
+      "style_title": "17th Century",
+      "classification_title": "statuette",
+      "image_id": "9de2aea3-ecd8-584f-9e71-417149fec73a",
+      "short_description": null
+    },
+    {
+      "_score": 39.929737,
+      "id": 4453,
+      "title": "Bodhisattva",
+      "date_display": "Tang dynasty (618–906), c. 725/50",
+      "place_of_origin": "China",
+      "description": "<p>In eighth-century China, Buddhist sculptors adopted new standards of secular beauty for spiritual figures. Whereas images of the Buddha appear sternly formal, bodhisattvas, the merciful deities that guide men toward salvation, often display more humanistic features. This bodhisattva's graceful proportions, upswept hair, sinuous drapery, and delicate jewelry convey an appealing physical elegance. Seated informally, the deity is poised to step down from its pedestal.</p>\n<p>Together with a large seated Buddha and another attendant bodhisattva in the Art Institute collection (1930.83, 1930.84), this sculpture came to the museum in 1930 with a note of its discovery in a temple known as Cangfosi in northern Hebei province. Neither archaeological nor written records have been located to confirm this reported site. The scale and stone medium of these figures suggest that they were commissioned for a cave temple or shrine a chamber carved into the face of a mountain or cliff.</p>\n",
+      "short_description": "In eighth-century China, Buddhist sculptors adopted new standards of secular beauty for spiritual figures. Whereas images of the Buddha appear sternly formal, bodhisattvas, the merciful deities that guide people toward salvation, often display more sympathetic and relatable features. This bodhisattva's graceful proportions, upswept hair, sinuous drapery, and delicate jewelry convey an appealing physical elegance.",
+      "medium_display": "Limestone with traces of polychromy",
+      "credit_line": "Lucy Maud Buckingham Collection",
+      "is_public_domain": true,
+      "term_titles": [
+        "limestone",
+        "stone",
+        "Chinese (culture or style)",
+        "sculpture",
+        "asian art"
+      ],
+      "style_title": "Chinese (culture or style)",
+      "classification_title": "stone",
+      "image_id": "3f8067b6-eb0f-7be8-661d-518a8c8f8155",
+      "artist_title": null
+    },
+    {
+      "_score": 39.895443,
+      "id": 27747,
+      "title": "Corpus of Christ",
+      "date_display": "13th century",
+      "place_of_origin": "Spain",
+      "description": "<p>This sculpture of the crucified Christ reportedly came from a church in Banyoles in northeastern Spain. It was displayed between the choir and the nave, which was the space reserved for the congregation.  Originally painted and gilded, it would have provided a dramatic focal point for the faithful.  Christ’s figure, with drooping head, closed eyes, and limp body, emphasizes his humanity and suffering.  This resigned treatment of the crucified Christ gained currency around 1200, in contrast to more upright and triumphant representations of Christ on the cross of earlier centuries.</p>\n",
+      "medium_display": "Wood with traces of polychromy",
+      "credit_line": "Kate S. Buckingham Endowment",
+      "is_public_domain": true,
+      "artist_title": "Spanish",
+      "term_titles": [
+        "wood (plant material)",
+        "sculpture",
+        "Jesus",
+        "woodworking",
+        "medieval",
+        "large scale",
+        "plant material",
+        "Christianity",
+        "Christian subjects",
+        "religious figures",
+        "religious",
+        "religion",
+        "man",
+        "body",
+        "figure",
+        "crucifixions",
+        "corpus christi",
+        "sculpture/wood",
+        "spanish",
+        "wood",
+        "organic material",
+        "polychrome",
+        "polychromy",
+        "carving",
+        "painting",
+        "painting (coating)",
+        "sculpting",
+        "sculpture techniques",
+        "13th century"
+      ],
+      "style_title": "medieval",
+      "classification_title": "sculpture",
+      "image_id": "41f65b0b-c5e9-ba52-744e-14c64d924f1e",
+      "short_description": null
+    },
+    {
+      "_score": 39.88022,
+      "id": 27150,
+      "title": "Upper Part of a Tabernacle for the Holy Sacrament",
+      "date_display": "1461/63",
+      "place_of_origin": "Italy",
+      "description": "<p>This relief represents the upper of two surviving panels from the altar of the Holy Sacrament in the Roman basilica of Santa Maria Maggiore (the second panel remains in the church). Dismantled in 1573, the altar was one of a number of improvements in the church instituted by Cardinal Guillaume d’Estouteville, archpriest of Santa Maria Maggiore during much of the 15th century. As his name implies, Isaia came from a family of stone carvers in Pisa and was active in Rome from 1428. He produced a number of tombs and altars there, although the majority no longer survive. Between 1455 and 1458, he collaborated on one of the grandest sculptural projects of the century, the Arch of Alfonso I of Aragon in Naples.</p>\n",
+      "medium_display": "Marble",
+      "credit_line": "Gift of Mr. and Mrs. Potter Palmer",
+      "is_public_domain": true,
+      "artist_title": "Isaia da Pisa",
+      "term_titles": [
+        "relief",
+        "marble",
+        "carving",
+        "15th century",
+        "angels",
+        "metamorphic rock",
+        "rock",
+        "inorganic material",
+        "sculpture",
+        "Italian",
+        "sculpture techniques",
+        "stonework",
+        "doors",
+        "sculpture"
+      ],
+      "style_title": "15th century",
+      "classification_title": "relief",
+      "image_id": "72c335d0-85ce-9d7a-a066-b6a1cc2c00dd",
+      "short_description": null
+    },
+    {
+      "_score": 39.82676,
+      "id": 286,
+      "title": "Portrait Head of a Woman",
+      "date_display": "about 140",
+      "place_of_origin": "Rome",
+      "medium_display": "marble",
+      "credit_line": "Museum Purchase Fund",
+      "is_public_domain": true,
+      "artist_title": "Ancient Roman",
+      "term_titles": [
+        "sculpture",
+        "heads",
+        "marble",
+        "roman (ancient, style or period)",
+        "marble",
+        "stone",
+        "ancient art",
+        "females"
+      ],
+      "style_title": "roman (ancient, style or period)",
+      "classification_title": "sculpture",
+      "image_id": "95d7115d-3f78-ce6a-d174-d8f3581c9aa4",
+      "short_description": null,
+      "description": null
+    },
+    {
+      "_score": 39.780373,
+      "id": 137222,
+      "title": "Hevajra and Nairātmyā in Ritual Embrace (Yab-Yum)",
+      "date_display": "c. 1600",
+      "place_of_origin": "Kathmandu Valley",
+      "medium_display": "Gilt bronze with pigments",
+      "credit_line": "Gift of the Alsdorf Foundation",
+      "is_public_domain": true,
+      "term_titles": [
+        "bronze",
+        "bronze",
+        "Himalayan",
+        "metal",
+        "sculpture",
+        "asian art"
+      ],
+      "style_title": "Himalayan",
+      "classification_title": "bronze",
+      "image_id": "cf932528-92bb-77f8-51d0-145f681643df",
+      "short_description": null,
+      "description": null,
+      "artist_title": null
+    },
+    {
+      "_score": 39.75965,
+      "id": 19146,
+      "title": "Trumpet Player",
+      "date_display": "c. 1760/70",
+      "place_of_origin": "Vienna",
+      "medium_display": "Hard-paste porcelain, polychrome enamels, and gilding",
+      "credit_line": "Mrs. Alfred Hoyt Granger gift",
+      "is_public_domain": true,
+      "artist_title": "Vienna State Porcelain Manufactory",
+      "term_titles": [
+        "sculpture",
+        "hard-paste porcelain",
+        "porcelain",
+        "porcelain",
+        "european decorative arts",
+        "ceramics"
+      ],
+      "classification_title": "sculpture",
+      "image_id": "0192f86e-179b-ad60-e727-d9e547d90c3d",
+      "short_description": null,
+      "style_title": null,
+      "description": null
+    },
+    {
+      "_score": 39.622265,
+      "id": 102611,
+      "title": "Veranda Post (Òpó Ògògá)",
+      "date_display": "1910-14",
+      "place_of_origin": "Ikere",
+      "description": "<p>One of four posts sculpted for the palace of the king (<em>ogoga</em>) of Ikere, this evocative image of the Yoruba concept of a divine ruler is a masterwork of Olowe of Ise. The renowned artist’s dynamic style can be distinguished by the interrelationships between figures, their exaggerated proportions, and the use of open space. The sculptor’s diminutive portrayal of the king suggests his dependence on others, and his crown has been emphasized to evoke the spiritual power residing within it.  The towering image of the king’s senior wife standing behind him underscores her superior status as a guardian of her husband’s interests, endowed with keen political understanding and supernatural knowledge. She would have placed the crown on the king’s head during his enthronement ceremony. The smaller figures at the king’s feet represent one of his junior wives and the flute-playing trickster god Eshu.</p>\n",
+      "medium_display": "Wood and pigment",
+      "credit_line": "Major Acquisitions Centennial Fund",
+      "is_public_domain": true,
+      "artist_title": "Olowe of Ise",
+      "term_titles": [
+        "wood (plant material)",
+        "carving",
+        "yoruba",
+        "sculpture",
+        "divine rulership",
+        "wood",
+        "arts of Africa",
+        "Arts of Africa",
+        "Coastal West Africa",
+        "pigment",
+        "rulers (people)",
+        "crowns",
+        "sculpting",
+        "painting (coating)",
+        "african Art",
+        "architectural fragment",
+        "kings",
+        "royalty",
+        "african art",
+        "carving",
+        "people",
+        "royal personages",
+        "women",
+        "architectural sculpture",
+        "communities",
+        "enthronement",
+        "spirit",
+        "supernatural",
+        "architectural fragments"
+      ],
+      "style_title": "yoruba",
+      "classification_title": "sculpture",
+      "image_id": "fec5d023-0b46-45df-eb57-cbf64e24121d",
+      "short_description": null
+    },
+    {
+      "_score": 39.420345,
+      "id": 148369,
+      "title": "Twenty-Armed Dancing God Ganesha, Remover of Obstacles",
+      "date_display": "10th century",
+      "place_of_origin": "Madhya Pradesh",
+      "description": "<p>Ganesha, the elephant-headed son of Shiva and Parvati, is one of South Asia’s most popular deities. Venerated as the “Remover of Obstacles,” the portly god is here shown mid-step performing an exuberant dance while heavenly musicians play instruments at the corners of the frame. Beside Ganesha’s lifted left foot, his rat <em>vahana</em> (mount) peers up at him in adoration. In a feat of artistic virtuosity, the sculptor has carved twenty arms on this Ganesha, which is remarkable both for its quality and iconography. The image originally occupied an exterior wall niche of a temple, perhaps one dedicated to his father Shiva.</p>\n",
+      "medium_display": "Sandstone",
+      "credit_line": "James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
+      "is_public_domain": true,
+      "term_titles": [
+        "sandstone",
+        "sandstone",
+        "South Asian",
+        "stone",
+        "sculpture",
+        "asian art"
+      ],
+      "style_title": "South Asian",
+      "classification_title": "sandstone",
+      "image_id": "a69ebcf9-ba90-fa33-3239-27a9bd7c8883",
+      "short_description": null,
+      "artist_title": null
+    },
+    {
+      "_score": 39.04314,
+      "id": 24548,
+      "title": "Shiva as Lord of the Dance (Nataraja)",
+      "date_display": "Chola period, about 10th/11th century",
+      "place_of_origin": "Tamil Nadu",
+      "description": "<p>Shiva, one of the most important Hindu divinities, is here depicted as the Lord of the Dance (<em>Nataraja</em>), an iconic image in Indian art. Shiva’s cosmic dance sets in motion the rhythm of life and death; it pervades the universe, as symbolized by the ring of fire that is filled with the loose, snakelike locks of the god’s hair. One pair of his arms balances the flame of destruction and the hand drum (<em>damaru</em>) that beats the rhythm of life while another performs symbolic gestures: the raised right hand means “fear not,” and the left hand (<em>gajahasta</em>) pointing down toward his raised left foot signifies release from the ignorance that hinders realization of the ultimate reality. Shiva is shown perfectly balanced, with his right leg planted on the demon of darkness (<em>Apasmara</em>), stamping out ignorance. The tiny figure of the personified river goddess, Ganga, is caught up in his matted, flowing locks. Shiva was believed to break the fall of the great Ganges River as it descends from the Himalayas by standing beneath the waters, which divide over his hair, becoming the seven holy rivers of India. This classic bronze comes from the Chola period in the south of India. Icons such as this were carried in procession during religious ceremonies.</p>\n",
+      "short_description": "In this sculpture, the Hindu divinity Shiva, depicted as the Lord of the Dance (Nataraja), performs a cosmic dance that sets in motion the rhythm of life and death. Considered one of the most sublime images in Indian art, the dancing Shiva destroys everything, allowing creation to start all over again. His right leg, planted on the demon of darkness, stamps out ignorance.",
+      "medium_display": "Bronze",
+      "credit_line": "Kate S. Buckingham Fund",
+      "is_public_domain": true,
+      "term_titles": [
+        "bronze",
+        "bronze",
+        "casting (process)",
+        "dancing",
+        "South Asian",
+        "metal",
+        "sculpture",
+        "asian art",
+        "chola",
+        "gods (deities)",
+        "Hindu",
+        "religion",
+        "Shiva Nataraja"
+      ],
+      "style_title": "South Asian",
+      "classification_title": "bronze",
+      "image_id": "cf50f037-5fb2-e197-0e56-3ae701edb3e2",
+      "artist_title": null
+    },
+    {
+      "_score": 83.4832,
+      "id": 30901,
+      "title": "The Denial of Saint Peter",
+      "date_display": "c. 1626",
+      "place_of_origin": "Netherlands",
+      "description": "<p>For this depiction of Peter denying that he is a follower of Jesus (seen under arrest in the background at right), Utrecht artist Hendrick ter Brugghen embraced the strong contrast of light and shadow and emotional urgency popularized by Italian painter Caravaggio. The dancing sparks of the fire illuminate the servant’s condemnatory finger and shroud the fearful saint in shadow, underlining the Dutch taste for naturalistic treatments of lighting in the 17th century.</p>\n",
+      "medium_display": "Oil on canvas",
+      "credit_line": "Charles H. and Mary F. S. Worcester Collection",
+      "is_public_domain": true,
+      "artist_title": "Hendrick Terbrugghen",
+      "term_titles": [
+        "oil on canvas",
+        "Christian subjects",
+        "17th Century",
+        "oil painting",
+        "oil paint (paint)",
+        "Christianity",
+        "fire",
+        "woman",
+        "men",
+        "saints",
+        "biblical",
+        "painting techniques",
+        "painting (image making)",
+        "painting",
+        "painting",
+        "paint",
+        "canvas",
+        "paint",
+        "oil paintings (visual works)",
+        "dutch",
+        "religion",
+        "religious",
+        "religious scenes",
+        "painting",
+        "european painting"
+      ],
+      "style_title": "17th Century",
+      "classification_title": "oil on canvas",
+      "image_id": "4bddb973-9b39-42e4-6c53-795ecdc26dc6",
+      "short_description": null
     },
     {
       "_score": 73.83053,
@@ -9928,902 +10913,6 @@
       "description": "<p>Johann Michael Rottmayr began painting ambitious <a href=\"https://www.artic.edu/artists/42097/johann-michael-rottmayr\">series like this one</a><br>in his native Salzburg, Austria, after returning from several years of artistic training in Venice. His new works featured mythological subjects, energetic compositions, and a saturated palette—the same qualities that inspired Flemish Baroque artists.</p>\n<p>Here, the Roman god Mercury has beheaded the guardsman Argus, whose crimson blood pours out from his neck onto the ground below. Mortal Io, who has been transformed into a cow by her lover Jupiter, looks on placidly as Mercury rescues her from her imprisonment by Jupiter’s jealous wife, Juno.</p>\n"
     },
     {
-      "_score": 59.336143,
-      "id": 11143,
-      "title": "The Fear of Love",
-      "date_display": "1742",
-      "place_of_origin": "France",
-      "medium_display": "Terracotta",
-      "credit_line": "Richard T. Crane, Jr. Endowment",
-      "is_public_domain": true,
-      "artist_title": "Jean-Louis Lemoyne",
-      "term_titles": [
-        "statuette",
-        "terracotta",
-        "forming",
-        "18th Century",
-        "love",
-        "inorganic material",
-        "sculpture",
-        "cupids",
-        "french",
-        "terracotta (sculpture)",
-        "clay",
-        "firing (heating)",
-        "modeling (forming)",
-        "sculpting",
-        "sculpture techniques",
-        "cherubs",
-        "children",
-        "figure",
-        "nudes",
-        "woman"
-      ],
-      "style_title": "18th Century",
-      "classification_title": "statuette",
-      "image_id": "70f69d6a-2cac-0e55-9913-7027ca19f5cb",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 48.79706,
-      "id": 454,
-      "title": "Statuette of a Seated Girl",
-      "date_display": "330-320 BCE",
-      "place_of_origin": "Athens",
-      "medium_display": "terracotta",
-      "credit_line": "Museum Purchase Fund",
-      "is_public_domain": true,
-      "artist_title": "Ancient Greek",
-      "term_titles": [
-        "statuette",
-        "terracotta",
-        "molding",
-        "hellenistic",
-        "youth",
-        "earthenware",
-        "inorganic material",
-        "forming",
-        "attic",
-        "ceramics",
-        "sculpture",
-        "ancient art",
-        "Greek"
-      ],
-      "style_title": "hellenistic",
-      "classification_title": "statuette",
-      "image_id": "38ea638d-c8f7-f916-da08-ac7730b6ed5a",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 47.46556,
-      "id": 153,
-      "title": "The Lost Pleiade",
-      "date_display": "1874–75",
-      "place_of_origin": "United States",
-      "description": "<p>In creating this sculpture, Randolph Rogers was inspired by the Roman author Ovid’s poem <em>Fasti</em>, which recounts the legend of the seven sister stars who lived among the constellations. Merope, the youngest sister, married Sisyphus and hid herself in shame because he was mortal. The sculpture depicts the outcast Merope as she seeks her celestial family. With its unclothed torso, <em>The Lost Pleiade</em> is the closest Rogers came to creating a complete nude. Although a conteporary viewers may not have understood the reference to <em>Fasti</em>, the title nonetheless reassured Victorian audiences that this partially nude woman had literary antecedents and was thus not intended as a sensual form.</p>\n",
-      "medium_display": "Marble",
-      "credit_line": "Gift of Mrs. E. S. Stickney",
-      "is_public_domain": true,
-      "artist_title": "Randolph Rogers",
-      "term_titles": [
-        "sculpture",
-        "marble",
-        "mythology",
-        "metamorphic rock",
-        "rock",
-        "inorganic material",
-        "american arts",
-        "female figures",
-        "people",
-        "portraits"
-      ],
-      "classification_title": "sculpture",
-      "image_id": "f9549068-ad7e-c9ce-6fed-5c7a429024fb",
-      "short_description": null,
-      "style_title": null
-    },
-    {
-      "_score": 45.92674,
-      "id": 56166,
-      "title": "Relief of a Falling Warrior",
-      "date_display": "2nd century",
-      "place_of_origin": "Piraeus",
-      "description": "<p>Around 435 BCE, the Greek sculptor Pheidias adorned the front of the shield at the side of his gold-and-ivory statue of Athena in the Parthenon with scenes of Greeks battling Amazons in the Trojan War. In Roman times, certain figures from this complex struggle were lifted out of their original context and enlarged to become decorative reliefs for the walls of a colonnade or courtyard.</p>\n<p>Here a wounded Greek warrior collapses to the ground after being struck a mortal blow from behind. The dying warrior’s noble countenance, the fillet or ribbon tied around his forehead, and his powerful, athletic body epitomize what Pheidias and his pupils sought to project as the ideal of mature male dignity in the decade when Athens was at the height of its power in the eastern Mediterranean world. Some five centuries later, collectors such as the Roman emperor Hadrian sought this Pheidian style, translated from a circular golden shield to a rectangular marble relief, to decorate their palaces and villas. Athenian sculptors of the Roman era made a good living creating and exporting such memories of past glories. This relief and a number of others were found near Athens in the harbor of Piraeus, where they had been lost in a disaster, likely while awaiting shipment.</p>\n",
-      "short_description": "Roman artists adapted Greek imagery for new functions and contexts. Originally, this image of a wounded Greek warrior decorated the shield of the monumental gold-and-ivory statue of the goddess Athena in the Parthenon. Roughly five to six centuries later, the same figure was adapted from its original religious setting for use on this Roman architectural relief, likely for a public building or a lavish home.",
-      "medium_display": "Marble",
-      "credit_line": "Gift of Alfred E. Hamill",
-      "is_public_domain": true,
-      "artist_title": "Ancient Roman",
-      "term_titles": [
-        "marble",
-        "carving",
-        "Classical",
-        "sculpture",
-        "mythology",
-        "marble",
-        "metamorphic rock",
-        "rock",
-        "inorganic material",
-        "relief",
-        "sculpture techniques",
-        "imperial (roman)",
-        "stone",
-        "ancient art",
-        "ancient",
-        "warriors"
-      ],
-      "style_title": "Classical",
-      "classification_title": "sculpture",
-      "image_id": "9e4f8394-4072-5915-2eea-e55132035165"
-    },
-    {
-      "_score": 45.493595,
-      "id": 566,
-      "title": "Life Cast of the Hands and Face of Abraham Lincoln",
-      "date_display": "Cast in plaster 1860; cast in bronze by 1888",
-      "place_of_origin": "Chicago",
-      "medium_display": "Bronze",
-      "credit_line": "Gift of the artist",
-      "is_public_domain": true,
-      "artist_title": "Leonard Wells Volk",
-      "term_titles": [
-        "sculpture",
-        "bronze",
-        "Abraham Lincoln",
-        "copper alloy",
-        "nonferrous metal",
-        "metal",
-        "inorganic material",
-        "american arts",
-        "faces",
-        "hands",
-        "presidents"
-      ],
-      "classification_title": "sculpture",
-      "image_id": "8ad03fff-be28-ab22-689c-8f022b5e181c",
-      "short_description": null,
-      "style_title": null,
-      "description": null
-    },
-    {
-      "_score": 44.398384,
-      "id": 18754,
-      "title": "Bust of a Woman",
-      "date_display": "1851",
-      "place_of_origin": "France",
-      "description": "<p>This fictionalized portrayal is a companion piece to the <a href=\"https://www.artic.edu/artworks/18751/bust-of-said-abdullah-of-the-darfour-people\"><em>Bust of Saïd Abdullah</em></a>. Charles-Henri-Joseph Cordier initially titled this stylized and highly detailed sculpture <em>Vénus africaine</em> (African Venus), thus conflating the ancient Greek goddess of love and beauty with his rendering of a Black woman. Her parted lips and bare shoulders and chest evoke the erotic associations of her former namesake deity, while the draping of her costume suggests Classical refinement.</p>\n<p>In 1851 the anthropological gallery of the National History Museum in Paris commissioned casts of this work and the likeness of Abdullah. Cordier’s ethnographic busts reflect mid-19th-century discourse on aesthetics and colonization as well as pseudoscientific theories of race.</p>\n",
-      "medium_display": "Bronze",
-      "credit_line": "Ada Turnbull Hertle Fund",
-      "is_public_domain": true,
-      "artist_title": "Charles Henri Joseph Cordier",
-      "term_titles": [
-        "portraits: African subject",
-        "casting (process)",
-        "19th century",
-        "bronze",
-        "sculpture",
-        "bust/head",
-        "African",
-        "sculpture",
-        "women",
-        "woman",
-        "busts",
-        "portraits: female subject",
-        "portrait",
-        "bronze",
-        "french",
-        "sculpture techniques",
-        "orientalizing",
-        "copper alloy",
-        "nonferrous metal",
-        "metal",
-        "inorganic material"
-      ],
-      "style_title": "19th century",
-      "classification_title": "sculpture",
-      "image_id": "725d19ab-4bd4-e640-86f2-a119e0a154e0",
-      "short_description": null
-    },
-    {
-      "_score": 44.390255,
-      "id": 18751,
-      "title": "Bust of Saïd Abdullah of the Darfour People",
-      "date_display": "1848",
-      "place_of_origin": "France",
-      "description": "<p>This naturalistic yet idealized likeness depicts a formerly enslaved Sudanese man, Saïd Abdullah, who visited Charles-Henri-Joseph Cordier in his Paris studio. It reflects the 19th-century fascination with non-European costumes, customs, and physiognomies, called Orientalism, as well as the burgeoning field of anthropology. A plaster cast of this bust was Cordier’s first entry to the Paris Salon, in 1848, and one of the few sculpted images of Black figures shown publicly up to that point. The air of nobility this figure projects may reflect opposition to the practice of slavery, which had been abolished in the French colonies that same year.</p>\n",
-      "medium_display": "Bronze",
-      "credit_line": "Ada Turnbull Hertle Fund",
-      "is_public_domain": true,
-      "artist_title": "Charles Henri Joseph Cordier",
-      "term_titles": [
-        "bust/head",
-        "casting (process)",
-        "19th century",
-        "portraits: African subject",
-        "bronze",
-        "busts",
-        "sculpture",
-        "Male",
-        "man",
-        "African",
-        "bronze",
-        "french",
-        "sculpture techniques",
-        "orientalizing",
-        "portrait",
-        "portraits: male subject",
-        "copper alloy",
-        "nonferrous metal",
-        "metal",
-        "inorganic material",
-        "sculpture"
-      ],
-      "style_title": "19th century",
-      "classification_title": "bust/head",
-      "image_id": "6a0e3e40-1e36-2109-378f-3fc5d29176b3",
-      "short_description": null
-    },
-    {
-      "_score": 44.07392,
-      "id": 86380,
-      "title": "Buddha",
-      "date_display": "Tang dynasty (A.D. 618–907), c. 725/50",
-      "place_of_origin": "China",
-      "description": "<p>Following its introduction from India centuries earlier, Buddhism flourished in China under the powerfully cosmopolitan Tang dynasty. Characteristic of Tang style in its robust, tapered physique, this monumental figure exhibits iconographic features distinctive to the Buddha: tightly curled hair covering a cranial mound symbolizes his enlightenment; and a forehead depression that originally held a stone or jewel represents wisdom. The articulated folds of the deity's flowing robe integrate Indian sensuality with a distinctly Tang blend of realism and linear elegance. Capping the deity's right shoulder, this garment discreetly modifies a fully bare-chested style described in Indian monastic texts.</p>\n<p>The stepped pedestal rises from a base encircled by lotus petals pure white flowers that rise from muddy water and thereby evoke Buddhist beliefs in purity and the search for enlightenment. Above, musicians encircling the tapered stem evoke an ideal, celestial realm.</p>\n<p>Together with two attendant bodhisattvas in the Art Institute collection (1930.84 and 1930.85), this sculpture came to the museum in 1930 with a note of its discovery in a temple known as Cangfosi in northern Hebei province. Neither archaeological nor written records have been located to confirm this reported site. The scale and stone medium of these figures suggest that they were commissioned for a cave temple or shrine—a chamber carved into the face of a mountain or cliff.</p>\n",
-      "short_description": "Buddhism flourished in China under the Tang dynasty (618–907). This monumental Buddha exhibits the deity's distinctive features: tightly curled hair covering a cranial mound that symbolizes his enlightenment and a forehead depression that originally held a jewel representing wisdom. The pedestal base is ringed with lotus petals, white flowers that rise from muddy water and evoke Buddhist beliefs in purity and the search for enlightenment.",
-      "medium_display": "Limestone with traces of polychromy",
-      "credit_line": "Lucy Maud Buckingham Collection",
-      "is_public_domain": true,
-      "term_titles": [
-        "limestone",
-        "stone",
-        "Chinese (culture or style)",
-        "sculpture",
-        "asian art"
-      ],
-      "style_title": "Chinese (culture or style)",
-      "classification_title": "stone",
-      "image_id": "598c063a-8071-e4d5-675e-111961495738",
-      "artist_title": null
-    },
-    {
-      "_score": 43.52834,
-      "id": 21023,
-      "title": "Buddha Shakyamuni Seated in Meditation (Dhyanamudra)",
-      "date_display": "Chola period, about 12th century",
-      "place_of_origin": "Nagapattinam",
-      "description": "<p>This meditating Buddha comes from the coastal town of Nagapattinam in southern India, which was, as a result of settlers from Srivijaya (Indonesia), one of the few places where Buddhism was still flourishing in the twelfth century. The Buddha—with his elongated earlobes, the wheel marks on his palms, the <em>urna</em> between his brows, and the cranial protuberance covered with snail-shell curls—is seated in the posture of meditation, with his hands resting on his lap <em>(dhyanamudra)</em>, wearing a seemingly diaphanous monastic garment. As in other images from Nagapattinam, a flame emerges out of the Buddha’s cranial protuberance, probably signifying wisdom. This monumental granite sculpture originally would have graced a monastic site at Nagapattinam, which is also well known for its Buddhist bronzes. The Tamil inscription covering its back is no longer legible.</p>\n",
-      "short_description": "Seated in a posture called the lotus, this serene 12th-century Buddha rests his hands and feet atop one another as he gazes downward, his eyelids lowered, the touch of a smile on his lips. The symbols that distinguish him as a great being—such as the <em>urna</em> on his forehead and <em>ushnisha</em> on top of his head—are delicately carved in the hard granite.",
-      "medium_display": "Granite",
-      "credit_line": "Purchased with funds provided by Mr. and Mrs. Robert Andrew Brown",
-      "is_public_domain": true,
-      "term_titles": [
-        "granite (rock)",
-        "stone (unidentified)",
-        "sculpting",
-        "Buddha",
-        "South Asian",
-        "stone",
-        "stone",
-        "sculpture",
-        "asian art",
-        "chola"
-      ],
-      "style_title": "South Asian",
-      "classification_title": "stone (unidentified)",
-      "image_id": "0675f9a9-1a7b-c90a-3bb6-7f7be2afb678",
-      "artist_title": null
-    },
-    {
-      "_score": 43.468807,
-      "id": 719,
-      "title": "A Burgher of Calais (Jean d'Aire)",
-      "date_display": "Modeled 1889",
-      "place_of_origin": "France",
-      "description": "<p>This statue is a part of the famous sculptural group <em>The Burghers of Calais</em>, made by Auguste Rodin to commemorate a tragic episode from the 14th century, during the Hundred Years’ War between France and England. Rodin depicted the moment when six courageous men offered them-selves as hostages to Edward III, the king of England, in exchange for the liberation of the city of Calais from a siege that had been starving inhabitants for nearly a year. This plaster statue (painted to simulate bronze) was exhibited in the 1893 World’s Columbian Exposition, held in Chicago, and entered the Art Institute’s collection that year.</p>\n",
-      "medium_display": "Plaster",
-      "credit_line": "Gift of Mrs. Addie M. Hall Ellis",
-      "is_public_domain": true,
-      "artist_title": "Auguste Rodin",
-      "term_titles": [
-        "plaster",
-        "Post-Impressionism",
-        "sculpture",
-        "men",
-        "sculpture techniques",
-        "large scale",
-        "coating (material)",
-        "portraits",
-        "portraits: male subject",
-        "portrait",
-        "man",
-        "figure",
-        "figure",
-        "french",
-        "plaster",
-        "forming",
-        "modeling (forming)",
-        "sculpting",
-        "19th century",
-        "nineteenth century"
-      ],
-      "style_title": "Post-Impressionism",
-      "classification_title": "sculpture",
-      "image_id": "d0a72b06-f1ee-4464-d58c-5e39bc0534b3",
-      "short_description": null
-    },
-    {
-      "_score": 43.405556,
-      "id": 136981,
-      "title": "God Krishna Dancing on the Head of the Snake Demon Kaliya (Kaliyadamana)",
-      "date_display": "Vijayanagar period, 14th century",
-      "place_of_origin": "Tamil Nadu",
-      "medium_display": "Bronze",
-      "credit_line": "Kate S. Buckingham Fund",
-      "is_public_domain": true,
-      "term_titles": [
-        "bronze",
-        "bronze",
-        "South Asian",
-        "metal",
-        "sculpture",
-        "asian art"
-      ],
-      "style_title": "South Asian",
-      "classification_title": "bronze",
-      "image_id": "bc06c92f-4117-639f-9e9c-5fe927972be1",
-      "short_description": null,
-      "description": null,
-      "artist_title": null
-    },
-    {
-      "_score": 43.081978,
-      "id": 15596,
-      "title": "Buddha Seated in Meditation",
-      "date_display": "18th–19th century",
-      "place_of_origin": "Southeast Asia",
-      "medium_display": "SIlver, cast with base worked in repoussé",
-      "credit_line": "James W. and Marilynn Alsdorf Collection",
-      "is_public_domain": true,
-      "term_titles": [
-        "silver",
-        "silver",
-        "repoussé",
-        "Southeast Asian",
-        "metal",
-        "sculpture",
-        "asian art"
-      ],
-      "style_title": "Southeast Asian",
-      "classification_title": "silver",
-      "image_id": "635328dc-7f38-3a3a-9ce2-cb95b78c82db",
-      "short_description": null,
-      "description": null,
-      "artist_title": null
-    },
-    {
-      "_score": 42.858723,
-      "id": 50909,
-      "title": "Head of an Apostle",
-      "date_display": "c. 1210",
-      "place_of_origin": "France",
-      "description": "<p>This elongated head—with its piercing, almond-shaped eyes and prominent mouth with parted lips—projects a commanding presence in limestone, despite its absent body. The unidentified subject likely represents an apostle from the biblical New Testament: Such full-length and larger-than-life-size depictions of Jesus’s followers often decorated columns or door jambs in Gothic cathedrals. The stylistic qualities of this head correspond to the architectural decoration produced for the west facade of Notre-Dame Cathedral in Paris around 1200. The symmetry of the head, the locks carved into cascading waves, the leanness of the cheeks, and the physical grandeur lacking emotional content, all resemble sculptures on that part of the building.</p>\n<p>The missing nose attests to the head’s storied history. It was allegedly excavated in the mid-1800s during the modernization of Paris; revolutionaries might have deliberately damaged and buried it half a century earlier because of the cathedral’s long association with the monarchy. This provenance, however, remains unsubstantiated. Neutron activation analysis has shown that the limestone used for this object derives from the same quarry as other figures from Notre-Dame, as well as the cathedral at Sens, about seventy-five miles from Paris. This sculpture awaits further technical, stylistic, and provenance research to verify its origins.</p>\n",
-      "short_description": "This head probably comes from a full-length sculpture of one of the apostles flanking the portals of Notre-Dame Cathedral in Paris. With its references to ancient and Byzantine models, it bears all the stylistic hallmarks of the beginning of the Gothic style. Medieval sculpture like this was purposely damaged in the 1790s during the French Revolution because of its presumed royal associations.",
-      "medium_display": "Limestone",
-      "credit_line": "Kate S. Buckingham Endowment",
-      "is_public_domain": true,
-      "artist_title": "French",
-      "term_titles": [
-        "limestone",
-        "sculpting",
-        "men",
-        "limestone",
-        "medieval",
-        "bust/head",
-        "carbonate rock",
-        "sedimentary rock",
-        "rock",
-        "inorganic material",
-        "sculpture",
-        "Christianity",
-        "beards",
-        "Christian subjects",
-        "religious figures",
-        "religious",
-        "religion",
-        "bearded man",
-        "head",
-        "french",
-        "sculpture/stone",
-        "carving",
-        "sculpture techniques",
-        "stonework",
-        "13th century"
-      ],
-      "style_title": "medieval",
-      "classification_title": "limestone",
-      "image_id": "73eb91ee-cde0-2f6d-843f-4f263d5c409f"
-    },
-    {
-      "_score": 41.45616,
-      "id": 671,
-      "title": "Bust of Seleucus Nicator of Syria",
-      "date_display": "Late 19th century reproduction",
-      "place_of_origin": "Italy",
-      "medium_display": "Bronze",
-      "credit_line": "Gift of H. N. Higinbotham",
-      "is_public_domain": true,
-      "artist_title": "Sabatino de Angelis",
-      "term_titles": [
-        "bronze",
-        "19th century",
-        "portrait",
-        "metal",
-        "sculpture",
-        "ancient art",
-        "man"
-      ],
-      "style_title": "19th century",
-      "classification_title": "bronze",
-      "image_id": "334bed08-2b18-4fe8-6e69-031e4c9e40aa",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 41.243675,
-      "id": 7500,
-      "title": "Shukongojin",
-      "date_display": "13th century",
-      "place_of_origin": "Japan",
-      "description": "<p>Known also as the Thunderbolt Deity, this fierce protector of the Law of Buddhism brandishes a <em>vajra</em> that symbolizes the power of wisdom to penetrate ignorance and destroy evil. Shukongo-jin belongs to the same category of gods as the paired guardians (<em>nio</em>) often placed on either side of the gateways to Buddhist temples.</p>\n<p>Because Shukongo-jin was not intended to blend into a sculptural ensemble, artists frequently used the opportunity to portray him as an occasion for eccentric and exaggerated effects. This figure, for example, is comparatively small, but it still conveys the threat of explosive force appropriate to the deity’s role. He stands surrounded by churning waves, while a divine wind blows his garments about and fuels the flames that are his hair. The hyperrealism of his chiseled muscles and bulging veins is a characteristic feature of Japanese sculpture of this era.</p>\n",
-      "short_description": "This statue of Shukongojin, the Buddhist Thunderbolt Diety, would have originally stood guard at a temple and was intended to frighten away any thoughts or entities that might distract devotees in the sacred temple space. A fierce protector of the Law of Buddhism, he brandishes a <em>vajra</em>, a ritualistic weapon symbolizing the power of wisdom to penetrate ignorance and destroy evil.",
-      "medium_display": "Wood with traces of polychromy",
-      "credit_line": "Kate S. Buckingham Endowment",
-      "is_public_domain": true,
-      "term_titles": [
-        "wood",
-        "wood (plant material)",
-        "Japanese (culture or style)",
-        "sculpture",
-        "asian art"
-      ],
-      "style_title": "Japanese (culture or style)",
-      "classification_title": "wood",
-      "image_id": "fbc2e336-47f6-8e18-a3ee-0c7852c058d0",
-      "artist_title": null
-    },
-    {
-      "_score": 41.208588,
-      "id": 50921,
-      "title": "Capital with the Adoration of the Magi",
-      "date_display": "c. 1120",
-      "place_of_origin": "Spain",
-      "medium_display": "Limestone",
-      "credit_line": "Kate S. Buckingham Endowment",
-      "is_public_domain": true,
-      "artist_title": "Spanish",
-      "term_titles": [
-        "architectural sculpture",
-        "stone",
-        "carving",
-        "medieval",
-        "architechture",
-        "rock",
-        "inorganic material",
-        "sculpture",
-        "spanish",
-        "sculpture/stone",
-        "stone",
-        "limestone",
-        "limestone",
-        "sculpting",
-        "sculpture techniques",
-        "stonework",
-        "architectural",
-        "architectural fragment",
-        "architectural fragments",
-        "Christian subjects",
-        "Christianity",
-        "king",
-        "religion",
-        "religious",
-        "religious scenes"
-      ],
-      "style_title": "medieval",
-      "classification_title": "architectural sculpture",
-      "image_id": "b434df24-2cd7-9a3e-189a-6381b69cd46e",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 40.7216,
-      "id": 14668,
-      "title": "Cameo",
-      "date_display": "Late 18th century",
-      "place_of_origin": "Burslem",
-      "medium_display": "Stoneware (jasperware)",
-      "credit_line": "Gift of Mrs. Robert D. Graff",
-      "is_public_domain": true,
-      "artist_title": "Wedgwood Manufactory",
-      "term_titles": [
-        "cameo (sculpture)",
-        "jasper ware",
-        "sculpture",
-        "stoneware",
-        "ceramic",
-        "inorganic material",
-        "stoneware",
-        "european decorative arts",
-        "ceramics"
-      ],
-      "classification_title": "cameo (sculpture)",
-      "image_id": "cf5e3deb-9da3-17be-70cd-77cfda4e8063",
-      "short_description": null,
-      "style_title": null,
-      "description": null
-    },
-    {
-      "_score": 40.55602,
-      "id": 19118,
-      "title": "Door Boss: Bust of a Satyress",
-      "date_display": "c. 1580",
-      "place_of_origin": "Northern Italy",
-      "medium_display": "Bronze",
-      "credit_line": "Gift of Mr. and Mrs. Chester D. Tripp",
-      "is_public_domain": true,
-      "artist_title": "Northern Italian",
-      "term_titles": [
-        "functional object",
-        "bronze",
-        "satyr",
-        "sculpting",
-        "sixteenth century",
-        "copper alloy",
-        "nonferrous metal",
-        "metal",
-        "inorganic material",
-        "sculpture",
-        "busts",
-        "mythology",
-        "mythological figures",
-        "mythical",
-        "woman",
-        "bronze",
-        "Italian",
-        "metal",
-        "casting (process)",
-        "firing (heating)",
-        "sculpture techniques",
-        "16th Century"
-      ],
-      "style_title": "sixteenth century",
-      "classification_title": "functional object",
-      "image_id": "32c7afd7-bcc0-e5cd-9d4c-74dc04504bd6",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 40.50414,
-      "id": 30354,
-      "title": "Hercules and Antaeus",
-      "date_display": "1600–1625",
-      "place_of_origin": "Italy",
-      "description": "<p>Both this bronze and <a href=\"https://www.artic.edu/artworks/30358/hercules-and-lichas\">it’s companion</a> depict the legendary labors of Hercules, a frequent subject in Renaissance and later art. The figures may derive from a lost series of silver statuettes after models by sculptor <a href=\"https://www.artic.edu/artists/50313/giovanni-da-bologna\">Giambologna</a> and were likely cast by his leading workshop assistant, Pietro Tacca. They reflect Giambologna’s intense preoccupation with the human form in motion, which transforms a violent struggle into a ballet.</p>\n",
-      "medium_display": "Bronze",
-      "credit_line": "Robert Allerton Endowment",
-      "is_public_domain": true,
-      "artist_title": "Pietro Tacca",
-      "term_titles": [
-        "statuette",
-        "bronze",
-        "sculpting",
-        "17th Century",
-        "men",
-        "copper alloy",
-        "nonferrous metal",
-        "metal",
-        "inorganic material",
-        "sculpture",
-        "battles",
-        "bronze",
-        "figure",
-        "Italian",
-        "metal",
-        "casting (process)",
-        "firing (heating)",
-        "sculpture techniques",
-        "figures",
-        "nudes",
-        "sculpture",
-        "strength",
-        "wrestlers"
-      ],
-      "style_title": "17th Century",
-      "classification_title": "statuette",
-      "image_id": "9de2aea3-ecd8-584f-9e71-417149fec73a",
-      "short_description": null
-    },
-    {
-      "_score": 40.365093,
-      "id": 4453,
-      "title": "Bodhisattva",
-      "date_display": "Tang dynasty (618–906), c. 725/50",
-      "place_of_origin": "China",
-      "description": "<p>In eighth-century China, Buddhist sculptors adopted new standards of secular beauty for spiritual figures. Whereas images of the Buddha appear sternly formal, bodhisattvas, the merciful deities that guide men toward salvation, often display more humanistic features. This bodhisattva's graceful proportions, upswept hair, sinuous drapery, and delicate jewelry convey an appealing physical elegance. Seated informally, the deity is poised to step down from its pedestal.</p>\n<p>Together with a large seated Buddha and another attendant bodhisattva in the Art Institute collection (1930.83, 1930.84), this sculpture came to the museum in 1930 with a note of its discovery in a temple known as Cangfosi in northern Hebei province. Neither archaeological nor written records have been located to confirm this reported site. The scale and stone medium of these figures suggest that they were commissioned for a cave temple or shrine a chamber carved into the face of a mountain or cliff.</p>\n",
-      "short_description": "In eighth-century China, Buddhist sculptors adopted new standards of secular beauty for spiritual figures. Whereas images of the Buddha appear sternly formal, bodhisattvas, the merciful deities that guide people toward salvation, often display more sympathetic and relatable features. This bodhisattva's graceful proportions, upswept hair, sinuous drapery, and delicate jewelry convey an appealing physical elegance.",
-      "medium_display": "Limestone with traces of polychromy",
-      "credit_line": "Lucy Maud Buckingham Collection",
-      "is_public_domain": true,
-      "term_titles": [
-        "limestone",
-        "stone",
-        "Chinese (culture or style)",
-        "sculpture",
-        "asian art"
-      ],
-      "style_title": "Chinese (culture or style)",
-      "classification_title": "stone",
-      "image_id": "3f8067b6-eb0f-7be8-661d-518a8c8f8155",
-      "artist_title": null
-    },
-    {
-      "_score": 40.322136,
-      "id": 27150,
-      "title": "Upper Part of a Tabernacle for the Holy Sacrament",
-      "date_display": "1461/63",
-      "place_of_origin": "Italy",
-      "description": "<p>This relief represents the upper of two surviving panels from the altar of the Holy Sacrament in the Roman basilica of Santa Maria Maggiore (the second panel remains in the church). Dismantled in 1573, the altar was one of a number of improvements in the church instituted by Cardinal Guillaume d’Estouteville, archpriest of Santa Maria Maggiore during much of the 15th century. As his name implies, Isaia came from a family of stone carvers in Pisa and was active in Rome from 1428. He produced a number of tombs and altars there, although the majority no longer survive. Between 1455 and 1458, he collaborated on one of the grandest sculptural projects of the century, the Arch of Alfonso I of Aragon in Naples.</p>\n",
-      "medium_display": "Marble",
-      "credit_line": "Gift of Mr. and Mrs. Potter Palmer",
-      "is_public_domain": true,
-      "artist_title": "Isaia da Pisa",
-      "term_titles": [
-        "relief",
-        "marble",
-        "carving",
-        "15th century",
-        "angels",
-        "metamorphic rock",
-        "rock",
-        "inorganic material",
-        "sculpture",
-        "Italian",
-        "sculpture techniques",
-        "stonework",
-        "doors",
-        "sculpture"
-      ],
-      "style_title": "15th century",
-      "classification_title": "relief",
-      "image_id": "72c335d0-85ce-9d7a-a066-b6a1cc2c00dd",
-      "short_description": null
-    },
-    {
-      "_score": 40.2458,
-      "id": 27747,
-      "title": "Corpus of Christ",
-      "date_display": "13th century",
-      "place_of_origin": "Spain",
-      "description": "<p>This sculpture of the crucified Christ reportedly came from a church in Banyoles in northeastern Spain. It was displayed between the choir and the nave, which was the space reserved for the congregation.  Originally painted and gilded, it would have provided a dramatic focal point for the faithful.  Christ’s figure, with drooping head, closed eyes, and limp body, emphasizes his humanity and suffering.  This resigned treatment of the crucified Christ gained currency around 1200, in contrast to more upright and triumphant representations of Christ on the cross of earlier centuries.</p>\n",
-      "medium_display": "Wood with traces of polychromy",
-      "credit_line": "Kate S. Buckingham Endowment",
-      "is_public_domain": true,
-      "artist_title": "Spanish",
-      "term_titles": [
-        "wood (plant material)",
-        "sculpture",
-        "Jesus",
-        "woodworking",
-        "medieval",
-        "large scale",
-        "plant material",
-        "Christianity",
-        "Christian subjects",
-        "religious figures",
-        "religious",
-        "religion",
-        "man",
-        "body",
-        "figure",
-        "crucifixions",
-        "corpus christi",
-        "sculpture/wood",
-        "spanish",
-        "wood",
-        "organic material",
-        "polychrome",
-        "polychromy",
-        "carving",
-        "painting",
-        "painting (coating)",
-        "sculpting",
-        "sculpture techniques",
-        "13th century"
-      ],
-      "style_title": "medieval",
-      "classification_title": "sculpture",
-      "image_id": "41f65b0b-c5e9-ba52-744e-14c64d924f1e",
-      "short_description": null
-    },
-    {
-      "_score": 40.24007,
-      "id": 137222,
-      "title": "Hevajra and Nairātmyā in Ritual Embrace (Yab-Yum)",
-      "date_display": "c. 1600",
-      "place_of_origin": "Kathmandu Valley",
-      "medium_display": "Gilt bronze with pigments",
-      "credit_line": "Gift of the Alsdorf Foundation",
-      "is_public_domain": true,
-      "term_titles": [
-        "bronze",
-        "bronze",
-        "Himalayan",
-        "metal",
-        "sculpture",
-        "asian art"
-      ],
-      "style_title": "Himalayan",
-      "classification_title": "bronze",
-      "image_id": "cf932528-92bb-77f8-51d0-145f681643df",
-      "short_description": null,
-      "description": null,
-      "artist_title": null
-    },
-    {
-      "_score": 40.22113,
-      "id": 286,
-      "title": "Portrait Head of a Woman",
-      "date_display": "about 140",
-      "place_of_origin": "Rome",
-      "medium_display": "marble",
-      "credit_line": "Museum Purchase Fund",
-      "is_public_domain": true,
-      "artist_title": "Ancient Roman",
-      "term_titles": [
-        "sculpture",
-        "heads",
-        "marble",
-        "roman (ancient, style or period)",
-        "marble",
-        "stone",
-        "ancient art",
-        "females"
-      ],
-      "style_title": "roman (ancient, style or period)",
-      "classification_title": "sculpture",
-      "image_id": "95d7115d-3f78-ce6a-d174-d8f3581c9aa4",
-      "short_description": null,
-      "description": null
-    },
-    {
-      "_score": 40.18183,
-      "id": 19146,
-      "title": "Trumpet Player",
-      "date_display": "c. 1760/70",
-      "place_of_origin": "Vienna",
-      "medium_display": "Hard-paste porcelain, polychrome enamels, and gilding",
-      "credit_line": "Mrs. Alfred Hoyt Granger gift",
-      "is_public_domain": true,
-      "artist_title": "Vienna State Porcelain Manufactory",
-      "term_titles": [
-        "sculpture",
-        "hard-paste porcelain",
-        "porcelain",
-        "porcelain",
-        "european decorative arts",
-        "ceramics"
-      ],
-      "classification_title": "sculpture",
-      "image_id": "0192f86e-179b-ad60-e727-d9e547d90c3d",
-      "short_description": null,
-      "style_title": null,
-      "description": null
-    },
-    {
-      "_score": 39.92943,
-      "id": 102611,
-      "title": "Veranda Post (Òpó Ògògá)",
-      "date_display": "1910-14",
-      "place_of_origin": "Ikere",
-      "description": "<p>One of four posts sculpted for the palace of the king (<em>ogoga</em>) of Ikere, this evocative image of the Yoruba concept of a divine ruler is a masterwork of Olowe of Ise. The renowned artist’s dynamic style can be distinguished by the interrelationships between figures, their exaggerated proportions, and the use of open space. The sculptor’s diminutive portrayal of the king suggests his dependence on others, and his crown has been emphasized to evoke the spiritual power residing within it.  The towering image of the king’s senior wife standing behind him underscores her superior status as a guardian of her husband’s interests, endowed with keen political understanding and supernatural knowledge. She would have placed the crown on the king’s head during his enthronement ceremony. The smaller figures at the king’s feet represent one of his junior wives and the flute-playing trickster god Eshu.</p>\n",
-      "medium_display": "Wood and pigment",
-      "credit_line": "The Art Institute of Chicago, Major Acquisitions Centennial Fund",
-      "is_public_domain": true,
-      "artist_title": "Olowe of Ise",
-      "term_titles": [
-        "wood (plant material)",
-        "carving",
-        "yoruba",
-        "sculpture",
-        "divine rulership",
-        "wood",
-        "arts of Africa",
-        "Arts of Africa",
-        "Coastal West Africa",
-        "pigment",
-        "rulers (people)",
-        "crowns",
-        "sculpting",
-        "painting (coating)",
-        "african Art",
-        "architectural fragment",
-        "kings",
-        "royalty",
-        "african art",
-        "carving",
-        "people",
-        "royal personages",
-        "women",
-        "architectural sculpture",
-        "communities",
-        "enthronement",
-        "spirit",
-        "supernatural",
-        "architectural fragments"
-      ],
-      "style_title": "yoruba",
-      "classification_title": "sculpture",
-      "image_id": "fec5d023-0b46-45df-eb57-cbf64e24121d",
-      "short_description": null
-    },
-    {
-      "_score": 39.862434,
-      "id": 148369,
-      "title": "Twenty-Armed Dancing God Ganesha, Remover of Obstacles",
-      "date_display": "10th century",
-      "place_of_origin": "Madhya Pradesh",
-      "description": "<p>Ganesha, the elephant-headed son of Shiva and Parvati, is one of South Asia’s most popular deities. Venerated as the “Remover of Obstacles,” the portly god is here shown mid-step performing an exuberant dance while heavenly musicians play instruments at the corners of the frame. Beside Ganesha’s lifted left foot, his rat <em>vahana</em> (mount) peers up at him in adoration. In a feat of artistic virtuosity, the sculptor has carved twenty arms on this Ganesha, which is remarkable both for its quality and iconography. The image originally occupied an exterior wall niche of a temple, perhaps one dedicated to his father Shiva.</p>\n",
-      "medium_display": "Sandstone",
-      "credit_line": "James W. and Marilynn Alsdorf Collection. Gift of Marilynn Alsdorf",
-      "is_public_domain": true,
-      "term_titles": [
-        "sandstone",
-        "sandstone",
-        "South Asian",
-        "stone",
-        "sculpture",
-        "asian art"
-      ],
-      "style_title": "South Asian",
-      "classification_title": "sandstone",
-      "image_id": "a69ebcf9-ba90-fa33-3239-27a9bd7c8883",
-      "short_description": null,
-      "artist_title": null
-    },
-    {
-      "_score": 39.397022,
-      "id": 24548,
-      "title": "Shiva as Lord of the Dance (Nataraja)",
-      "date_display": "Chola period, about 10th/11th century",
-      "place_of_origin": "Tamil Nadu",
-      "description": "<p>Shiva, one of the most important Hindu divinities, is here depicted as the Lord of the Dance (<em>Nataraja</em>), an iconic image in Indian art. Shiva’s cosmic dance sets in motion the rhythm of life and death; it pervades the universe, as symbolized by the ring of fire that is filled with the loose, snakelike locks of the god’s hair. One pair of his arms balances the flame of destruction and the hand drum (<em>damaru</em>) that beats the rhythm of life while another performs symbolic gestures: the raised right hand means “fear not,” and the left hand (<em>gajahasta</em>) pointing down toward his raised left foot signifies release from the ignorance that hinders realization of the ultimate reality. Shiva is shown perfectly balanced, with his right leg planted on the demon of darkness (<em>Apasmara</em>), stamping out ignorance. The tiny figure of the personified river goddess, Ganga, is caught up in his matted, flowing locks. Shiva was believed to break the fall of the great Ganges River as it descends from the Himalayas by standing beneath the waters, which divide over his hair, becoming the seven holy rivers of India. This classic bronze comes from the Chola period in the south of India. Icons such as this were carried in procession during religious ceremonies.</p>\n",
-      "short_description": "In this sculpture, the Hindu divinity Shiva, depicted as the Lord of the Dance (Nataraja), performs a cosmic dance that sets in motion the rhythm of life and death. Considered one of the most sublime images in Indian art, the dancing Shiva destroys everything, allowing creation to start all over again. His right leg, planted on the demon of darkness, stamps out ignorance.",
-      "medium_display": "Bronze",
-      "credit_line": "Kate S. Buckingham Fund",
-      "is_public_domain": true,
-      "term_titles": [
-        "bronze",
-        "bronze",
-        "casting (process)",
-        "dancing",
-        "South Asian",
-        "metal",
-        "sculpture",
-        "asian art",
-        "chola",
-        "gods (deities)",
-        "Hindu",
-        "religion",
-        "Shiva Nataraja"
-      ],
-      "style_title": "South Asian",
-      "classification_title": "bronze",
-      "image_id": "cf50f037-5fb2-e197-0e56-3ae701edb3e2",
-      "artist_title": null
-    },
-    {
       "_score": 128.1776,
       "id": 65811,
       "title": "The Plate of Apples",
@@ -10862,58 +10951,6 @@
       "style_title": "Post-Impressionism",
       "classification_title": "oil on canvas",
       "image_id": "2e6d6a89-61bd-5098-59d3-b41d14bf7973"
-    },
-    {
-      "_score": 82.92852,
-      "id": 16179,
-      "title": "The Dream of Saint Jerome",
-      "date_display": "1476",
-      "place_of_origin": "Italy",
-      "description": "<p>This painting and its companion, <a href=\"https://www.artic.edu/artworks/16183/saint-augustine-s-vision-of-saints-jerome-and-john-the-baptist\"><em>Saint Augustine’s Vision</em></a>, depict scenes from the life of Saint Jerome, the scholar credited with translating the Bible from Hebrew into Latin, a more widely known language at the time, so that more people would be able to read it. The first scene shows Jerome’s dream of being punished by a heavenly council for preferring ancient Greek and Roman texts to the Christian Bible. In the second painting, Saint Augustine is composing Jerome’s eulogy when he is interrupted by a vision of the saint accompanied by John the Baptist, who praises Jerome as his equal.</p>\n",
-      "medium_display": "Tempera on panel",
-      "credit_line": "Mr. and Mrs. Martin A. Ryerson Collection",
-      "is_public_domain": true,
-      "artist_title": "Matteo di Giovanni",
-      "term_titles": [
-        "tempera",
-        "saints",
-        "15th century",
-        "panel painting",
-        "tempera",
-        "violence",
-        "translation",
-        "scholars",
-        "hermits",
-        "religious scenes",
-        "religious figures",
-        "religious",
-        "religion",
-        "Narrative",
-        "men",
-        "Christianity",
-        "Christian subjects",
-        "architecture",
-        "architecture",
-        "architechture",
-        "painting techniques",
-        "painting (image making)",
-        "painting",
-        "wood (plant material)",
-        "plant material",
-        "panel (wood)",
-        "organic material",
-        "paint",
-        "Italian",
-        "painting",
-        "european painting",
-        "Century of Progress",
-        "world's fairs",
-        "Chicago World's Fairs"
-      ],
-      "style_title": "15th century",
-      "classification_title": "tempera",
-      "image_id": "336a83f3-c184-add1-ee03-f295aa97a0b0",
-      "short_description": null
     },
     {
       "_score": 39.197556,
